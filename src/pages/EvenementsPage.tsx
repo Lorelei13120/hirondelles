@@ -9,7 +9,7 @@ const EvenementsPage = () => {
         <div className="max-w-5xl mx-auto flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <img src={logo} alt="Les Hirondelles" className="w-10 h-10" />
-            <span className="font-display text-lg italic">Les Hirondelles</span>
+            <span className="font-display font-bold text-lg uppercase tracking-tight">Les Hirondelles</span>
           </Link>
           <nav className="flex gap-6 font-body text-sm text-primary-foreground/70">
             <Link to="/" className="hover:text-accent transition-colors">Accueil</Link>
@@ -20,7 +20,7 @@ const EvenementsPage = () => {
 
       <section className="py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-display text-foreground mb-3">
+          <h1 className="text-4xl md:text-6xl font-display font-bold uppercase text-foreground mb-3 tracking-tight">
             Événements
           </h1>
           <div className="h-0.5 w-16 bg-primary mb-4" />
@@ -42,11 +42,19 @@ const EvenementsPage = () => {
                 key={i}
                 className="border-t border-border py-10 flex flex-col md:flex-row gap-6 md:items-start hover:bg-card/50 transition-colors px-4 -mx-4 rounded"
               >
-                <div className="font-display text-primary text-3xl md:text-4xl w-36 shrink-0">
+                {event.image && (
+                  <img
+                    src={event.image}
+                    alt={event.title}
+                    className="w-full md:w-48 h-32 object-cover rounded shrink-0"
+                    loading="lazy"
+                  />
+                )}
+                <div className="font-display font-bold text-primary text-3xl md:text-4xl w-36 shrink-0">
                   {event.date}
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-xl font-display text-foreground mb-2">{event.title}</h2>
+                  <h2 className="text-xl font-display font-bold uppercase text-foreground mb-2 tracking-tight">{event.title}</h2>
                   <p className="text-muted-foreground font-body text-xs tracking-wide mb-3">
                     📍 {event.location}
                   </p>
