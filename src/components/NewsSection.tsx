@@ -1,21 +1,47 @@
-const news = [
+import { Link } from "react-router-dom";
+
+export const news = [
   {
-    date: "18 février 2026",
-    title: "Victoire : le tribunal reconnaît notre droit d'usage",
+    date: "22 février 2026",
+    title: "On lance des Dance Days à Béthanie !",
     summary:
-      "Après 14 mois de procédure, le tribunal a statué en notre faveur. La ferme reste un lieu de vie et de culture paysanne. Merci à tou·tes pour votre soutien !",
+      "Le concept : danser dans le noir pendant une heure, sans drague, sans jugement. Juste pour le plaisir de bouger. Parfois sur une playlist, d'autres fois DJ. Prochaines dates les lundis à Béthanie et à la Maison du Concert.",
+    telegramLink: "https://t.me/hirondelles/329",
   },
   {
     date: "5 février 2026",
-    title: "Appel à semences paysannes",
+    title: "Fête des 2 ans — Save the date : 4 avril !",
     summary:
-      "Nous cherchons des variétés anciennes de tomates, courges et blés pour la saison à venir. Si vous avez des graines à partager, contactez-nous sur Telegram.",
+      "Une étrange nuée d'hirondelles pleines d'amour, de paillettes et de rage révolutionnaire appelle à la fête ! Le 4 avril, venez festoyer nos 2 ans à la ferme. Grande journée paillettée avec ateliers, maraîche et grosse teuf !",
+    telegramLink: "https://t.me/hirondelles/325",
   },
   {
-    date: "20 janvier 2026",
-    title: "Communiqué : solidarité avec les Soulèvements de la Terre",
+    date: "17 janvier 2026",
+    title: "Chantier chambre froide au hameau de Pontareuse",
     summary:
-      "Le collectif Les Hirondelles réaffirme son soutien total aux mouvements de défense des terres et de l'eau. La terre se défend, nous la défendons.",
+      "Nous prévoyons une année de maraîchage avec davantage de production, il nous faut une chambre froide ! Venez nous aider à remettre en état la cave enterrée. Jeux de société, projections et discussions au programme des soirées.",
+    telegramLink: "https://t.me/hirondelles/323",
+  },
+  {
+    date: "17 janvier 2026",
+    title: "Rencontre avec l'association A4 — Accès à la terre et migration",
+    summary:
+      "L'association A4 travaille sur l'accueil en agriculture et artisanat de personnes migrantes en France. Projection, discussion et repas vegan prix libre à Béthanie.",
+    telegramLink: "https://t.me/hirondelles/322",
+  },
+  {
+    date: "31 août 2025",
+    title: "Soutien à Naser — Cagnotte de solidarité",
+    summary:
+      "Notre ami Naser a été enfermé après s'être rendu au SPoMi de Fribourg. Son incarcération a aggravé sa dépression. Une cagnotte de soutien est organisée pour lui permettre d'avoir une sécurité financière après son expulsion.",
+    telegramLink: "https://t.me/hirondelles/298",
+  },
+  {
+    date: "19 août 2025",
+    title: "Recherche isolation et mazout — Appel à dons",
+    summary:
+      "On cherche à vous débarrasser de votre isolation (laine de verre, de bois ou de roche) et de votre mazout. Comme ça on pourra avoir bien chaud en hiver et organiser plein de bouffes pop, de concerts et de projections !",
+    telegramLink: "https://t.me/hirondelles/292",
   },
 ];
 
@@ -29,11 +55,8 @@ const NewsSection = () => {
         <div className="h-0.5 w-16 bg-primary mb-12" />
 
         <div className="space-y-10">
-          {news.map((item, i) => (
-            <article
-              key={i}
-              className="border-l-4 border-primary pl-6"
-            >
+          {news.slice(0, 3).map((item, i) => (
+            <article key={i} className="border-l-4 border-primary pl-6">
               <time className="font-body text-xs text-muted-foreground tracking-wide uppercase">
                 {item.date}
               </time>
@@ -43,8 +66,27 @@ const NewsSection = () => {
               <p className="text-muted-foreground font-body text-sm leading-relaxed max-w-2xl">
                 {item.summary}
               </p>
+              {item.telegramLink && (
+                <a
+                  href={item.telegramLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-2 text-primary font-body text-xs tracking-wide hover:underline"
+                >
+                  Lire sur Telegram →
+                </a>
+              )}
             </article>
           ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <Link
+            to="/actualites"
+            className="inline-block bg-primary text-primary-foreground px-6 py-3 font-body font-semibold text-sm tracking-wide rounded hover:bg-primary/80 transition-colors"
+          >
+            Toutes les actualités
+          </Link>
         </div>
       </div>
     </section>
