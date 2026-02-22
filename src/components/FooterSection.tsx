@@ -9,7 +9,7 @@ const FooterSection = () => {
           <div className="flex items-start gap-4">
             <img src={logo} alt="Les Hirondelles" className="w-16 h-16" />
             <div>
-              <h3 className="font-display text-2xl mb-2 italic">
+              <h3 className="font-display font-bold text-2xl mb-2 uppercase tracking-tight">
                 Les Hirondelles
               </h3>
               <p className="font-body text-sm text-primary-foreground/60 max-w-xs leading-relaxed">

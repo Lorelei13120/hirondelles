@@ -58,7 +58,7 @@ const DescriptionSection = () => {
   return (
     <section id="description" className="py-24 px-6 bg-background">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-display text-foreground mb-3">
+        <h2 className="text-4xl md:text-5xl font-display font-bold uppercase text-foreground mb-3 tracking-tight">
           Qui sommes-nous ?
         </h2>
         <div className="h-0.5 w-16 bg-primary mb-8" />
@@ -70,7 +70,7 @@ const DescriptionSection = () => {
         </p>
 
         {/* Buts du lieu */}
-        <h3 className="text-2xl md:text-3xl font-display text-foreground mb-6">
+        <h3 className="text-2xl md:text-3xl font-display font-bold uppercase text-foreground mb-6 tracking-tight">
           Nos objectifs
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
@@ -89,7 +89,7 @@ const DescriptionSection = () => {
         </div>
 
         {/* Valeurs / Charte */}
-        <h3 className="text-2xl md:text-3xl font-display text-foreground mb-6">
+        <h3 className="text-2xl md:text-3xl font-display font-bold uppercase text-foreground mb-6 tracking-tight">
           Nos valeurs
         </h3>
         <p className="font-body text-muted-foreground text-base max-w-3xl mb-10 leading-relaxed">
