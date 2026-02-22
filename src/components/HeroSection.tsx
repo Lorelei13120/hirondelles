@@ -1,4 +1,5 @@
 import heroBg from "@/assets/hero-bg.jpg";
+import logo from "@/assets/logo-hirondelles.png";
 
 const HeroSection = () => {
   return (
@@ -10,8 +11,13 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-foreground/40" />
 
       <div className="relative z-10 text-center px-6 max-w-4xl">
+        <img
+          src={logo}
+          alt="Logo Les Hirondelles"
+          className="w-32 h-32 md:w-40 md:h-40 mx-auto mb-6 drop-shadow-lg"
+        />
         <p className="font-body text-primary-foreground/80 text-sm tracking-widest uppercase mb-4">
-          Collectif paysan · Ferme occupée
+          Hameau agricole de Pontareuse · Boudry (NE)
         </p>
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-display text-primary-foreground leading-tight mb-6 italic">
           Les Hirondelles

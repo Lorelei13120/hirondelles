@@ -5,25 +5,25 @@ const values = [
     icon: Sprout,
     title: "Agriculture paysanne",
     description:
-      "Nous cultivons la terre dans le respect du vivant, loin de l'agro-industrie. Maraîchage, semences libres et savoir-faire partagés.",
+      "Maraîchage collectif, récolte de courges, préparation des sols. On cultive la terre dans le respect du vivant, avec des repas partagés et des légumes pour tou·tes.",
   },
   {
     icon: Home,
     title: "Occupation & réquisition",
     description:
-      "Cette ferme était laissée à l'abandon. Nous l'avons reprise pour la faire vivre, parce que la terre appartient à celleux qui la travaillent.",
+      "Le hameau de Pontareuse à Boudry était laissé à l'abandon. Nous l'avons repris pour en faire un lieu de vie, de culture et de luttes paysannes.",
   },
   {
     icon: HandHeart,
     title: "Entraide & solidarité",
     description:
-      "Chantiers collectifs, partage de récoltes, accueil inconditionnel. Ici, on construit ensemble un autre rapport au monde.",
+      "Chantiers participatifs, repas vegan prix libre, accueil de personnes migrantes, soutien aux copaines en procès. On construit ensemble.",
   },
   {
     icon: Leaf,
     title: "Luttes paysannes",
     description:
-      "Contre l'accaparement des terres, les méga-bassines et l'artificialisation. Pour une agriculture nourricière et autonome.",
+      "Contre le fracking, l'accaparement des terres et les violences policières. Solidarité avec les luttes locales et internationales.",
   },
 ];
 
@@ -36,10 +36,10 @@ const DescriptionSection = () => {
         </h2>
         <div className="h-0.5 w-16 bg-primary mb-8" />
         <p className="font-body text-muted-foreground text-lg max-w-3xl mb-16 leading-relaxed">
-          Les Hirondelles, c'est un collectif de paysan·nes, militant·es et 
-          habitant·es qui ont investi une ferme abandonnée pour y faire renaître 
-          une agriculture vivante et solidaire. Nous croyons que la terre ne 
-          devrait jamais être une marchandise.
+          Les Hirondelles, c'est un collectif installé au hameau agricole de 
+          Pontareuse à Boudry (NE). Depuis deux ans, on fait renaître cette 
+          ferme abandonnée : maraîchage, bouffes pop, concerts, projections, 
+          chantiers collectifs et fêtes pailletées. La terre à celleux qui la travaillent !
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
