@@ -2,51 +2,42 @@ import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${heroBg})` }}
       />
-      <div className="absolute inset-0 bg-secondary/80" />
-      
-      {/* Marquee band */}
-      <div className="absolute top-0 left-0 right-0 bg-primary py-2 overflow-hidden z-10">
-        <div className="animate-marquee whitespace-nowrap flex">
-          {Array.from({ length: 10 }).map((_, i) => (
-            <span key={i} className="text-primary-foreground font-body text-sm tracking-widest mx-8">
-              NO GODS — NO MASTERS — SOLIDARITY FOREVER — DIRECT ACTION —
-            </span>
-          ))}
-        </div>
-      </div>
+      <div className="absolute inset-0 bg-foreground/40" />
 
-      <div className="relative z-10 text-center px-6 max-w-5xl">
-        <h1 className="text-6xl md:text-8xl lg:text-9xl font-display text-primary-foreground leading-none mb-6">
-          BREAK THE
-          <br />
-          <span className="text-primary">CHAINS</span>
+      <div className="relative z-10 text-center px-6 max-w-4xl">
+        <p className="font-body text-primary-foreground/80 text-sm tracking-widest uppercase mb-4">
+          Collectif paysan · Ferme occupée
+        </p>
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-display text-primary-foreground leading-tight mb-6 italic">
+          Les Hirondelles
         </h1>
-        <p className="text-primary-foreground/70 font-body text-lg md:text-xl max-w-2xl mx-auto mb-10">
-          A collective dedicated to mutual aid, direct action, and building a world without hierarchy.
+        <p className="text-primary-foreground/80 font-body text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light">
+          Pour la terre, pour celleux qui la travaillent.
+          <br />
+          Occupation, entraide et luttes paysannes.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="#principles"
-            className="bg-primary text-primary-foreground px-8 py-4 font-body font-bold text-sm tracking-widest uppercase hover:bg-primary/80 transition-colors border-2 border-primary"
+            href="#description"
+            className="bg-primary text-primary-foreground px-8 py-3 font-body font-semibold text-sm tracking-wide rounded hover:bg-primary/80 transition-colors"
           >
-            Our Principles
+            Qui sommes-nous ?
           </a>
           <a
-            href="#action"
-            className="border-2 border-primary-foreground text-primary-foreground px-8 py-4 font-body font-bold text-sm tracking-widest uppercase hover:bg-primary-foreground hover:text-secondary transition-colors"
+            href="https://t.me/hirondelles"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border-2 border-primary-foreground/70 text-primary-foreground px-8 py-3 font-body font-semibold text-sm tracking-wide rounded hover:bg-primary-foreground/10 transition-colors"
           >
-            Get Involved
+            Rejoindre sur Telegram
           </a>
         </div>
       </div>
-
-      {/* Bottom border */}
-      <div className="absolute bottom-0 left-0 right-0 h-1 bg-primary" />
     </section>
   );
 };

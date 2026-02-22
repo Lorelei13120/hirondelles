@@ -1,16 +1,16 @@
 import HeroSection from "@/components/HeroSection";
-import PrinciplesSection from "@/components/PrinciplesSection";
+import DescriptionSection from "@/components/DescriptionSection";
+import NewsSection from "@/components/NewsSection";
 import EventsSection from "@/components/EventsSection";
-import ActionSection from "@/components/ActionSection";
 import FooterSection from "@/components/FooterSection";
 
 const Index = () => {
   return (
     <main>
       <HeroSection />
-      <PrinciplesSection />
+      <DescriptionSection />
+      <NewsSection />
       <EventsSection />
-      <ActionSection />
       <FooterSection />
     </main>
   );
