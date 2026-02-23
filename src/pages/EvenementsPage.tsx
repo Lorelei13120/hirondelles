@@ -1,23 +1,9 @@
-import { Link } from "react-router-dom";
 import { events } from "@/components/EventsSection";
-import logo from "@/assets/logo-hirondelles.png";
+import FooterSection from "@/components/FooterSection";
 
 const EvenementsPage = () => {
   return (
     <main className="min-h-screen bg-background">
-      <header className="bg-foreground text-primary-foreground py-4 px-6">
-        <div className="max-w-5xl mx-auto flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <img src={logo} alt="Les Hirondelles" className="w-10 h-10" />
-            <span className="font-display font-bold text-lg uppercase tracking-tight">Les Hirondelles</span>
-          </Link>
-          <nav className="flex gap-6 font-body text-sm text-primary-foreground/70">
-            <Link to="/" className="hover:text-accent transition-colors">Accueil</Link>
-            <Link to="/actualites" className="hover:text-accent transition-colors">Actualités</Link>
-          </nav>
-        </div>
-      </header>
-
       <section className="py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-display font-bold uppercase text-foreground mb-3 tracking-tight">
@@ -68,6 +54,7 @@ const EvenementsPage = () => {
           </div>
         </div>
       </section>
+      <FooterSection />
     </main>
   );
 };
