@@ -25,8 +25,10 @@ const FooterSection = () => {
               <h4 className="font-display text-sm mb-4 text-accent">Navigation</h4>
               <ul className="space-y-2 font-body text-sm text-primary-foreground/70">
                 <li><a href="/#description" className="hover:text-accent transition-colors">Qui sommes-nous</a></li>
+                <li><Link to="/maraichage" className="hover:text-accent transition-colors">Maraîchage</Link></li>
                 <li><Link to="/actualites" className="hover:text-accent transition-colors">Actualités</Link></li>
                 <li><Link to="/evenements" className="hover:text-accent transition-colors">Événements</Link></li>
+                <li><Link to="/galerie" className="hover:text-accent transition-colors">Galerie</Link></li>
               </ul>
             </div>
             <div>
