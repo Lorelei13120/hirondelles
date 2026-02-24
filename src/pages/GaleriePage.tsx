@@ -13,10 +13,6 @@ interface TelegramMessage {
 }
 
 const staticPhotos = [
-  { src: pontareuse, alt: "Le hameau de Pontareuse" },
-  { src: planter, alt: "Plantations au jardin" },
-  { src: greffes, alt: "Atelier de greffes" },
-  { src: danceDay, alt: "Dance Day à Pontareuse" },
 ];
 
 const GaleriePage = () => {
@@ -59,7 +55,7 @@ const GaleriePage = () => {
           </h1>
           <div className="h-0.5 w-16 bg-primary mb-4" />
           <p className="font-body text-muted-foreground mb-16 max-w-2xl">
-            Photos de la vie au hameau de Pontareuse.
+            Photos de la vie à Pontareuse.
           </p>
 
           {/* Photos statiques */}

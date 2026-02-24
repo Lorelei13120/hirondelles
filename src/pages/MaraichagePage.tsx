@@ -14,9 +14,9 @@ const MaraichagePage = () => {
           </h1>
           <div className="h-0.5 w-16 bg-primary mb-8" />
           <p className="font-body text-muted-foreground text-lg max-w-3xl leading-relaxed">
-            Au hameau de Pontareuse, on cultive la terre collectivement, en dehors des logiques marchandes. 
-            Pas de vente, pas de profit : on produit pour nourrir le collectif et les personnes qui passent. 
-            C'est un projet d'autosuffisance, d'apprentissage et de soin de la terre.
+            A Pontareuse, on cultive la terre collectivement, en dehors des logiques marchandes. 
+            Retrouvez-nous au marché de Boudry chaque dernier samedi du mois ! On vend des plantons et des légumes prix libre. 
+            C'est un projet d'apprentissage, d'expérimentation et de soin de la terre.
           </p>
         </div>
       </section>

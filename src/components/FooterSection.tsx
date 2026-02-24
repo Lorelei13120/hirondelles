@@ -15,7 +15,7 @@ const FooterSection = () => {
               <p className="font-body text-sm text-primary-foreground/60 max-w-xs leading-relaxed">
                 Hameau agricole de Pontareuse.
                 <br />
-                Collectif paysan en lutte.
+                Collectif des Hirondelles.
               </p>
             </div>
           </div>

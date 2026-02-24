@@ -83,7 +83,7 @@ const EvenementsPage = () => {
           </h1>
           <div className="h-0.5 w-16 bg-primary mb-4" />
           <p className="font-body text-muted-foreground mb-16 max-w-2xl">
-            Les prochains rendez-vous du collectif. Pour ne rien rater, suivez{" "}
+            Les prochains événements. Pour ne rien rater, suivez{" "}
             <a
               href="https://t.me/hirondelles"
               target="_blank"
