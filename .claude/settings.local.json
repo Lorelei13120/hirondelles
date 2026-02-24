@@ -4,7 +4,9 @@
       "Bash(cd:*)",
       "Bash(cd /c/Users/buton/Downloads/hirondelles && npm run build 2>&1)",
       "Bash(cd /c/Users/buton/Downloads/hirondelles && npx vite build 2>&1)",
-      "Bash(cd /c/Users/buton/Downloads/hirondelles && ./node_modules/.bin/vite build 2>&1)"
+      "Bash(cd /c/Users/buton/Downloads/hirondelles && ./node_modules/.bin/vite build 2>&1)",
+      "Bash(ls:*)",
+      "Bash(cd C:\\\\Users\\\\buton\\\\Downloads\\\\hirondelles:*)"
     ]
   }
 }
