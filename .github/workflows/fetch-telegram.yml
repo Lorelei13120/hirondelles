@@ -57,7 +57,7 @@ jobs:
       - name: Commit and push changes
         if: steps.verify_changed_files.outputs.changed == 'true'
         run: |
-          git add Assets/
+          git add public/Assets/
           git commit -m "🤖 Mise à jour automatique des messages Telegram - $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
           git push
       
