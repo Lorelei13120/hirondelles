@@ -1,5 +1,13 @@
 [
   {
+    "id": "test-event-1",
+    "date": "2026-03-01T10:00:00+00:00",
+    "content": "Concert des Hirondelles\n📅 23 mars 2026\n📍 Salle des fêtes, Boudry\nVenez nombreux pour ce concert de soutien au collectif. Entrée libre, buvette sur place.",
+    "images": [],
+    "tags": ["événement"],
+    "relatedEvent": null
+  },
+  {
     "id": "8",
     "date": "2024-03-23T10:33:55+00:00",
     "content": "📣 💥 REPRISE D'UN HAMEAU AGRICOLE A BOUDRY (NE) 💥  📣\n\n__🌱Les Hirondelles annoncent le printemps!__ \n\nCe matin du 23 mars, le collectif des Hirondelles a lancé une action de reprise de la ferme dite \"Pontareuse\", chemin du Bois-des-Creux à Boudry. Le hameau était laissée à l'abandon depuis des années par les institutions qui en sont propriétaires.\n\n**Rejoignez le canal d'info, diffusez le mot aux copaines et venez prendre part aux évènements sur place ce week-end!**\n\n—> t.me/hirondelles",
