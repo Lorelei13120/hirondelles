@@ -20,12 +20,12 @@ const HeroSection = () => {
           Hameau agricole de Pontareuse · Boudry (NE)
         </p>
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold uppercase text-primary-foreground leading-tight mb-6 tracking-tight">
-          Les Hirondelles
+          Collectif desHirondelles
         </h1>
         <p className="text-primary-foreground/80 font-body text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light">
-          Pour la terre, pour celleux qui la travaillent.
+          La terre à celleux qui la cultivent
           <br />
-          Occupation, entraide et luttes paysannes.
+          Vive les topis, le bissap et les poêles à bois
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
@@ -40,7 +40,7 @@ const HeroSection = () => {
             rel="noopener noreferrer"
             className="border-2 border-primary-foreground/70 text-primary-foreground px-8 py-3 font-body font-semibold text-sm tracking-wide rounded hover:bg-primary-foreground/10 transition-colors"
           >
-            Rejoindre sur Telegram
+            Rejoindre le canal Telegram
           </a>
         </div>
       </div>

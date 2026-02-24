@@ -1,14 +1,5 @@
 [
   {
-    "id": "test-event-1",
-    "date": "2026-03-01T10:00:00+00:00",
-    "content": "Concert des Hirondelles\n📅 23 mars 2026\n📍 Salle des fêtes, Boudry\nVenez nombreux pour ce concert de soutien au collectif. Entrée libre, buvette sur place.",
-    "images": [],
-    "tags": [
-      "événement"
-    ]
-  },
-  {
     "id": "8",
     "date": "2024-03-23T10:33:55+00:00",
     "content": "📣 💥 REPRISE D'UN HAMEAU AGRICOLE A BOUDRY (NE) 💥  📣\n\n__🌱Les Hirondelles annoncent le printemps!__ \n\nCe matin du 23 mars, le collectif des Hirondelles a lancé une action de reprise de la ferme dite \"Pontareuse\", chemin du Bois-des-Creux à Boudry. Le hameau était laissée à l'abandon depuis des années par les institutions qui en sont propriétaires.\n\n**Rejoignez le canal d'info, diffusez le mot aux copaines et venez prendre part aux évènements sur place ce week-end!**\n\n—> t.me/hirondelles",
@@ -29,17 +20,6 @@
     ]
   },
   {
-    "id": "13",
-    "date": "2024-03-23T13:31:05+00:00",
-    "content": "+++ BREAKING+++ \n\n**Bauernhof-Besetzung in Pontareuse, Boudry, Neuchâtel**\n\nHeute morgen hat das Landwirtschaftskollektiv \"Hirondelles\" in Pontareuse einen verlassenen Bauernhof besetzt und dabei angefangen einen Gemüsegarten anzulegen. Das Kollektiv will den Bauernhof wiederbeleben und einen bunten Ort des Experimentierens und der Wissensvermittlung aufbauen. \n\n__Dieses Wochenende gibt es verschiedene Workshops und Diskussionen vor Ort. Kommt gerne vorbei!__\n\nAlle Infos: t.me/hirondelles",
-    "images": [
-      "telegram-images/photos/telegram_13_1771887287.395365.jpg"
-    ],
-    "tags": [
-      "actualité"
-    ]
-  },
-  {
     "id": "14",
     "date": "2024-03-23T15:26:43+00:00",
     "content": "\"__Nous déclarons le printemps ouvert et le rêve général__ ! \"\n\n💌 Les Hirondelles apportent des chouettes nouvelles de ce qu'il s'est passé aujourd'hui. \n\n🎉 En quelques lignes, la situation est stabilisée. La police a pu enfin rentrer chez elle, jouer avec ses enfantes par cette belle journée. Un dialogue positif et constructif a pu s'établir entre le collectif des Hirondelles et les propriétaires! Descendu·e·s à toute berzingue depuis La Chaux-de-Fonds où iels étaient en train de manifester à la Grève pour le climat, iels se sont montré·e·s sensibles à nos valeurs et on les remercie.\n\nQue demande le peuple? **Venez à Boudry, \ncette fin d'après-midi et demain, pardi!** 💚\n\n📍Hameau de Pontareuse, chemin du Bois-des-Creux 32, Boudry \n🚃 __Info transports publics plus haut sur ce canal__\n\n🎒 __Au menu de ce dimanche en toute convivialité__ :\nDès 10H30 — Discours — Pétanque  — Repas  — Chasse aux oeufs — Plantations — ** 13H30 Table ronde sur l'accès à la terre**   — 15h30 Théâtre  — Chants, atelier sculpture\n\nMerci! A+ 💚",
@@ -49,69 +29,6 @@
     "tags": [
       "actualité"
     ]
-  },
-  {
-    "id": "15",
-    "date": "2024-03-23T15:26:43+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_15_1771887290.165604.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "16",
-    "date": "2024-03-23T15:26:43+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/photos/telegram_16_1771887291.328099.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "17",
-    "date": "2024-03-23T15:26:43+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/photos/telegram_17_1771887292.448735.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "18",
-    "date": "2024-03-23T15:26:43+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/photos/telegram_18_1771887295.82895.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "19",
-    "date": "2024-03-23T15:26:43+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/photos/telegram_19_1771887297.271924.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "20",
-    "date": "2024-03-23T15:26:43+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/photos/telegram_20_1771887298.560151.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "21",
-    "date": "2024-03-23T15:26:43+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/photos/telegram_21_1771887300.535525.jpg"
-    ],
-    "tags": []
   },
   {
     "id": "23",
@@ -152,15 +69,6 @@
     ]
   },
   {
-    "id": "27",
-    "date": "2024-03-27T14:16:28+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_27_1771887303.985027.jpg"
-    ],
-    "tags": []
-  },
-  {
     "id": "28",
     "date": "2024-03-27T14:16:57+00:00",
     "content": "Salut touxtes ✨ !\nVous vous en doutez, la vie se met à foisonner au hameau des hirondelles 🕊️\nCes derniers jours ont eu lieu des parties de pétanque nocturnes, de Mølki, des ateliers de grimpe dans les arbres, une répétition de la chorale révolutionnaire de Neuchâtel 🎶 et une chasse aux oeufs (en chocolat) ! Les plantons sont plantés (mais d'autres sont en chemin) et un plan de culture a été réalisé. On partage tous les jours des repas et on continue à s'organiser en collectivité.\nAu niveau de la discussion avec les propriétaires, une réunion a lieu demain après-midi pour continuer la négociation et la definition du projet. On vous tiens au courant🌞.\nEn attendant, n'hésitez plus et rejoignez nous ! Comment, vous direz? Il faut descendre à l'arrêt de bus \"Perreux, Pontareuse\" et marcher 5-10 minutes en direction de la grande maison aux mille fenêtres, devant la colline (avec le lac derrière vous). L'adresse, c'est Chemin du bois des Creux 32, 2017 Boudry. Pour l'accessibilité, la maison est pour l'instant peu apte à accueillir les personnes à mobilité réduite. On y travaille - d'ailleurs, si vous avez une rampe ou des copainexs en capacité d'en construire, ça nous aiderait +++.\nPour le programme des prochains jours, on vous invite ce weekend (et avant et après) à venir manger et/ou planter avec nous 🌻 ! Il est possible de dormir sur place, il faut juste que tu prennes ton matelas, ton sac de couchage très chaud et tout ce qu'il te faut pour vivre en collectivité pour le nombre de jours que tu souhaites. \nDimanche, un atelier greffe (20 personnes max) est prévu, en plus d'une chasse aux oeufs (oui, encore) !\nOn se réjouis de te voir par ici, à tout vite 🌱",
@@ -188,53 +96,6 @@
     ]
   },
   {
-    "id": "35",
-    "date": "2024-04-01T20:49:07+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/photos/telegram_35_1771887305.059526.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "36",
-    "date": "2024-04-01T20:49:07+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/photos/telegram_36_1771887306.76321.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "37",
-    "date": "2024-04-01T20:49:07+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/photos/telegram_37_1771887308.49216.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "38",
-    "date": "2024-04-01T20:49:07+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/photos/telegram_38_1771887310.298337.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "41",
-    "date": "2024-04-01T21:13:51+00:00",
-    "content": "Arc-en-ciel vu depuis le potager🌈",
-    "images": [
-      "telegram-images/photos/telegram_41_1771887311.613901.jpg"
-    ],
-    "tags": [
-      "actualité"
-    ]
-  },
-  {
     "id": "42",
     "date": "2024-04-02T18:24:17+00:00",
     "content": "Si vous êtes ici, on se doute que l'**accès à la terre** en Suisse vous botte..! Héhé!\n\nOn vous partage l'invitation à une discussion qui aura lieu **à Neuchâtel** la semaine prochaine avec une multitude d'invité-e-x-s : __le jardin des Turricules, Système B, chez Emmy, le Joran, Rage de Vert, Uniterre et la coalition terre,...__\n\nPour en apprendre plus et échanger sur l'accès à la terre, en particulier de manière collective et extra-familiale. <3\n\nOuvert à touxtes.\n\nC'est vraiment l'occasion!\n\n📣 Mardi 9 avril | 18H30\n📍Neuchâtel\n🌱Université des Lettres, Espace Tilo Frey, salle RN02\n\n__A-t-on assez répété 'accès à la terre' dans ce post?__",
@@ -253,7 +114,7 @@
       "telegram-images/affiches/telegram_43_1771887314.676992.jpg"
     ],
     "tags": [
-      "actualité"
+      "événement"
     ]
   },
   {
@@ -388,15 +249,6 @@
     ]
   },
   {
-    "id": "71",
-    "date": "2024-04-14T21:00:56+00:00",
-    "content": "✊🌱WICHTIGE INFO DER SCHWALBEN\n\nDas Wochenende war schön.\nWir gehen.\nMontagmorgen.\nMorgen. \nZwischenzeitlich. Höchstens 3 Wochen.\nWiederkommen. \nDie Fantasien, die wir begonnen haben aufzubauen zu verfolgen.\nWir glauben fest an die kollektive Dimension des Projekts.\nWir werden weiter den kollektiven Zugang zu Land verteidigen.\nUnd andere Werte.\nWir wollen keine WG mit einem kleinen Garten machen. Nein das ist es nicht.\nGemüsebau, Austausch, eine erstrebenswerte Zukunft für alle, …\nDas sind nicht 10 Personen…\nDas heisst mehr als 1100 zu sein, die uns folgen. \nAm Dienstag treffen wir erneut die Eigentümer*innen. Unser Gehen, eröffnet wieder die Verhandlungen.\nWir werden Mittel finden, uns während dieser Zeit in der Region wiederzutreffen!\nWir werden Küfas machen, eine tolle art zu quatschen und die Freude zu nähren, ...\nInfos folgen.\n\nDas ist sicher nicht das Ende!!\n\n➡️ Kommt, um noch einen Abend mit uns zu teilen und beim Umzug Hand anzulegen, wenn ihr Lust habt. \n\n⚠️Morgen und in den daraufkommenden Tagen nicht kommen, leider… Ihr riskiert damit, den Verhandlungen zu schaden und euch selbst in Schwierigkeiten zu bringen. \nImmer, auch keine Küsse für die Polizei, und schützt euch vor Zecken.\n\n🔥Wir werden euch weiterhin über die Verhandlunngen hier informieren. 🔥\n\nErzählt weiter vom Projekt um euch herum\n❤️Merci ❤️ Merci! ❤️\nKüsschen\nA+",
-    "images": [],
-    "tags": [
-      "actualité"
-    ]
-  },
-  {
     "id": "72",
     "date": "2024-04-29T10:49:20+00:00",
     "content": "Cui-cui!\nBon lundi !\n\nDeux semaines se sont écoulées depuis notre départ temporaire de Pontareuse. Les négociations sont en cours et nous vous en parlerons bientôt !\n\nEn attendant davantage de graines à se mettre sous le bec, voici quelques jolies images du jardin des Hirondelles, dorloté malgré les aléas du froid.\n\nOn en profite pour teaser qu'en fin de semaine, nous ferons probablement - mais sans certitude - un repas collectif dans la région à base de patates et de gras. Confirmation et plus d'infos suivront !\n\nA+ ✊💜",
@@ -406,15 +258,6 @@
     "tags": [
       "actualité"
     ]
-  },
-  {
-    "id": "73",
-    "date": "2024-04-29T10:49:20+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/photos/telegram_73_1771887330.451654.jpg"
-    ],
-    "tags": []
   },
   {
     "id": "75",
@@ -488,50 +331,12 @@
     ]
   },
   {
-    "id": "86",
-    "date": "2024-05-12T07:30:55+00:00",
-    "content": "🥳 DIE SCHÄUNE IST OFFEN 🥳\n\nLiebe Freund*innen wir haben die Schlüssel (welche wir vermutlich irgendwo bald verlieren werden 😇) und ganz viele Matratzen im Haus 🤩 kommt jederzeit vorbei ob für einen Tag, einen Monat oder bis zur Revolution!\n\nEs hat ganz viel Arbeit 🤪\n- KüFa-Aussenküche\n- Ausbau von Sleep in\n- diverse Tinyhäuser\n- Gartenarbeiten\n- chillen und baden in der Areuse\n- organisieren von Veranstaltungen\n- vieles mehr\n\nDas Projekt steht ganz am Anfang, es ist also noch alles offen.\nZögere nicht das Projekt mit zu gestalten 🐛🌾🌳\nDer Ort braucht eure Ideen, eure Hände und eure Herzen 🖤\nLass uns weiter kämpfen!",
-    "images": [],
-    "tags": [
-      "actualité"
-    ]
-  },
-  {
     "id": "87",
     "date": "2024-05-15T11:16:11+00:00",
     "content": "🍉🍉🍉 🍉🍉🍉 🍉🍉🍉 \n\nSalut! \n\nVous êtes +1200 à suivre les aventures des Hirondelles! Merci!\nAujourd’hui une publication qui ne traite pas de l’actualité du projet, mais on espère qu’elle attirera votre attention de même. \n\nDepuis plusieurs jours en Suisse, le mouvement étudiant en protestation face au génocide en cours à Gaza grandit en Suisse, et ailleurs dans le monde! Depuis ce midi, on a appris que l’Université de Neuchâtel - elle aussi - est occupée!\n\n**Ca nous tient vraiment à coeur d’affirmer notre soutien au peuple palestinien & de rendre visible les mouvements de soutien !\n\n**Vous pouvez suivre ce qui se passe à Neuchâtel sur leur canal: https://t.me/unine4palestine\n\nMerci !!! \n\n🍉🍉🍉 🍉🍉🍉 🍉🍉🍉",
     "images": [],
     "tags": [
       "actualité"
-    ]
-  },
-  {
-    "id": "88",
-    "date": "2024-05-15T11:17:48+00:00",
-    "content": "Autre RDV - cet après-midi à Lausanne - 16H30, Unicentre\n\nInfo du canal de l’occupation à Lausanne: https://t.me/occupunil",
-    "images": [
-      "telegram-images/affiches/telegram_88_1771887339.634368.jpg"
-    ],
-    "tags": [
-      "événement"
-    ]
-  },
-  {
-    "id": "89",
-    "date": "2024-05-15T12:35:08+00:00",
-    "content": "⬇️ ⬇️ ⬇️\n\n__Pétition de soutien__ au collectif étudiant de l'UNINE pour la Palestine :\n\nhttps://www.petitionenligne.net/soutien_au_collectif_etudiant_pour_la_palestine_-_unine",
-    "images": [],
-    "tags": [
-      "événement"
-    ]
-  },
-  {
-    "id": "90",
-    "date": "2024-05-17T13:45:53+00:00",
-    "content": "On partage encore l'info du collectif étudiant pour la Palestine :",
-    "images": [],
-    "tags": [
-      "événement"
     ]
   },
   {
@@ -586,15 +391,6 @@
     ]
   },
   {
-    "id": "100",
-    "date": "2024-06-06T12:45:46+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_100_1771887346.86677.jpg"
-    ],
-    "tags": []
-  },
-  {
     "id": "101",
     "date": "2024-06-07T13:40:10+00:00",
     "content": "NOTRE PROJET AGRICOLE :\n\n__Moins de blabla, plus de mains qui plantent des rutabagas!__\n\nPiou piou !\n\nLes premières rencontres concernant le fonctionnement du projet agricole des hirondelles ont eu lieu!\n\nLe but de ce jardin reste aligné sur des valeurs claires : une expérimentation agricole collective, non marchande et sociale. \n\nOn te partagera plus de détails sur le fonctionnement et les buts de ce projet tout bientôt. ✨✨\n\n\n➡️ ➡️ ➡️ En attendant....\n\nSi tu veux participer à la base de la création de ce projet agricole et/ou à la réflexion des plans de cultures et des pratiques agricoles (même si tu n’est pas souvent là):\n\n **il est possible de nous rejoindre!!!**\n\n🌾 🌱 Envoie nous un mail : collectif_hirondelles@riseup.net 🌾🌱",
@@ -617,21 +413,14 @@
     "date": "2024-06-07T14:55:10+00:00",
     "content": "**Venir à Pontareuse**\n\n🚃 + 🚍 +🚶‍♀: Avec le tram Littorail —> Depuis la gare de Neuchâtel, sortir à l'arrière de la gare et prendre un bus en direction de la \"Place Pury\" ou marcher 15' minutes. A la place Pury, passer le sous-voie en direction du lac vers l'arrêt du tram jaune \"Littorail\". Emprunter le tram jusqu'à son terminus à Boudry. Descendre du tram. En face, prendre le bus 613, arrêt Perreux-Pontareuse. Ensuite, il y a une montée pendant 5 minutes sur un chemin goudronné. Les Hirondelles habitent désormais dans la ferme/appartement en haut du hameaux.\n\n🚂 + 🚴‍♀ (1) : Depuis Neuchâtel, prendre le train jusqu'à Boudry, puis descendre le \"fameux trou de Boudry\", avant de le remonter vers le domaine des gorges. Comptez 15' de vélo depuis la gare de Boudry.\n\n🚂 + 🚴‍♀ (2) : Version à plat en descendant un arrêt après à Bevaix et en revenant à vélo sur ces pas. Comptez 10' de vélo depuis la gare de Bevaix.\n\n🚞 + 🚵‍♀ : Version depuis La Chaux-de-Fonds en descendant à Chambrelien et en continuant à vélo, 20'\n\n🏎 : Si possible, évitez la bagnole et laissez les places de parc à celleux qui en ont besoin pour permettre leur mobilité et/ou pour amener du matos",
     "images": [],
-    "tags": []
+    "tags": ["actualité"]
   },
   {
     "id": "105",
     "date": "2024-06-07T16:08:01+00:00",
     "content": "🎡 Infos accessibilité\n\nLe lieu n’a pour l’instant pas de chauffage et il fait parfois un peu froid (mais de moins en moins)🧣\n\nIl y a un peu de monde et donc potentiellement du bruit 📢 mais des casques anti-bruit sont à disposition🎧 La maison n’est pas très bien isolée phoniquement, et il y a peu d'espaces pour être seul.ex. Mais il y a un dortoir MINTA. Il y a aussi la forêt qui est à 1 minute à pied, s’il y a le besoin d’être seul.ex et sans interaction.🌳\n\nLa maison est pour l'instant peu apte à accueillir les personnes à mobilité réduite. L’arret de bus est à 5 minutes mais la route monte un peu. Il n'y a pas d'escaliers pour accéder à la maison, et les premières toilettes sont au rez-de-chaussée (mais sont assez exigues). Mais il y a des escaliers pour monter à la première chambre.\n\nIl y a de l’électricité et l’eau courante, mais pas d'eau chaude.\n\nLa cuisine est collective et végane, et il est possible d’annoncer ses allergies, mais on ne peut pas garantir qu’il n’y ait pas de traces d’allergènes.\n\nLes plènières et réunions sont généralement en français mais il est possible de faire une traduction (simultanée ou pas) en allemand et anglais (pour d’autres langues, y compris LDS, demandez 🙂 ).👋\n\nSi tu as des besoins spécifiques hésite pas à nous écrire par mail à collectif_hirondelles@riseup.net. On se réjouis de te voir 🙂 !",
     "images": [],
-    "tags": []
-  },
-  {
-    "id": "106",
-    "date": "2024-06-07T16:22:13+00:00",
-    "content": "Zugänglichkeit\nEs gibt momentan keine Heizung, es ist also eher kalt im Haus 🧣\n\nDurch die (vielen) Menschen hat es häufig viele Geräusche/Lärm.📢 Es gibt aber lärmdämpfenden Kopfhörern 🎧 Das Haus ist nicht\ngut schallisoliert. Es gibt nicht viele Zimmer um alleine zu sein 🌳 aber Wald ist nicht weit (1 Minute) und auch ein Ort um alleine zu sein. Es gibt ein FLINTA sleep-in.\n\nDas Haus ist momentan wenig geeignet für Personen mit eingeschränkter\nMobilität 🦽 Die nächste Bushaltestelle ist 5 Minuten zu Fuss, aber die Strasse steigt an bis zum Haus. Der Zugang zum Haus ist möglich ohne Treppen, und es gibt  Toiletten im 0. Stock, aber die kleine sind.\n\nEs gibt (kalt) fliessend Wasser und Elektrizität 💡\n\nDie Küche ist kollektiv und vegan. Es ist möglich, Allergien\nanzugeben, aber es kann nicht garantiert werden, dass keine Spuren von Allergenen vorhanden sind 🧅\n\nDie Plenas und Sitzungen sind grundsätzlich auf Französisch, es ist möglich eine (Flüster-)übersetzung auf Deutsch oder Englisch zu\norganisieren. (für andere Sprachen inklusive Gebärdensprache, fragt\nnach) 👋\n\nWenn du spezifische Bedürfnisse hast, zögere nicht uns ein Mail zu schreiben an collectif_hirondelles@riseup.net\nWir freuen uns auf dich! :)",
-    "images": [],
-    "tags": []
+    "tags": ["actualité"]
   },
   {
     "id": "108",
@@ -656,84 +445,10 @@
     ]
   },
   {
-    "id": "111",
-    "date": "2024-06-16T11:24:20+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/photos/telegram_111_1771887351.13396.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "112",
-    "date": "2024-06-16T11:24:20+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/photos/telegram_112_1771887352.286307.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "113",
-    "date": "2024-06-16T11:24:20+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_113_1771887353.537923.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "114",
-    "date": "2024-06-16T11:24:20+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_114_1771887355.959795.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "115",
-    "date": "2024-06-16T11:24:20+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_115_1771887357.326046.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "116",
-    "date": "2024-06-16T11:25:05+00:00",
-    "content": "[RELAI DE L'ACTUALITE SUISSE ROMANDE]\n\n🦎**SALAMANDRES TACHETÉES CONTRE BÉTON ARMÉ - OCCUPATION DU BOIS DE BALLENS**🦎 \n\nHier s'est mise en place la nouvelle occupation du Bois de Ballens - la forêt qui valait 1 milliard de francs ! \n\nLes plateformes sont montées dans les arbres, la cuisine, les toilettes et le coin chill sont installé.es, et on continue à construire un super camp! \n\nAujourd'hui, on organise une assemblée populaire à 18h au village de Ballens (devant l'auberge communale), pour informer la population, qui n'a pas l'air d'être au courant de ce qui va se passer prochainement dans sa forêt...on souhaite établir un dialogue clair et durable avec elleux, et on vous invite à nous rejoindre pour ce moment-là, et pour tous les moments qui vont suivre! \n\nOn continue à se mobiliser pour faire vivre ce lieu de camp, cette forêt et cette région!  N'hésitez pas à passer nous rendre visite une journée, ou à amener de quoi vous installer plus longtemps - la forêt n'attend que ta tente et ton soutien!! \n\nAllez check l'instagram de Grondements des Terres pour la programmation d'aujourd'hui! (@grondementsdesterres) \n\nOn organise en plus un skillshare grimpe à 15h sur le lieu de camp, pas besoin de matos, on en a sur place :) \n\nOn vous accueille à bras ouverts et on vous dit à tout bientôt sous/dans les arbres ;) \n\nON LÂCHE PAS LE LESS BÉTON!!! 🔥✊🐿🌿💛\n\nA+ dans l'bois!\n\n📍Bois de Ballens (Vaud)\n🔍 __infos en continu sur le canal Telegram des Grondements__ :https://t.me/grondementsdesterres + __instagram__",
-    "images": [],
-    "tags": [
-      "événement"
-    ]
-  },
-  {
     "id": "120",
     "date": "2024-06-20T08:32:10+00:00",
     "content": "🌱🔥 **CHANTIER PARTICIPATIF CE SAMEDI 22 JUIN** 🔥🌱\n__                  Partage des récoltes à la fin de la journée !__\n\n- RDV à 9H00 pour une première session du matin au jardin (9h-12h)\n- 12H00-14H00 Repas collectif\n- 14H00-17H00 Suite du chantier participatif\n\n**Au programme : **\n- Paillage des nouvelles planches de culture, et plantation de centaines de plantons de salades, oignons, choux, tomates, courgettes, fenouil, côtes de bettes, maïs, basilic... \n- Remodelage des buttes (ratisser, pailler...)\n\n__Pose tes questions en commentaires si t'en as, on se réjouit de te voir !\nPoint accessibilité et localisation plus haut sur le canal__",
-    "images": [],
-    "tags": [
-      "événement"
-    ]
-  },
-  {
-    "id": "122",
-    "date": "2024-06-24T20:43:39+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_122_1771887358.676903.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "123",
-    "date": "2024-06-27T22:16:37+00:00",
-    "content": "[RELAI] **Soutien aux copaines de la Ferme de Bassenges, près de Lausanne** 💜\n\n\"La présidence de l’Ecole polytechnique fédérale de Lausanne (EPFL) ne souhaite pas renouveler le contrat de bail avec le collectif d’agriculteurs qui vit et travaille sur le domaine depuis début 2020. La ferme de Bassenges est vouée à devenir un centre de recherche et de formation à l’horizon 2026\" (RTS-info, 27.6.24) 😱\n\nUne pétition en faveur de la Ferme sera remise vendredi à l'EPFL. ✊\n\nSource: L'EPFL veut transformer sa ferme écologique en centre de sciences fondamentales https://www.rts.ch/info/regions/vaud/2024/article/l-epfl-veut-transformer-sa-ferme-ecologique-en-centre-de-sciences-fondamentales-28552337.html",
-    "images": [
-      "telegram-images/affiches/telegram_123_1771887360.145179.jpg"
-    ],
+    "images": [  "telegram-images/affiches/telegram_122_1771887358.676903.jpg"],
     "tags": [
       "événement"
     ]
@@ -770,15 +485,6 @@
     ]
   },
   {
-    "id": "127",
-    "date": "2024-07-22T17:44:00+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_127_1771887367.896599.jpg"
-    ],
-    "tags": []
-  },
-  {
     "id": "128",
     "date": "2024-08-03T07:50:07+00:00",
     "content": "💚 Allons soutenir les copaines de la ferme de Bassenges ce dimanche dans leur ferme près de Lausanne. 💚\n\nAu programme : des concerts et spectacles, ainsi qu'un repas à prix libre. \n\nOn se voit là-bas ! 🌞",
@@ -788,15 +494,6 @@
     "tags": [
       "événement"
     ]
-  },
-  {
-    "id": "129",
-    "date": "2024-08-03T07:50:07+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_129_1771887371.04496.jpg"
-    ],
-    "tags": []
   },
   {
     "id": "130",
@@ -830,19 +527,10 @@
   {
     "id": "134",
     "date": "2024-08-28T06:28:52+00:00",
-    "content": "📆 Ce JEUDI 29 AOÛT dès 17H30, Abundia viendra au jardin de L'AMAR cuisiner avec nous et parler de ses luttes pour la défense de la \"Toile Sacrée de l'Abondance\".\n\n🌽 Au programme, cuisine avec le maïs, suivi d'un repas populaire et d'une discussion autour du Global Kitchen Project.\n\n🌶️ Toute aide sera bienvenue dans la journée pour la préparation du repas populaire de soutien à prix libre, qui aura lieu en soirée.\n\n🍉 Cette rencontre s'inscrit dans le cadre de l'événement \"Celebrating and Defending Abundance Everywhere\" qui a lieu dans plusieurs villes d'Allemagne et de Suisse. Plus d'infos ici: https://abundance.noblogs.org.\n\n🌺 À propos d'Abundia: femme trans migrante Nahuatl-Chiricahua Apache établie au sud des Etats-Unis, Abundia est membre du collectif Tierra Comida Libertad, de Mariposas Rebeldes et activiste du mouvement StopCopCity pour la défense de la forêt Welaunee, près d'Atlanta City.",
+    "content": "📆 Ce JEUDI 29 AOÛT dès 17H30, Abundia viendra au jardin de L'AMAR cuisiner avec nous et parler de ses luttes pour la défense de la \"Toile Sacrée de l'Abondance\".\n\n🌽 Au programme, cuisine avec le maïs, suivi d'un repas populaire et d'une discussion autour du Global Kitchen Project.\n\n🌶️ Toute aide sera bienvenue dans la journée pour la préparation du repas populaire de soutien à prix libre, qui aura lieu en soirée.\n\n🍉 Cette rencontre s'inscrit dans le cadre de l'événement \"Celebrating and Defending Abundance Everywhere\" qui a lieu dans plusieurs villes d'Allemagne et de Suisse. Plus d'infos ici: https://abundance.noblogs.org.\n\n🌺 À propos d'Abundia: femme trans migrante Nahuatl-Chiricahua Apache établie au sud des Etats-Unis, Abundia est membre du collectif Tierra Comida Libertad, de Mariposas Rebeldes et activiste du mouvement StopCopCity pour la défense de la forêt Welaunee, près d'Atlanta City./n**Précisions sur l’événement et détails concernant l’accessibilité**\n\nNous souhaitons donner plus de précisions sur le déroulement de la soirée, afin notamment de donner le plus d’informations aux personnes avec des besoins spécifiques. Ces informations sont données dans notre état de connaissances limitées sur les questions d’anti-validisme.\nL’événement se déroule en plusieurs temps, sur différentes thématiques, n’hésitez pas à venir pour les parties qui vous intéressent ou vous conviennent !\nNous sommes désolé·e·s si ces informations arrivent un peu tard, et exprimons la volonté de trouver des adaptations à un besoin spécifique sur place.\n\n**👉 17h30 Cuisine collective avec le maïs**\nNous préparerons des tortillas avec les personnes qui le souhaitent. Abundia donnera les instructions pour les préparations, et ce sera également l’occasion de quelques échanges informels.\nLe moment de cuisine se passera à l’intérieur, dans un espace assez grand, avec des chaises ou des canapés disponibles pour s’asseoir. Cet espace se trouve au premier étage de l’AMAR, accessible uniquement par escalier.\n\n**👉 18h30 actualité StopCopCity/forêt Weelaunee**\nCe sera un moment de présentation par Abundia, qui s’exprime en anglais, français et espagnol. Des diapositives accompagneront la présentation d’Abundia, projetées sur un écran blanc.\nLa présentation aura lieu également au premier étage de L’AMAR.\n\n\n**👉 **Nous nous déplacerons pour le reste de la soirée à l’extérieur, dans le jardin de l’AMAR, accessible de plein-pied, entourés des légumes et plantes comestibles qui y poussent. Le temps est annoncé beau, l’espace sera ombragé à cette heure après les grosses chaleurs de la journée. Une grande route et la voie de tram passent à proximité et peuvent occasionner du bruit.\n\n**👉 19h repas populaire**\nLe repas sera composé d’une base de tortillas, de gorditas et de tamales, préparés avec du maïs. Le repas sera servi pour les végétaliens, avec divers accompagnements : riz, haricots noirs, farce de légumes de saison, guacamole (avec coriandre)\n\n**👉 19h30 discussion Global Radical Kitchen**\nAbundia nous présentera un manifeste du Global Radical Kitchen, qui met en lumière l’aspect politique des cuisines communautaires. Ce manifeste sera disponible sous forme écrite, en anglais et en français. Nous discuterons ensuite en petits groupes de différentes parties du manifeste.",
     "images": [
       "telegram-images/affiches/telegram_134_1771887375.705926.jpg"
     ],
-    "tags": [
-      "événement"
-    ]
-  },
-  {
-    "id": "135",
-    "date": "2024-08-28T06:31:09+00:00",
-    "content": "**Précisions sur l’événement et détails concernant l’accessibilité**\n\nNous souhaitons donner plus de précisions sur le déroulement de la soirée, afin notamment de donner le plus d’informations aux personnes avec des besoins spécifiques. Ces informations sont données dans notre état de connaissances limitées sur les questions d’anti-validisme.\nL’événement se déroule en plusieurs temps, sur différentes thématiques, n’hésitez pas à venir pour les parties qui vous intéressent ou vous conviennent !\nNous sommes désolé·e·s si ces informations arrivent un peu tard, et exprimons la volonté de trouver des adaptations à un besoin spécifique sur place.\n\n**👉 17h30 Cuisine collective avec le maïs**\nNous préparerons des tortillas avec les personnes qui le souhaitent. Abundia donnera les instructions pour les préparations, et ce sera également l’occasion de quelques échanges informels.\nLe moment de cuisine se passera à l’intérieur, dans un espace assez grand, avec des chaises ou des canapés disponibles pour s’asseoir. Cet espace se trouve au premier étage de l’AMAR, accessible uniquement par escalier.\n\n**👉 18h30 actualité StopCopCity/forêt Weelaunee**\nCe sera un moment de présentation par Abundia, qui s’exprime en anglais, français et espagnol. Des diapositives accompagneront la présentation d’Abundia, projetées sur un écran blanc.\nLa présentation aura lieu également au premier étage de L’AMAR.\n\n\n**👉 **Nous nous déplacerons pour le reste de la soirée à l’extérieur, dans le jardin de l’AMAR, accessible de plein-pied, entourés des légumes et plantes comestibles qui y poussent. Le temps est annoncé beau, l’espace sera ombragé à cette heure après les grosses chaleurs de la journée. Une grande route et la voie de tram passent à proximité et peuvent occasionner du bruit.\n\n**👉 19h repas populaire**\nLe repas sera composé d’une base de tortillas, de gorditas et de tamales, préparés avec du maïs. Le repas sera servi pour les végétaliens, avec divers accompagnements : riz, haricots noirs, farce de légumes de saison, guacamole (avec coriandre)\n\n**👉 19h30 discussion Global Radical Kitchen**\nAbundia nous présentera un manifeste du Global Radical Kitchen, qui met en lumière l’aspect politique des cuisines communautaires. Ce manifeste sera disponible sous forme écrite, en anglais et en français. Nous discuterons ensuite en petits groupes de différentes parties du manifeste.",
-    "images": [],
     "tags": [
       "événement"
     ]
@@ -877,15 +565,6 @@
     "tags": [
       "événement"
     ]
-  },
-  {
-    "id": "139",
-    "date": "2024-09-02T17:59:26+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_139_1771887381.664976.jpg"
-    ],
-    "tags": []
   },
   {
     "id": "140",
@@ -924,228 +603,12 @@
     ]
   },
   {
-    "id": "144",
-    "date": "2024-09-08T15:16:43+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/photos/telegram_144_1771887383.229949.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "145",
-    "date": "2024-09-08T15:16:43+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/photos/telegram_145_1771887385.349305.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "146",
-    "date": "2024-09-08T15:16:44+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/photos/telegram_146_1771887387.734878.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "147",
-    "date": "2024-09-08T15:16:44+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/photos/telegram_147_1771887389.404572.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "148",
-    "date": "2024-09-08T15:16:44+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/photos/telegram_148_1771887391.526794.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "149",
-    "date": "2024-09-08T15:16:44+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/photos/telegram_149_1771887393.506647.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "150",
-    "date": "2024-09-08T15:16:44+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/photos/telegram_150_1771887395.464143.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "151",
-    "date": "2024-09-08T15:16:44+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/photos/telegram_151_1771887397.276124.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "152",
-    "date": "2024-09-08T15:16:44+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/photos/telegram_152_1771887399.401723.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "153",
-    "date": "2024-09-08T15:16:44+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/photos/telegram_153_1771887401.214748.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "154",
-    "date": "2024-09-08T15:16:44+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/photos/telegram_154_1771887402.676067.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "155",
-    "date": "2024-09-12T08:49:11+00:00",
-    "content": "LES DISSIDENTES - PROGRAMME COMPLET MIS A JOUR 🔥\n\nQuelques petites modifs et annulations, mais surtout une nouvelle conférence le vendredi soir, Luttes transféministes et résistance anticapitaliste ✊🏼✊🏼✊🏼",
-    "images": [
-      "telegram-images/affiches/telegram_155_1771887404.080752.jpg"
-    ],
-    "tags": [
-      "événement"
-    ]
-  },
-  {
-    "id": "156",
-    "date": "2024-09-12T08:49:11+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_156_1771887406.764748.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "157",
-    "date": "2024-09-12T08:49:11+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_157_1771887408.755936.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "158",
-    "date": "2024-09-12T08:49:11+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_158_1771887410.924669.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "159",
-    "date": "2024-09-12T08:49:11+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_159_1771887413.30275.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "160",
-    "date": "2024-09-12T08:54:27+00:00",
-    "content": "🔥 Ça commence demain 🔥\n\nPour avoir d’avantage d’infos, (sur le lieu, accessibilité, dodo, garderie, …) on vous encourage vivement à aller sur le canal suivant : \nhttps://t.me/contreattaque_autonomie\n\nAllez, on se capte dés demain aux Dissidentes les ami.es.x !",
-    "images": [],
-    "tags": []
-  },
-  {
     "id": "162",
     "date": "2024-09-19T09:52:41+00:00",
     "content": "Rejoins-nous pour aller manifester contre les frontières le samedi 28 septembre. Les petites hirondelles seront présentent et on va profiter du bus organisé par Droit de rester- Neuchatel pour se rendre à la manif. \n\nPour la liberté de touxtes\nA bas les frontières !",
     "images": [
       "telegram-images/affiches/telegram_162_1771887415.233075.jpg"
     ],
-    "tags": [
-      "événement"
-    ]
-  },
-  {
-    "id": "163",
-    "date": "2024-09-19T09:52:42+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_163_1771887415.943621.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "164",
-    "date": "2024-09-19T09:52:42+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_164_1771887416.88829.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "165",
-    "date": "2024-09-19T09:52:42+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_165_1771887417.929399.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "166",
-    "date": "2024-09-19T09:52:42+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_166_1771887419.385991.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "167",
-    "date": "2024-09-19T09:52:42+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_167_1771887420.344957.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "168",
-    "date": "2024-09-19T09:52:42+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_168_1771887421.455066.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "169",
-    "date": "2024-09-19T09:55:17+00:00",
-    "content": "Voici le message pour rejoindre le transport depuis la Tchaux et Neuch :\n\n📆 Le samedi 28 septembre, une GRANDE manifestation organisée par Solidarité sans Frontières et soutenue par + de 100 organisations est prévue à Berne pour affirmer: ENTRE NOUS, PAS DE FRONTIÈRES \n🚌 Droit de Rester Neuchâtel organise un transport collectif gratuit ! Inscriptions ici: https://forms.gle/9YksSFRGQJn2J9yF6\n🚏 Départ de La Chaux-de-Fonds à 12h15, place de la gare\n🚏 Départ de Neuchâtel à 13h, esplanade de la Maladière\n💥 Nous allons à Berne pour défendre le droit d'asile, la liberté de circulation et pour dire que PERSONNE n'est illégal\n🥪 Sandwichs prévus pour le voyage!\n⚠️ Plus d'infos sur la manifestation : https://www.sosf.ch/fr/fr/event/grande-manifestation\nEt le dernier bulletin de Sosf pour se documenter : https://www.sosf.ch/fr/fr/publication/bulletin-ndeg-3-2024",
-    "images": [],
     "tags": [
       "événement"
     ]
@@ -1205,19 +668,10 @@
     "id": "176",
     "date": "2024-10-07T15:14:05+00:00",
     "content": "**✨Prochains évènements à Pontareuse ✨**\n- Mardi 15 octobre : projection de deux courts métrages 🎥\n\"Extra Large\" de Marina Ziolkowski\n\"C pas fini\", sur la ZAD de la colline, suivi d'un entretien avec lea réalisatrix\n\n- Samedi 19 octobre : journée participative de maraîchage 🌱\nPour préparer le jardin à l'hiver, rendez-vous dès 9h pour un chantier participatif. Un repas collectif sera cuisiné le midi, et à la fin de la journée, on se partage les récoltes !\n\n- Lundi 21 octobre : ouverture de la cuisine extérieure 🥔\nNous allons officiellement ouvrir notre cuisine pour les personnes du centre. Cuisine ouverte entre 10h30 et 15h. Infos suivront !\n\n- Samedi 26 octobre : Marché de Boudry\nNous aurons un stand, avec peut-être un atelier vélo mobile ! Rendez-vous devant la salle de spectacle entre 9h et 13h 🥦🚲\n\n- Samedi 2 novembre : Pendaison de crémaillère de Pontareuse 🥳. Infos suiveront ! Pour l'instant on confirme une Jam, un jacuzzi, et un max de fun",
-    "images": [],
+    "images": [ "telegram-images/affiches/telegram_178_1771887428.28461.jpg"],
     "tags": [
       "événement"
     ]
-  },
-  {
-    "id": "178",
-    "date": "2024-10-12T15:15:46+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_178_1771887428.28461.jpg"
-    ],
-    "tags": []
   },
   {
     "id": "179",
@@ -1265,15 +719,6 @@
     ]
   },
   {
-    "id": "183",
-    "date": "2024-11-18T17:49:06+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_183_1771887436.525185.jpg"
-    ],
-    "tags": []
-  },
-  {
     "id": "184",
     "date": "2024-11-20T22:38:34+00:00",
     "content": "🐦 Les Hirondelles de la ferme de Pontareuse sont de retour, non pas pour nous annoncer le printemps (c'est un peu tôt ☃️) mais pour vous préparer un succulent repas, le vendredi 22 novembre à L'Amar (rue de la Coquemène 1). Il y aura notamment des légumes du potager ainsi que de délicieuses feuilles de vigne farcies ❤️ Venez nous rencontrer et nous aider à financer notre projet. 🌾🌟\n\nLe repas sera servi aux alentours de 19h et à prix libre 💸🌱\n\nPiou Piou 🐦‍⬛",
@@ -1305,33 +750,6 @@
     ]
   },
   {
-    "id": "187",
-    "date": "2024-11-28T08:54:55+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_187_1771887440.709413.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "188",
-    "date": "2024-11-28T08:54:55+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_188_1771887442.167336.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "189",
-    "date": "2024-11-28T08:54:55+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/photos/telegram_189_1771887443.508183.jpg"
-    ],
-    "tags": []
-  },
-  {
     "id": "190",
     "date": "2024-12-02T12:50:34+00:00",
     "content": "Lundi 16 décembre, nous participerons au Noël organisé par l'association À la rencontre. Ce sera une belle occasion pour que les requérent.exs d'asile et la populations passe un moment festifs en cette fin d'année.\nNous allons mijoter une bonne soupe au feu de bois que l'on va préparer avec la ferme des trois Rods.🫶\nVous pouvez volontiers passer fêter avec nous, tout le monde est bienvenue  🎄🎄🎄",
@@ -1356,7 +774,7 @@
   {
     "id": "192",
     "date": "2024-12-19T18:15:13+00:00",
-    "content": "```🧥 🧤Apelle pour collecter des vêtements chauds 🥾🧦```\n\nLes requérant.e.x.s du centre d’asile à Boudry ont froid, pas assez de vêtements chauds, pas assez de chaussures, les gens sont obligé.e.xs de se balader en tongues pour certainexs… si vous avez un tri d’armoire ou des fringues chaudes que vous ne mettez plus, vous pouvez les amenez directement au centre à Boudry (NE).\nAutrement il y a 3 points de collectes ou apporter ces vêtements chaud : \n\n- à l’AMAR à Serrière : Rue de la Coquemène 1    -   2000 Neuchâtel\n- à Chaux-de-fonds : Rue du temple allemand 107, Au  rez, Les indications pour déposer sont sur la porte\n- ou encore directement chez nous à la ferme de Pontareuse.\n \nPour info il y a aussi un centre à Vallorbe (VD), Giffers (Fr) et Bure (JU) où la situation est probablement similaire.\n\nMerci d’avance, \nEnsemble faisons de chaque quartier des zones de solidarités, tout en faisant front contre le racisme, le colonialisme et le fascisme ! \n🔥Feu au frontières 🔥",
+    "content": "```🧥 🧤Appel pour collecter des vêtements chauds 🥾🧦```\n\nLes requérant.e.x.s du centre d’asile à Boudry ont froid, pas assez de vêtements chauds, pas assez de chaussures, les gens sont obligé.e.xs de se balader en tongues pour certainexs… si vous avez un tri d’armoire ou des fringues chaudes que vous ne mettez plus, vous pouvez les amenez directement au centre à Boudry (NE).\nAutrement il y a 3 points de collectes ou apporter ces vêtements chaud : \n\n- à l’AMAR à Serrière : Rue de la Coquemène 1    -   2000 Neuchâtel\n- à Chaux-de-fonds : Rue du temple allemand 107, Au  rez, Les indications pour déposer sont sur la porte\n- ou encore directement chez nous à la ferme de Pontareuse.\n \nPour info il y a aussi un centre à Vallorbe (VD), Giffers (Fr) et Bure (JU) où la situation est probablement similaire.\n\nMerci d’avance, \nEnsemble faisons de chaque quartier des zones de solidarités, tout en faisant front contre le racisme, le colonialisme et le fascisme ! \n🔥Feu au frontières 🔥",
     "images": [],
     "tags": [
       "actualité"
@@ -1374,41 +792,12 @@
     ]
   },
   {
-    "id": "194",
-    "date": "2025-02-16T09:03:43+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_194_1771887449.856404.jpg"
-    ],
-    "tags": []
-  },
-  {
     "id": "195",
     "date": "2025-02-16T23:27:53+00:00",
-    "content": "🔥 feu aux frontières 🔥 \n\nLe 20 février à 19:00 à l'AMAR aura lieu une soirée d'information sur le nouveau pacte anti asile que l'Europe et la Suisse mettront en œuvre pour refouler toujours plus de demandes d'asile. Viens pour en apprendre plus et savoir comment te mobiliser contre ce projet immonde! \n🔥",
+    "content": "🔥 feu aux frontières 🔥 \n\nLe 20 février à 19:00 à LAMAR aura lieu une soirée d'information sur le nouveau pacte anti asile que l'Europe et la Suisse mettront en œuvre pour refouler toujours plus de demandes d'asile. Viens pour en apprendre plus et savoir comment te mobiliser contre ce projet immonde! \n🔥",
     "images": [
       "telegram-images/photos/telegram_195_1771887451.550309.jpg"
     ],
-    "tags": [
-      "événement"
-    ]
-  },
-  {
-    "id": "196",
-    "date": "2025-02-27T15:42:22+00:00",
-    "content": "Mobilisation à La Chaux-de-Fonds et Neuchâtel en vue du carnaval du 22 mars à Lausanne 🔥🏴‍☠️",
-    "images": [
-      "telegram-images/affiches/telegram_196_1771887452.384514.jpg"
-    ],
-    "tags": [
-      "événement"
-    ]
-  },
-  {
-    "id": "197",
-    "date": "2025-02-27T15:42:58+00:00",
-    "content": "**Mobilisation à La Chaux-de-Fonds et Neuchâtel en vue du carnaval du 22 mars à Lausanne**\n\n\nDans un contexte global de montée de l’extrême-droite et du fascisme, nous appelons toutes les forces antifascistes, antiracistes, anticapitalistes, queers, anarchistes, féministes, antispécistes et associées à se mobiliser pour le carnaval du 22 mars, pour une résistance joyeuse et deter.\nUne série d'évènements sur CDF et Neuch nous permettront de nous rencontrer, et de nous organiser pour bouger nombreus.exs à ce carnaval. \n---------------------------------------------------------------—\n**Mercredi 12 mars - par le collectif chez Flinta -  18h à 20h30\n**\nAtelier Créatif :\n`Confection de masques pour le carnaval et création de groupe(s) affinitaire(s)\nEn mixité choisie sans mec cis`\n\nChez Flinta - Balance 10 (4ème étage) - La Chaux de Fonds\n---------------------------------------------------------------—\n**Samedi 15 mars - La Bibliothèque Libre - 17h30\n**\nProjection : Violences policières : \"Le combat des familles\"\n\n`Retrace les histoires et les luttes des familles confrontées aux brutalités des forces de l’ordre. Chaque année, en France comme en Suisse, la liste des victimes s’allonge, laissant aux proches le fardeau de mener le combat pour la justice et la vérité.`\n\nProjection suivie d’un repas prix libre (montant reversé pour Nzoy).\nBéthanie - Clos-de-Serrières 25, Neuchâtel\n---------------------------------------------------------------------\n**Dimanche 16 mars - par le collectif NAP et l'Amar - 15h**\n\nAtelier créatif:\n`Confection de costumes et de masques pour le carnaval\nAvec un DJ set et un bal masqué pour tester ses  déguisements !\n`\nBéthanie - Clos-de-Serrières 25, Neuchâtel\n------------------------------------------------------------------------\n**Lundi 17 au vendredi 21 mars - 10h à 18h - collectif des Hirondelles et NAP**\n\nRésidence participative :\n`Construction du char Neuchâtelois pour le carnaval antiraciste !\nrésidence ouverte tous les jours - repas autogéré les midis`\n\nFermes des Hirondelles -  Chemin du Bois des Creux 34, Boudry\n------------------------------------------------------------------------\n**Samedi 22 Mars : \n**\n`Gros départ collectif direction le carnaval ! Celui-ci sera parsemé de surprises avant d'arriver à l'emplacement final où nous nous réchaufferons autour de nos rêves partagés d'un avenir antifa. Heure de départ à définir.`",
-    "images": [],
     "tags": [
       "événement"
     ]
@@ -1425,17 +814,6 @@
     ]
   },
   {
-    "id": "199",
-    "date": "2025-03-04T10:47:50+00:00",
-    "content": "Ce jeudi 6 mars à Béthanie (clos de Serrières 25) a lieu une soirée de soutien à Stop Pillage 🔥\n\nIl y aura un repas prix libre à 18:30, suivi d'une présentation du collectif Stop Pillage à 19:00 et la projection du film aura lieu à 19:30. \n\nOn se réjouit de vous y voir ! 🌈",
-    "images": [
-      "telegram-images/affiches/telegram_199_1771887454.696256.jpg"
-    ],
-    "tags": [
-      "événement"
-    ]
-  },
-  {
     "id": "200",
     "date": "2025-03-06T07:21:47+00:00",
     "content": "🪶 C'est bientôt le printemps 🌱 Et pour fêter ça, deux super cuisiniers des Hirondelles vont vous préparer, ce vendredi, des pelmeni, un type de ravioli farcis originaires de l'Est de l'Europe 🥟 Ça va être super bon, ramenez vos copainexs 🔥 le repas sera servi à 19:00 et sera à prix libre 🐦‍⬛",
@@ -1447,20 +825,9 @@
     ]
   },
   {
-    "id": "201",
-    "date": "2025-03-14T19:04:45+00:00",
-    "content": "🔥JEUDI 20 MARS À BÉTHANIE🔥\n💅M4UV3 × 🍄MIKOZE × 🌬️BRIZE\nRAP (GRENOBLE)\n19H REPAS 🦝\n20H CONCERTS 😈\nPRIX LIBRE 💋\nViens faire une pause dans ton chantier carnaval\n❤️‍🔥Ça va flamber des bûches🐦‍🔥",
-    "images": [
-      "telegram-images/affiches/telegram_201_1771887457.451298.jpg"
-    ],
-    "tags": [
-      "événement"
-    ]
-  },
-  {
     "id": "203",
     "date": "2025-03-16T10:34:23+00:00",
-    "content": "C’est aujourd’hui à** 15h ! On vous attend à Bethanie pour ce confectionner des masques et déguisements. N’hesitez pas à ramener un peut de matos si vous avez. \n**`\nAvec un DJ set et un bal masqué pour tester ses  déguisements`\n———————————————\nEt la semaine prochaine, sous le soleil ☀️ \n\nDu** Lundi 17 au vendredi 21 mars - 10h à 18h - collectif des Hirondelles et NAP**\n\nRésidence participative :\n`Construction du char Neuchâtelois pour le carnaval antiraciste !\nrésidence ouverte tous les jours - repas autogéré les midis`\n\nFermes des Hirondelles -  Chemin du Bois des Creux 34, Boudry\n----------------------------\n**Samedi 22 Mars : \n**\n`Gros départ collectif direction le carnaval ! Celui-ci sera parsemé de surprises avant d'arriver à l'emplacement final où nous nous réchaufferons autour de nos rêves partagés d'un avenir antifa. Heure de départ à définir.`",
+    "content": "C’est aujourd’hui à** 15h ! On vous attend à Bethanie pour confectionner des masques et déguisements. N’hesitez pas à ramener un peut de matos si vous avez. \n**`\nAvec un DJ set et un bal masqué pour tester ses  déguisements`\n———————————————\nEt la semaine prochaine, sous le soleil ☀️ \n\nDu** Lundi 17 au vendredi 21 mars - 10h à 18h - collectif des Hirondelles et NAP**\n\nRésidence participative :\n`Construction du char Neuchâtelois pour le carnaval antiraciste !\nrésidence ouverte tous les jours - repas autogéré les midis`\n\nFermes des Hirondelles -  Chemin du Bois des Creux 34, Boudry\n----------------------------\n**Samedi 22 Mars : \n**\n`Gros départ collectif direction le carnaval ! Celui-ci sera parsemé de surprises avant d'arriver à l'emplacement final où nous nous réchaufferons autour de nos rêves partagés d'un avenir antifa. Heure de départ à définir.`",
     "images": [
       "telegram-images/photos/telegram_203_1771887459.467284.jpg"
     ],
@@ -1529,15 +896,6 @@
     ]
   },
   {
-    "id": "221",
-    "date": "2025-03-30T10:27:12+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/photos/telegram_221_1771887467.426924.jpg"
-    ],
-    "tags": []
-  },
-  {
     "id": "222",
     "date": "2025-04-01T15:06:28+00:00",
     "content": "Merci pour cette fête du tonnerre 🎸🔥 ça nous a fait plaisir de célébrer nos 1 an avec vous 🥳\nMerci aux différents groupes venus jouer samedi, et a l'association Carpelle qui est venue animer la discussion sur l'agriculture sans fumier 💩\nPour cette saison de maraiche qui commence (on commence quand on veut ok?) on vous propose de venir tous les samedis a partir de ce samedi 5 avril pour nos journées de maraiche participatives 🥕🌱 !\n9h-12h : maraîchage \n12h-14h : repas collectif 🍎\n14h-17h : re-maraiche 🥕🌱\n19h30 : repas collectif bis🍎\n20h : projection si envie 📽️",
@@ -1586,15 +944,6 @@
     ]
   },
   {
-    "id": "227",
-    "date": "2025-04-20T20:22:05+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/photos/telegram_227_1771887471.762855.jpg"
-    ],
-    "tags": []
-  },
-  {
     "id": "229",
     "date": "2025-04-21T10:26:58+00:00",
     "content": "On doit démonter la yourte 😢 les proprios nous ont donné un ultimatum 🤮 Pour cela on a besoin d'aide du 29.4 au 1.5. Ça serait cool si on est 4-6 personnes par jour (aussi super pour une demi journée). Met une 🥕 si tu est dispo a un de ces moments et plus d'infos (rdv, mission du jour) suivront en mp. La propriété privé à la poubelle 🚮 et les fachos et le patriarcaca aussi!",
@@ -1626,15 +975,6 @@
     "tags": [
       "événement"
     ]
-  },
-  {
-    "id": "233",
-    "date": "2025-04-25T14:38:03+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/photos/telegram_233_1771887479.203732.jpg"
-    ],
-    "tags": []
   },
   {
     "id": "234",
@@ -1677,15 +1017,6 @@
     ]
   },
   {
-    "id": "243",
-    "date": "2025-05-11T20:44:05+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/photos/telegram_243_1771887485.13543.jpg"
-    ],
-    "tags": []
-  },
-  {
     "id": "244",
     "date": "2025-05-16T15:42:18+00:00",
     "content": "Demain, on sera pour la première fois au marché de Neuchâtel dans le but de  financer le projet d’agriculture sociale et collective ! 🥳\n\nPassez nous dire coucou, on aura des zines, des plantons à vendre et quelques bouquins. \n\nEt sinon demain comme chaque samedi à la ferme : c’est toujours les chantiers participatifs de 10h à 18h. On cultive ensemble et on fini en se partageant les récoltes.\nRepas collectif prévu à midi\nPasse quand tu veux, même pour un petit moment.",
@@ -1693,7 +1024,6 @@
       "telegram-images/photos/telegram_244_1771887487.752545.jpg"
     ],
     "tags": [
-      "événement",
       "actualité"
     ]
   },
@@ -1703,15 +1033,6 @@
     "content": "",
     "images": [
       "telegram-images/photos/telegram_245_1771887489.301259.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "246",
-    "date": "2025-05-16T15:42:18+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/photos/telegram_246_1771887490.129084.jpg"
     ],
     "tags": []
   },
@@ -1736,33 +1057,6 @@
     ]
   },
   {
-    "id": "249",
-    "date": "2025-05-25T18:15:09+00:00",
-    "content": "🇨🇩🇨🇩C’est tout bientôt à Bethanie. Les copaines ont préparé un programme très interessant ! On se voit là-bas ! ♥️",
-    "images": [],
-    "tags": [
-      "événement"
-    ]
-  },
-  {
-    "id": "250",
-    "date": "2025-05-25T18:16:05+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_250_1771887495.176452.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "251",
-    "date": "2025-05-25T18:16:05+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_251_1771887495.821986.jpg"
-    ],
-    "tags": []
-  },
-  {
     "id": "252",
     "date": "2025-06-03T07:04:32+00:00",
     "content": "Au début de l'année, un hébergement d'urgence a ouvert ses portes en ville de Neuchâtel pour répondre aux besoins de personnes sans solution de logement. Mais cette structure temporaire doit déjà fermer à la fin du mois de juin.\nFace à cette réalité, Droit de Rester et L'Amar vous invitent à une table-ronde pour réfléchir collectivement aux enjeux du logement et de la précarité, ici et ailleurs en Suisse romande.\n📅 Jeudi 5 juin 2025\n⏰ 19h à 21h environ\n📍 L'Amar, rue de la Coquemène 1, Neuchâtel-Serrières",
@@ -1776,19 +1070,10 @@
   {
     "id": "254",
     "date": "2025-06-05T06:17:01+00:00",
-    "content": "Le vendredi 13 juin à Pontareuse se tiendra une projection du film des pirates des Lentillères \"Une île et une nuit\" 🏴‍☠️ !\nhttps://piratesdeslentilleres.net/\nDes personnes du quartier libre des Lentillères (situé dans le Sud de Dijon) viendront pour présenter le film et discuter autour de lui 🥳✨\nUn repas collectif sera organisé après la projection 🥕🥔\nLe film commencera à 18h45, et durera 1h40 🎥. On a tout prévu pour que cela coïncide avec les horaires du 🚎613 depuis Boudry Littorail, pour venir et prendre le dernier bus qui redescend, alors viens voir le film avec nous !\nOn se réjouit de partager ce moment avec toi, alors réservé ton vendredi 13 !\n📍 Chemin du Bois des Creux 34, 2017 Boudy.\nAccessibilité : la route monte et est raide par endroit. La salle de projection et la cuisine extérieure est accessible aux personnes à mobilité réduite. Si tu as une question, écris-nous a l'adresse mail collectif_hirondelles@riseup.net",
+    "content": "Le vendredi 13 juin à Pontareuse se tiendra une projection du film des pirates des Lentillères \"Une île et une nuit\" 🏴‍☠️ !\nhttps://piratesdeslentilleres.net/\nDes personnes du quartier libre des Lentillères (situé dans le Sud de Dijon) viendront pour présenter le film et discuter autour de lui 🥳✨\nUn repas collectif sera organisé après la projection 🥕🥔\nLe film commencera à 18h45, et durera 1h40 🎥. On a tout prévu pour que cela coïncide avec les horaires du 🚎613 depuis Boudry Littorail, pour venir et prendre le dernier bus qui redescend, alors viens voir le film avec nous !\nOn se réjouit de partager ce moment avec toi, alors réservé ton vendredi 13 !\n📍 Chemin du Bois des Creux 34, 2017 Boudy.\nAccessibilité : la route monte et est raide par endroit. La salle de projection et la cuisine extérieure est accessible aux personnes à mobilité réduite. Si tu as une question, écris-nous a l'adresse mail collectif_hirondelles@riseup.net/n📖 Synopsis du film :\"Autour du feu, voyageurs et pirates se racontent leurs souvenirs, leurs rêves, leurs batailles. D'une langue à l'autre, de récit en récit se font entendre le grondement de la tempête et le bruissement des feuilles, les sirènes menaçantes et les danses endiablées, le choc des sabres et le chant des oiseaux. Jusqu'à l'aube se dessinent mille et un chemins de cette île imaginaire mais pourtant bien réelle.\"",
     "images": [
       "telegram-images/affiches/telegram_254_1771887498.091433.jpg"
     ],
-    "tags": [
-      "événement"
-    ]
-  },
-  {
-    "id": "255",
-    "date": "2025-06-05T06:19:01+00:00",
-    "content": "📖 Synopsis du film :\"Autour du feu, voyageurs et pirates se racontent leurs souvenirs, leurs rêves, leurs batailles. D'une langue à l'autre, de récit en récit se font entendre le grondement de la tempête et le bruissement des feuilles, les sirènes menaçantes et les danses endiablées, le choc des sabres et le chant des oiseaux. Jusqu'à l'aube se dessinent mille et un chemins de cette île imaginaire mais pourtant bien réelle.\"",
-    "images": [],
     "tags": [
       "événement"
     ]
@@ -1812,44 +1097,6 @@
     ]
   },
   {
-    "id": "258",
-    "date": "2025-06-08T09:58:01+00:00",
-    "content": "De la part de nos camarades de Briançon :\n\"🚨APPEL URGENT AU SOUTIEN BÉNÉVOLE🚨\n\n🗣️La situation à la frontière est particulièrement difficile en ce moment. Au-delà de la crise financière que nous traversons qui nous conduit à recentrer nos activités autour du bénévolat, les besoins d'accueil sont de plus en plus importants avec l'installation du printemps et l'arrivée de l'été. \n⚠️Pour toutes ces raisons, les bénévoles sont en sous effectif ! On a besoin de vous, maintenant plus que jamais !🤝\n\n🎯🗓 Dispo dans les prochains jours ?\n Rejoignez-nous comme bénévole ponctuel-le !\n\n✅🗓Pas dispo tout de suite mais à partir de l'été pour au moins deux mois ?\n➡️ Contactez-nous pour devenir Volontaire Accueil !\n\n👋🗓 Dispo cet été pour quelques semaines ?\n➡️ Venez filer un coup de main et faire vivre notre lieu de répit et de repos à la frontière franco-italienne.\n\n✊Rejoignez Refuges Solidaires, défendez l'accueil digne et inconditionnel des personnes exilées✊\n\n📢Diffusez notre appel !!\n\n🔥La solidarité FAIT notre résistance 🔥\"",
-    "images": [
-      "telegram-images/affiches/telegram_258_1771887500.385201.jpg"
-    ],
-    "tags": [
-      "actualité"
-    ]
-  },
-  {
-    "id": "259",
-    "date": "2025-06-08T09:58:01+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_259_1771887502.014688.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "260",
-    "date": "2025-06-08T09:58:01+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_260_1771887504.239227.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "261",
-    "date": "2025-06-08T09:58:01+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_261_1771887506.16628.jpg"
-    ],
-    "tags": []
-  },
-  {
     "id": "263",
     "date": "2025-06-11T08:02:01+00:00",
     "content": "Cette année, les Limaces organisent leurs Trouvailles au hameau de Pontareuse 🥳✨ !\nhttps://renverse.co/infos-locales/article/les-trouvailles-2025-7444\n\n\"Si t’es ni facho, ni macho, ni terf, ni relou, joins-toi à nous ! Les adultes et les enfants sont bienvenuexs.\"\n\nLe programme est autogéré, et rien n'est décidé à l'avance. Alors viens passer un moment entre le 4 et le 13 juillet à la Ferme 🌱 !",
@@ -1864,15 +1111,6 @@
     "id": "264",
     "date": "2025-06-13T10:06:50+00:00",
     "content": "Pour celleux qui n’ont pas reussi à avoir des billets pour Festineuch, venez à la projection des Lentillères ce soir à 18h45 🍿\nAprès, il y aura des beignets de legumes 🥕",
-    "images": [],
-    "tags": [
-      "événement"
-    ]
-  },
-  {
-    "id": "265",
-    "date": "2025-06-13T14:29:39+00:00",
-    "content": "🔥BREAKING NEWS 🔥\nLa projection est déplacée a LAMAR ce soir, Rue de la Coquemène 1\n\nDu coup venez à 19h pour le super repas prix libre de l’AMAR ! :))",
     "images": [],
     "tags": [
       "événement"
@@ -1919,15 +1157,6 @@
     ]
   },
   {
-    "id": "270",
-    "date": "2025-06-23T17:08:55+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_270_1771887515.48787.jpg"
-    ],
-    "tags": []
-  },
-  {
     "id": "271",
     "date": "2025-06-23T17:08:56+00:00",
     "content": "",
@@ -1935,15 +1164,6 @@
       "telegram-images/affiches/telegram_271_1771887516.777403.jpg"
     ],
     "tags": []
-  },
-  {
-    "id": "272",
-    "date": "2025-06-23T17:12:51+00:00",
-    "content": "🍒 Encore un événement trop stylé organisé chez nos copaines de Béthanie ! N’hésitez pas à y aller en masse :)) 🍒",
-    "images": [],
-    "tags": [
-      "événement"
-    ]
   },
   {
     "id": "273",
@@ -1955,15 +1175,6 @@
     "tags": [
       "événement"
     ]
-  },
-  {
-    "id": "274",
-    "date": "2025-06-25T06:28:54+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_274_1771887518.626083.jpg"
-    ],
-    "tags": []
   },
   {
     "id": "275",
@@ -1994,17 +1205,8 @@
       "telegram-images/affiches/telegram_279_1771887530.522143.jpg"
     ],
     "tags": [
-      "événement"
+      "actualité"
     ]
-  },
-  {
-    "id": "280",
-    "date": "2025-06-30T16:14:04+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_280_1771887533.097661.jpg"
-    ],
-    "tags": []
   },
   {
     "id": "281",
@@ -2053,28 +1255,10 @@
   {
     "id": "289",
     "date": "2025-08-02T10:14:29+00:00",
-    "content": "La quatrième édition du Camping sur Fracking commence Samedi prochain !\nVenez donc, pour discuter, voir des films militants, des témoignages, des résumés de ce qui se passe sur le site et des concerts qui nous donnent envie de lutter ensemble ! Les hirondelles y seront présentes et on y préparent les repas du Dimanche soir (Pizza au feu de bois) et du Lundi avant Binamé : on y fera + de frites pour moins de flics ! A toute là bas❤️❤️",
+    "content": "La quatrième édition du Camping sur Fracking commence Samedi prochain !\nVenez donc, pour discuter, voir des films militants, des témoignages, des résumés de ce qui se passe sur le site et des concerts qui nous donnent envie de lutter ensemble ! Les hirondelles y seront présentes et on y préparent les repas du Dimanche soir (Pizza au feu de bois) et du Lundi avant Binamé : on y fera + de frites pour moins de flics ! A toute là bas❤️❤️/nSi vous n'êtes pas au courant, cela fait maintenant 12 ans que Geo-Energie Suisse planifie son projet dans la commune d’Haute-Sorne. Douze ans également qu’une lutte se manifeste par les habitant.es contre ce projet imposer par l'état. \n\nCes dernières années, ça s'intensifie. Alors que Geo-Energie Suisse a commencé pour de bon à creuser, les voitures des entreprises qui collaborent avec leur projet brûlent, leurs bureaux sont vandalisés à coup de masse et de bombes puantes. Les grilles du chantier sont déjà tombées une fois et les securitas n'ont pas réussi à arrêter les oposant.es déterminé.es. Le chantier a été recouvert de merde 💩 par un paysan pendant une manif l'année passée et les flics anti émeutes jurassien ont du être dépoussiérés pour empêcher la rage des manifestant.es de s'exprimer. La tension est grande. L'état veut à tout prix imposer son projet au service du capitalisme industriel. \nLa population n'en veut pas et ne compte pas se résigner.\nViens sur place lors de ce camping, une soirée ou quelques nuits sous la tente, pour goûter à l'auto-organisation et à un programme super 🔥🔥\nOn se réjouit de se voir à Glovelier 🥳 !",
     "images": [
       "telegram-images/affiches/telegram_289_1771887539.38907.jpg"
     ],
-    "tags": [
-      "événement"
-    ]
-  },
-  {
-    "id": "290",
-    "date": "2025-08-02T10:14:29+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_290_1771887541.402422.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "291",
-    "date": "2025-08-02T10:17:30+00:00",
-    "content": "Si vous n'êtes pas au courant, cela fait maintenant 12 ans que Geo-Energie Suisse planifie son projet dans la commune d’Haute-Sorne. Douze ans également qu’une lutte se manifeste par les habitant.es contre ce projet imposer par l'état. \n\nCes dernières années, ça s'intensifie. Alors que Geo-Energie Suisse a commencé pour de bon à creuser, les voitures des entreprises qui collaborent avec leur projet brûlent, leurs bureaux sont vandalisés à coup de masse et de bombes puantes. Les grilles du chantier sont déjà tombées une fois et les securitas n'ont pas réussi à arrêter les oposant.es déterminé.es. Le chantier a été recouvert de merde 💩 par un paysan pendant une manif l'année passée et les flics anti émeutes jurassien ont du être dépoussiérés pour empêcher la rage des manifestant.es de s'exprimer. La tension est grande. L'état veut à tout prix imposer son projet au service du capitalisme industriel. \nLa population n'en veut pas et ne compte pas se résigner.\nViens sur place lors de ce camping, une soirée ou quelques nuits sous la tente, pour goûter à l'auto-organisation et à un programme super 🔥🔥\nOn se réjouit de se voir à Glovelier 🥳 !",
-    "images": [],
     "tags": [
       "événement"
     ]
@@ -2096,7 +1280,6 @@
       "telegram-images/photos/telegram_294_1771887542.774326.jpg"
     ],
     "tags": [
-      "événement",
       "actualité"
     ]
   },
@@ -2119,7 +1302,6 @@
       "telegram-images/photos/telegram_296_1771887546.4916.jpg"
     ],
     "tags": [
-      "événement",
       "actualité"
     ]
   },
@@ -2202,7 +1384,7 @@
   {
     "id": "305",
     "date": "2025-09-30T17:55:54+00:00",
-    "content": "Coucou les potos!\nCe samedi 4 octobre, c’est la teuf à ponta! 🔥🔥🔥\n\nAu programme :\nDès l’aprem : de la maraîche participative, de la construction en terre-paille, et de la réparation de vélos, ou aussi du chill et des jeux🌼\nSuivi d’un super repas vegan prix libre composé de légumes du jardin et de récup 🍆\nPuis des concerts (des infos suivront), un DJ-set, et une bonne grosse jam 🎷(yaura des instrus sur place mais n’hésite pas à en ramener si tu veux :))\nUn.e super tatoueur.euse sera sur place pour faire des tattoos prix libres à toutexs les motivéexs! Pour checker ce qu’iel fait sur insta : @microonde_tattoo\n\nComme d’hab, on vendra pas d’alcool sur place donc ramènes-en si t’as envie d’en boire! Yaura des softs stylés prix libre par contre🧃\n\nYa des sleepins dispos pour dodo sur place, dont un en mixité choisie sans mecs cis, ainsi qu’une forêt si envie de planter une tente :)\n\nOn se réjouit trop de vous voir, ramenez touxtes vos potes ça va être trop fun! À samedi 🔥🔥",
+    "content": "Coucou les potos!\nCe samedi 4 octobre, c’est la teuf à ponta! 🔥🔥🔥\n\nAu programme :\nDès l’aprem : de la maraîche participative, de la construction en terre-paille, et de la réparation de vélos, ou aussi du chill et des jeux🌼\nSuivi d’un super repas vegan prix libre composé de légumes du jardin et de récup 🍆\nPuis des concerts (des infos suivront), un DJ-set, et une bonne grosse jam 🎷(yaura des instrus sur place mais n’hésite pas à en ramener si tu veux :))\nUn.e super tatoueur.euse sera sur place pour faire des tattoos prix libre à toutexs les motivéexs! Pour checker ce qu’iel fait sur insta : @microonde_tattoo\n\nComme d’hab, on vendra pas d’alcool sur place donc ramènes-en si t’as envie d’en boire! Yaura des softs stylés prix libre par contre🧃\n\nYa des sleepins dispos pour dodo sur place, dont un en mixité choisie sans mecs cis, ainsi qu’une forêt si envie de planter une tente :)\n\nOn se réjouit trop de vous voir, ramenez touxtes vos potes ça va être trop fun! À samedi 🔥🔥/n📍Chemin du Bois des Creux 34, 2017 Boudry📍\n\n🎡 Infos Accessibilité : \nLa maison est pour l'instant peu apte à accueillir les personnes à mobilité réduite. L’arrêt de bus est à 10 minutes à pied de la ferme, mais la route est raide. Il n'y a pas d'escaliers pour accéder à la maison, et il y a des toilettes sèches accessibles PMR devant la cuisine extérieure (merci les Limaces♥️🔥!)",
     "images": [
       "telegram-images/affiches/telegram_305_1771887557.888018.jpg"
     ],
@@ -2213,78 +1395,9 @@
   {
     "id": "307",
     "date": "2025-09-30T17:56:23+00:00",
-    "content": "📍Chemin du Bois des Creux 34, 2017 Boudry📍\n\n🎡 Infos Accessibilité : \nLa maison est pour l'instant peu apte à accueillir les personnes à mobilité réduite. L’arrêt de bus est à 10 minutes à pied de la ferme, mais la route est raide. Il n'y a pas d'escaliers pour accéder à la maison, et il y a des toilettes sèches accessibles PMR devant la cuisine extérieure (merci les Limaces♥️🔥!)",
+    "content": "",
     "images": [],
     "tags": []
-  },
-  {
-    "id": "308",
-    "date": "2025-10-01T09:22:57+00:00",
-    "content": "                   💥CE SOIR💥\n💥MERCREDI 01.10 À BÉTHANIE💥\n           ⚡️MARIA VIOLENZA⚡️\nOriginaire de Palerme (haut lieu de l'inquisition sicilienne) Maria Violenza incarne la vengeance des hérétiques.\nElle traduit la souffrance par des mélodies punk et synthétiques, un voyage en métro en sens contraire de Médine à La Mecque. Ça vous cloue au mur, les névroses s'accentuent, et l'accélération fatale des beats vous emmène dans le monde souterrain. Maria Violenza, c'est de l'exorcisme moderne avec comme outils une boîte à rythme, un synthé, un looper et des riffs folkloriques arabes.\n                         20H30\n          CLOS-DE-SERRIÈRES 25\n                     NEUCHÂTEL",
-    "images": [
-      "telegram-images/affiches/telegram_308_1771887558.942985.jpg"
-    ],
-    "tags": [
-      "événement"
-    ]
-  },
-  {
-    "id": "309",
-    "date": "2025-10-02T12:28:37+00:00",
-    "content": "18H | Place de la Gare\n\nIl est aussi possible d'agir depuis chez soi en interpelant le gouvernement via ce générateur de mail en soutien à la flottille :\n[https://waves-of-freedom.ch/fr/take-action/](https://waves-of-freedom.ch/fr/take-action/)\n\nFree Palestine",
-    "images": [
-      "telegram-images/affiches/telegram_309_1771887561.349537.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "310",
-    "date": "2025-10-02T13:48:32+00:00",
-    "content": "Et plus localement à Chaux-de-Fonds ce soire, ramène ta rage à 22H !\nIl y a aussi un rassemblement à Genève à 18h",
-    "images": [
-      "telegram-images/affiches/telegram_310_1771887563.567305.jpg"
-    ],
-    "tags": [
-      "événement"
-    ]
-  },
-  {
-    "id": "311",
-    "date": "2025-10-03T08:25:08+00:00",
-    "content": "⚠️!!C’est déplacer à Dimanche à 16h!!⚠️\n\n🔥Manifestation contre l'impérialisme demain à 17:30 à la fontaine de la justice à Neuchâtel!! Soyeux nombreux-sesx 🔥",
-    "images": [
-      "telegram-images/affiches/telegram_311_1771887564.964521.jpg"
-    ],
-    "tags": [
-      "événement"
-    ]
-  },
-  {
-    "id": "312",
-    "date": "2025-10-03T08:25:08+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_312_1771887566.305081.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "314",
-    "date": "2025-10-20T07:02:59+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_314_1771887567.624875.jpg"
-    ],
-    "tags": []
-  },
-  {
-    "id": "315",
-    "date": "2025-10-20T07:03:06+00:00",
-    "content": "**Racisme dans la police : quelles réponses poitiques ? **\n\n   La section montagnes de solidaritéS organise, **vendredi 31 octobre 2025 à 19h00**, une soirée publique à Unia, Rue Léopold-Robert 67, 2300 La Chaux-de-Fonds. L’événement mettra au centre la question des violences policières et du racisme institutionnel en Suisse, et la nécessité d’y apporter des réponses politiques concrètes. \n\n   Temps fort de la rencontre : Border Forensics présentera son rapport “Nzoy”, consacré à l’analyse indépendante d’un cas emblématique de violence policière. La présentation sera suivie d’interventions d’acteur·ices associatifs et politiques, puis d’une discussion ouverte avec la salle. \n\n   Les enjeux : \n\n   Ces dernières années, plusieurs affaires ont ravivé un débat de fond sur la proportionnalité de l’usage de la force, le profilage racial, la transparence des procédures et la protection des droits fondamentaux en Suisse. Au-delà des cas individuels, des organisations de la société civile pointent des lacunes systémiques persistantes.",
-    "images": [],
-    "tags": [
-      "événement"
-    ]
   },
   {
     "id": "316",
@@ -2309,15 +1422,6 @@
     ]
   },
   {
-    "id": "319",
-    "date": "2025-12-16T10:29:47+00:00",
-    "content": "La fête à Ponta c'est déjà ce samedi !!!",
-    "images": [],
-    "tags": [
-      "événement"
-    ]
-  },
-  {
     "id": "320",
     "date": "2025-12-18T16:44:09+00:00",
     "content": "Demain rencontre, repas et activités entre les personnes du CFA et de Boudry.\nLes Hirondelles participent pour la préparation de la soupe!",
@@ -2327,13 +1431,6 @@
     "tags": [
       "événement"
     ]
-  },
-  {
-    "id": "321",
-    "date": "2026-01-17T11:16:16+00:00",
-    "content": "🔥😍 **Aujourd'hui à Béthanie** 😍🔥\nHyper intéressant projet à ne pas manquer !",
-    "images": [],
-    "tags": []
   },
   {
     "id": "322",
@@ -2358,7 +1455,7 @@
   {
     "id": "325",
     "date": "2026-02-05T10:57:42+00:00",
-    "content": "__⁨Mais que ce passe-t-il sur la colline de Boudry ? Il semblerait q'une étrange nuée d'oiseaux s'y sont regrouper dans une jolie ferme. Des petites hirondelles pleines d'amour, de paillettes et de rage révolutionnaire. Elles appellent à la fête, car cela fait maintenant deux printemps qu'elles y chantent !__\n**\n Le 4 AVRIL, vient festoyer nos 2 ANS de la ferme des Hirondelles !! **\n\nOn vous prépare une grande journée paillettée, avec des ateliers, de la maraîche et bien sûr une grosse teuf !!!🪲🪩🦄\n\nOn vous partage le programme tout bientôt, mais notez déjà la date dans vos petits agendas <33\n\nOn se réjouiiiiit❤️‍🔥❤️‍🔥❤️‍🔥⁩",
+    "content": " Mais que ce passe-t-il sur la colline de Boudry ? Il semblerait q'une étrange nuée d'oiseaux s'y sont regrouper dans une jolie ferme. Des petites hirondelles pleines d'amour, de paillettes et de rage révolutionnaire. Elles appellent à la fête, car cela fait maintenant deux printemps qu'elles y chantent !__\n**\n Le 4 AVRIL, vient festoyer nos 2 ANS de la ferme des Hirondelles !! **\n\nOn vous prépare une grande journée paillettée, avec des ateliers, de la maraîche et bien sûr une grosse teuf !!!🪲🪩🦄\n\nOn vous partage le programme tout bientôt, mais notez déjà la date dans vos petits agendas <33\n\nOn se réjouiiiiit❤️‍🔥❤️‍🔥❤️‍🔥⁩",
     "images": [
       "telegram-images/affiches/telegram_325_1771887574.671757.jpg"
     ],
@@ -2367,19 +1464,10 @@
     ]
   },
   {
-    "id": "327",
-    "date": "2026-02-22T11:06:24+00:00",
-    "content": "",
-    "images": [
-      "telegram-images/affiches/telegram_327_1771887575.667158.jpg"
-    ],
-    "tags": []
-  },
-  {
     "id": "329",
     "date": "2026-02-22T11:07:02+00:00",
     "content": "On lance des DANCE DAYS à Béthanie :) :) :)\nLe premier aura lieu 🎉 CE LUNDI 23.02.2026 à 18H30 🎉\nLe concept c'est la possibilité de danser dans le noir pendant une heure, viens expérimenter tes mouvements, sans drague, sans l'appréhension que ta façon de danser soit stylée ou pas! \nParfois sur une playlist, d'autres fois DJ, juste pour le plaisir de bouger\nIl y en a aussi à la Maison du Concert (https://www.maisonduconcert.ch/programme/detail/108-monday-is-danceday)\nProchaines dates:\nMaison du Concert 18h15 : Lu 9 mars/Lu 6 avril/Lu 4 mai/Lu 1 juin\nBéthanie 18h30 : Lu 23 mars/Lu 20 avril/Lu 18 mai/Lu 15 juin\n\nBienvenu.x.e.s à touxtes \nPRIX LIBRE",
-    "images": [],
+    "images": ["telegram-images/affiches/telegram_327_1771887575.667158.jpg"],
     "tags": [
       "événement"
     ]
