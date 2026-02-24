@@ -1,0 +1,67 @@
+name: Fetch Telegram Updates
+
+# Exécution schedulée (tous les lundis et jeudis à 10h UTC)
+on:
+  schedule:
+    # Lundis à 10h UTC
+    - cron: '0 10 * * 1'
+    # Jeudis à 10h UTC
+    - cron: '0 10 * * 4'
+  
+  # Permet aussi de déclencher manuellement depuis GitHub
+  workflow_dispatch:
+
+jobs:
+  fetch-messages:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. Récupérer le repo
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      # 2. Installer Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      # 3. Installer les dépendances npm
+      - name: Install dependencies
+        run: npm install
+      
+      # 4. Lancer le script de récupération
+      - name: Fetch new Telegram messages
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: node scripts/fetch_telegram_updates.js
+      
+      # 5. Configurer Git
+      - name: Configure Git
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+      
+      # 6. Vérifier s'il y a des changements
+      - name: Check for changes
+        id: verify_changed_files
+        run: |
+          if git diff-index --quiet HEAD --; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+      
+      # 7. Commit et push les changements
+      - name: Commit and push changes
+        if: steps.verify_changed_files.outputs.changed == 'true'
+        run: |
+          git add Assets/
+          git commit -m "🤖 Mise à jour automatique des messages Telegram - $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+          git push
+      
+      # 8. Message d'information si pas de changements
+      - name: No changes found
+        if: steps.verify_changed_files.outputs.changed == 'false'
+        run: echo "✅ Aucun nouveau message trouvé"
