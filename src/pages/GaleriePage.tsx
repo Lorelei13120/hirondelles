@@ -21,21 +21,29 @@ const staticPhotos = [
 
 const GaleriePage = () => {
   const [telegramPhotos, setTelegramPhotos] = useState<{ src: string; alt: string }[]>([]);
+  const [telegramAffiches, setTelegramAffiches] = useState<{ src: string; alt: string }[]>([]);
 
   useEffect(() => {
     fetch(import.meta.env.BASE_URL + 'Assets/messages.json')
       .then(res => res.ok ? res.json() : Promise.reject())
       .then((data: TelegramMessage[]) => {
         const photos: { src: string; alt: string }[] = [];
+        const affiches: { src: string; alt: string }[] = [];
         for (const msg of data) {
           for (const img of msg.images) {
-            photos.push({
+            const item = {
               src: import.meta.env.BASE_URL + 'Assets/' + img,
-              alt: msg.content ? msg.content.slice(0, 60) : 'Photo Telegram',
-            });
+              alt: msg.content ? msg.content.slice(0, 60) : 'Image Telegram',
+            };
+            if (img.includes('affiches/')) {
+              affiches.push(item);
+            } else {
+              photos.push(item);
+            }
           }
         }
         setTelegramPhotos(photos);
+        setTelegramAffiches(affiches);
       })
       .catch(() => {
         // Silencieux si le fichier n'est pas encore disponible
@@ -54,6 +62,7 @@ const GaleriePage = () => {
             Photos de la vie au hameau de Pontareuse.
           </p>
 
+          {/* Photos statiques */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {staticPhotos.map((photo, i) => (
               <div key={i} className="overflow-hidden rounded group">
@@ -68,10 +77,11 @@ const GaleriePage = () => {
             ))}
           </div>
 
+          {/* Section Photos Telegram */}
           {telegramPhotos.length > 0 && (
             <>
               <h2 className="text-2xl font-display font-bold uppercase text-foreground mt-20 mb-8 tracking-tight">
-                Photos du canal Telegram
+                Photos
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {telegramPhotos.map((photo, i) => (
@@ -80,6 +90,27 @@ const GaleriePage = () => {
                       src={photo.src}
                       alt={photo.alt}
                       className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy"
+                    />
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
+
+          {/* Section Affiches Telegram */}
+          {telegramAffiches.length > 0 && (
+            <>
+              <h2 className="text-2xl font-display font-bold uppercase text-foreground mt-20 mb-8 tracking-tight">
+                Affiches
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                {telegramAffiches.map((affiche, i) => (
+                  <div key={i} className="overflow-hidden rounded group">
+                    <img
+                      src={affiche.src}
+                      alt={affiche.alt}
+                      className="w-full object-contain transition-transform duration-500 group-hover:scale-105 bg-muted"
                       loading="lazy"
                     />
                   </div>
