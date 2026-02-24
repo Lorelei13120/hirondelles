@@ -149,8 +149,7 @@ async function fetchNewMessages() {
         date: new Date(msg.date * 1000).toISOString(),
         content: msg.text || msg.caption || '',
         images: [],
-        tags: [],
-        relatedEvent: null
+        tags: []
       };
 
       // Traiter les photos

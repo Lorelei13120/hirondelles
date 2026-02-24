@@ -7,7 +7,6 @@ interface TelegramMessage {
   content: string;
   images: string[];
   tags: string[];
-  relatedEvent: string | null;
 }
 
 const ActualitesPage = () => {

@@ -4,8 +4,9 @@
     "date": "2026-03-01T10:00:00+00:00",
     "content": "Concert des Hirondelles\n📅 23 mars 2026\n📍 Salle des fêtes, Boudry\nVenez nombreux pour ce concert de soutien au collectif. Entrée libre, buvette sur place.",
     "images": [],
-    "tags": ["événement"],
-    "relatedEvent": null
+    "tags": [
+      "événement"
+    ]
   },
   {
     "id": "8",
@@ -16,8 +17,7 @@
     ],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "10",
@@ -26,18 +26,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
-  },
-  {
-    "id": "11",
-    "date": "2024-03-23T11:05:35+00:00",
-    "content": "**Comment venir?**\n\n📍Chemin du Bois-des-Creux 32, 2017 Boudry (NE)\n\n🚃 Avec le tram Littorail —-> Depuis la gare de Neuchâtel, sortir à l'arrière de la gare et prendre un bus en direction de la \"Place Pury\" ou marcher 15' minutes. A la place Pury, passer le sous-voie en direction du lac vers l'arrêt du tram jaune \"Littorail\". Emprunter le tram jusqu'à son terminus à Boudry. Descendre du tram. En face, prendre le bus 613, arrêt Perreux-Pontareuse et 5 minutes de marche. Vous êtes arrivé·e·x·s !\n\n🚍 __Alternative__ : Depuis Neuchâtel jusqu'à la gare ferroviaire de Boudry, mais il y a des bus de remplacement ce week-end et faut les trouver 😉. Après faut marcher 45'.",
-    "images": [
-      "telegram-images/affiches/telegram_11_1771887285.992119.jpg"
-    ],
-    "tags": [],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "13",
@@ -48,8 +37,7 @@
     ],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "14",
@@ -60,8 +48,7 @@
     ],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "15",
@@ -70,8 +57,7 @@
     "images": [
       "telegram-images/affiches/telegram_15_1771887290.165604.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "16",
@@ -80,8 +66,7 @@
     "images": [
       "telegram-images/photos/telegram_16_1771887291.328099.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "17",
@@ -90,8 +75,7 @@
     "images": [
       "telegram-images/photos/telegram_17_1771887292.448735.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "18",
@@ -100,8 +84,7 @@
     "images": [
       "telegram-images/photos/telegram_18_1771887295.82895.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "19",
@@ -110,8 +93,7 @@
     "images": [
       "telegram-images/photos/telegram_19_1771887297.271924.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "20",
@@ -120,8 +102,7 @@
     "images": [
       "telegram-images/photos/telegram_20_1771887298.560151.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "21",
@@ -130,8 +111,7 @@
     "images": [
       "telegram-images/photos/telegram_21_1771887300.535525.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "23",
@@ -140,8 +120,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "24",
@@ -150,8 +129,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "25",
@@ -162,8 +140,7 @@
     ],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "26",
@@ -172,8 +149,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "27",
@@ -182,8 +158,7 @@
     "images": [
       "telegram-images/affiches/telegram_27_1771887303.985027.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "28",
@@ -192,8 +167,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "31",
@@ -202,8 +176,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "34",
@@ -212,8 +185,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "35",
@@ -222,8 +194,7 @@
     "images": [
       "telegram-images/photos/telegram_35_1771887305.059526.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "36",
@@ -232,8 +203,7 @@
     "images": [
       "telegram-images/photos/telegram_36_1771887306.76321.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "37",
@@ -242,8 +212,7 @@
     "images": [
       "telegram-images/photos/telegram_37_1771887308.49216.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "38",
@@ -252,8 +221,7 @@
     "images": [
       "telegram-images/photos/telegram_38_1771887310.298337.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "41",
@@ -264,8 +232,7 @@
     ],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "42",
@@ -276,8 +243,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "43",
@@ -288,8 +254,7 @@
     ],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "44",
@@ -300,8 +265,7 @@
     ],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "45",
@@ -310,8 +274,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "51",
@@ -322,8 +285,7 @@
     ],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "52",
@@ -334,8 +296,7 @@
     ],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "53",
@@ -346,8 +307,7 @@
     ],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "54",
@@ -358,8 +318,7 @@
     ],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "56",
@@ -370,8 +329,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "59",
@@ -382,8 +340,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "61",
@@ -392,8 +349,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "64",
@@ -402,8 +358,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "65",
@@ -412,8 +367,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "67",
@@ -422,8 +376,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "68",
@@ -432,8 +385,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "71",
@@ -442,8 +394,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "72",
@@ -454,8 +405,7 @@
     ],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "73",
@@ -464,8 +414,7 @@
     "images": [
       "telegram-images/photos/telegram_73_1771887330.451654.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "75",
@@ -474,8 +423,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "76",
@@ -486,8 +434,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "77",
@@ -498,8 +445,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "81",
@@ -508,8 +454,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "82",
@@ -518,8 +463,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "84",
@@ -530,8 +474,7 @@
     ],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "85",
@@ -542,8 +485,7 @@
     ],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "86",
@@ -552,8 +494,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "87",
@@ -562,8 +503,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "88",
@@ -574,8 +514,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "89",
@@ -584,8 +523,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "90",
@@ -594,8 +532,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "92",
@@ -604,8 +541,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "93",
@@ -614,8 +550,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "95",
@@ -626,8 +561,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "98",
@@ -638,8 +572,7 @@
     ],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "99",
@@ -650,8 +583,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "100",
@@ -660,8 +592,7 @@
     "images": [
       "telegram-images/affiches/telegram_100_1771887346.86677.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "101",
@@ -670,8 +601,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "102",
@@ -680,32 +610,28 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "103",
     "date": "2024-06-07T14:55:10+00:00",
     "content": "**Venir à Pontareuse**\n\n🚃 + 🚍 +🚶‍♀: Avec le tram Littorail —> Depuis la gare de Neuchâtel, sortir à l'arrière de la gare et prendre un bus en direction de la \"Place Pury\" ou marcher 15' minutes. A la place Pury, passer le sous-voie en direction du lac vers l'arrêt du tram jaune \"Littorail\". Emprunter le tram jusqu'à son terminus à Boudry. Descendre du tram. En face, prendre le bus 613, arrêt Perreux-Pontareuse. Ensuite, il y a une montée pendant 5 minutes sur un chemin goudronné. Les Hirondelles habitent désormais dans la ferme/appartement en haut du hameaux.\n\n🚂 + 🚴‍♀ (1) : Depuis Neuchâtel, prendre le train jusqu'à Boudry, puis descendre le \"fameux trou de Boudry\", avant de le remonter vers le domaine des gorges. Comptez 15' de vélo depuis la gare de Boudry.\n\n🚂 + 🚴‍♀ (2) : Version à plat en descendant un arrêt après à Bevaix et en revenant à vélo sur ces pas. Comptez 10' de vélo depuis la gare de Bevaix.\n\n🚞 + 🚵‍♀ : Version depuis La Chaux-de-Fonds en descendant à Chambrelien et en continuant à vélo, 20'\n\n🏎 : Si possible, évitez la bagnole et laissez les places de parc à celleux qui en ont besoin pour permettre leur mobilité et/ou pour amener du matos",
     "images": [],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "105",
     "date": "2024-06-07T16:08:01+00:00",
     "content": "🎡 Infos accessibilité\n\nLe lieu n’a pour l’instant pas de chauffage et il fait parfois un peu froid (mais de moins en moins)🧣\n\nIl y a un peu de monde et donc potentiellement du bruit 📢 mais des casques anti-bruit sont à disposition🎧 La maison n’est pas très bien isolée phoniquement, et il y a peu d'espaces pour être seul.ex. Mais il y a un dortoir MINTA. Il y a aussi la forêt qui est à 1 minute à pied, s’il y a le besoin d’être seul.ex et sans interaction.🌳\n\nLa maison est pour l'instant peu apte à accueillir les personnes à mobilité réduite. L’arret de bus est à 5 minutes mais la route monte un peu. Il n'y a pas d'escaliers pour accéder à la maison, et les premières toilettes sont au rez-de-chaussée (mais sont assez exigues). Mais il y a des escaliers pour monter à la première chambre.\n\nIl y a de l’électricité et l’eau courante, mais pas d'eau chaude.\n\nLa cuisine est collective et végane, et il est possible d’annoncer ses allergies, mais on ne peut pas garantir qu’il n’y ait pas de traces d’allergènes.\n\nLes plènières et réunions sont généralement en français mais il est possible de faire une traduction (simultanée ou pas) en allemand et anglais (pour d’autres langues, y compris LDS, demandez 🙂 ).👋\n\nSi tu as des besoins spécifiques hésite pas à nous écrire par mail à collectif_hirondelles@riseup.net. On se réjouis de te voir 🙂 !",
     "images": [],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "106",
     "date": "2024-06-07T16:22:13+00:00",
     "content": "Zugänglichkeit\nEs gibt momentan keine Heizung, es ist also eher kalt im Haus 🧣\n\nDurch die (vielen) Menschen hat es häufig viele Geräusche/Lärm.📢 Es gibt aber lärmdämpfenden Kopfhörern 🎧 Das Haus ist nicht\ngut schallisoliert. Es gibt nicht viele Zimmer um alleine zu sein 🌳 aber Wald ist nicht weit (1 Minute) und auch ein Ort um alleine zu sein. Es gibt ein FLINTA sleep-in.\n\nDas Haus ist momentan wenig geeignet für Personen mit eingeschränkter\nMobilität 🦽 Die nächste Bushaltestelle ist 5 Minuten zu Fuss, aber die Strasse steigt an bis zum Haus. Der Zugang zum Haus ist möglich ohne Treppen, und es gibt  Toiletten im 0. Stock, aber die kleine sind.\n\nEs gibt (kalt) fliessend Wasser und Elektrizität 💡\n\nDie Küche ist kollektiv und vegan. Es ist möglich, Allergien\nanzugeben, aber es kann nicht garantiert werden, dass keine Spuren von Allergenen vorhanden sind 🧅\n\nDie Plenas und Sitzungen sind grundsätzlich auf Französisch, es ist möglich eine (Flüster-)übersetzung auf Deutsch oder Englisch zu\norganisieren. (für andere Sprachen inklusive Gebärdensprache, fragt\nnach) 👋\n\nWenn du spezifische Bedürfnisse hast, zögere nicht uns ein Mail zu schreiben an collectif_hirondelles@riseup.net\nWir freuen uns auf dich! :)",
     "images": [],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "108",
@@ -716,8 +642,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "110",
@@ -728,8 +653,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "111",
@@ -738,8 +662,7 @@
     "images": [
       "telegram-images/photos/telegram_111_1771887351.13396.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "112",
@@ -748,8 +671,7 @@
     "images": [
       "telegram-images/photos/telegram_112_1771887352.286307.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "113",
@@ -758,8 +680,7 @@
     "images": [
       "telegram-images/affiches/telegram_113_1771887353.537923.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "114",
@@ -768,8 +689,7 @@
     "images": [
       "telegram-images/affiches/telegram_114_1771887355.959795.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "115",
@@ -778,8 +698,7 @@
     "images": [
       "telegram-images/affiches/telegram_115_1771887357.326046.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "116",
@@ -788,8 +707,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "120",
@@ -798,8 +716,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "122",
@@ -808,8 +725,7 @@
     "images": [
       "telegram-images/affiches/telegram_122_1771887358.676903.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "123",
@@ -820,8 +736,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "124",
@@ -832,8 +747,7 @@
     ],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "125",
@@ -842,8 +756,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "126",
@@ -854,8 +767,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "127",
@@ -864,8 +776,7 @@
     "images": [
       "telegram-images/affiches/telegram_127_1771887367.896599.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "128",
@@ -876,8 +787,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "129",
@@ -886,8 +796,7 @@
     "images": [
       "telegram-images/affiches/telegram_129_1771887371.04496.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "130",
@@ -896,8 +805,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "131",
@@ -906,8 +814,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "132",
@@ -918,8 +825,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "134",
@@ -930,8 +836,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "135",
@@ -940,8 +845,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "136",
@@ -950,8 +854,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "137",
@@ -962,8 +865,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "138",
@@ -974,8 +876,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "139",
@@ -984,8 +885,7 @@
     "images": [
       "telegram-images/affiches/telegram_139_1771887381.664976.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "140",
@@ -994,8 +894,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "141",
@@ -1004,8 +903,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "142",
@@ -1014,8 +912,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "143",
@@ -1024,8 +921,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "144",
@@ -1034,8 +930,7 @@
     "images": [
       "telegram-images/photos/telegram_144_1771887383.229949.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "145",
@@ -1044,8 +939,7 @@
     "images": [
       "telegram-images/photos/telegram_145_1771887385.349305.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "146",
@@ -1054,8 +948,7 @@
     "images": [
       "telegram-images/photos/telegram_146_1771887387.734878.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "147",
@@ -1064,8 +957,7 @@
     "images": [
       "telegram-images/photos/telegram_147_1771887389.404572.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "148",
@@ -1074,8 +966,7 @@
     "images": [
       "telegram-images/photos/telegram_148_1771887391.526794.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "149",
@@ -1084,8 +975,7 @@
     "images": [
       "telegram-images/photos/telegram_149_1771887393.506647.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "150",
@@ -1094,8 +984,7 @@
     "images": [
       "telegram-images/photos/telegram_150_1771887395.464143.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "151",
@@ -1104,8 +993,7 @@
     "images": [
       "telegram-images/photos/telegram_151_1771887397.276124.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "152",
@@ -1114,8 +1002,7 @@
     "images": [
       "telegram-images/photos/telegram_152_1771887399.401723.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "153",
@@ -1124,8 +1011,7 @@
     "images": [
       "telegram-images/photos/telegram_153_1771887401.214748.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "154",
@@ -1134,8 +1020,7 @@
     "images": [
       "telegram-images/photos/telegram_154_1771887402.676067.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "155",
@@ -1146,8 +1031,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "156",
@@ -1156,8 +1040,7 @@
     "images": [
       "telegram-images/affiches/telegram_156_1771887406.764748.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "157",
@@ -1166,8 +1049,7 @@
     "images": [
       "telegram-images/affiches/telegram_157_1771887408.755936.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "158",
@@ -1176,8 +1058,7 @@
     "images": [
       "telegram-images/affiches/telegram_158_1771887410.924669.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "159",
@@ -1186,16 +1067,14 @@
     "images": [
       "telegram-images/affiches/telegram_159_1771887413.30275.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "160",
     "date": "2024-09-12T08:54:27+00:00",
     "content": "🔥 Ça commence demain 🔥\n\nPour avoir d’avantage d’infos, (sur le lieu, accessibilité, dodo, garderie, …) on vous encourage vivement à aller sur le canal suivant : \nhttps://t.me/contreattaque_autonomie\n\nAllez, on se capte dés demain aux Dissidentes les ami.es.x !",
     "images": [],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "162",
@@ -1206,8 +1085,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "163",
@@ -1216,8 +1094,7 @@
     "images": [
       "telegram-images/affiches/telegram_163_1771887415.943621.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "164",
@@ -1226,8 +1103,7 @@
     "images": [
       "telegram-images/affiches/telegram_164_1771887416.88829.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "165",
@@ -1236,8 +1112,7 @@
     "images": [
       "telegram-images/affiches/telegram_165_1771887417.929399.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "166",
@@ -1246,8 +1121,7 @@
     "images": [
       "telegram-images/affiches/telegram_166_1771887419.385991.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "167",
@@ -1256,8 +1130,7 @@
     "images": [
       "telegram-images/affiches/telegram_167_1771887420.344957.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "168",
@@ -1266,8 +1139,7 @@
     "images": [
       "telegram-images/affiches/telegram_168_1771887421.455066.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "169",
@@ -1276,8 +1148,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "170",
@@ -1288,8 +1159,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "171",
@@ -1298,8 +1168,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "172",
@@ -1310,8 +1179,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "174",
@@ -1320,8 +1188,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "175",
@@ -1332,8 +1199,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "176",
@@ -1342,8 +1208,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "178",
@@ -1352,8 +1217,7 @@
     "images": [
       "telegram-images/affiches/telegram_178_1771887428.28461.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "179",
@@ -1364,8 +1228,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "180",
@@ -1377,8 +1240,7 @@
     "tags": [
       "actualité",
       "maraîchage"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "181",
@@ -1389,8 +1251,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "182",
@@ -1401,8 +1262,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "183",
@@ -1411,8 +1271,7 @@
     "images": [
       "telegram-images/affiches/telegram_183_1771887436.525185.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "184",
@@ -1423,8 +1282,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "185",
@@ -1433,8 +1291,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "186",
@@ -1445,8 +1302,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "187",
@@ -1455,8 +1311,7 @@
     "images": [
       "telegram-images/affiches/telegram_187_1771887440.709413.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "188",
@@ -1465,8 +1320,7 @@
     "images": [
       "telegram-images/affiches/telegram_188_1771887442.167336.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "189",
@@ -1475,8 +1329,7 @@
     "images": [
       "telegram-images/photos/telegram_189_1771887443.508183.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "190",
@@ -1487,8 +1340,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "191",
@@ -1499,8 +1351,7 @@
     ],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "192",
@@ -1509,8 +1360,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "193",
@@ -1521,8 +1371,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "194",
@@ -1531,8 +1380,7 @@
     "images": [
       "telegram-images/affiches/telegram_194_1771887449.856404.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "195",
@@ -1543,8 +1391,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "196",
@@ -1555,8 +1402,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "197",
@@ -1565,8 +1411,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "198",
@@ -1577,8 +1422,7 @@
     ],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "199",
@@ -1589,8 +1433,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "200",
@@ -1601,8 +1444,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "201",
@@ -1613,8 +1455,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "203",
@@ -1625,8 +1466,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "204",
@@ -1635,8 +1475,7 @@
     "images": [
       "telegram-images/affiches/telegram_204_1771887460.095386.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "205",
@@ -1647,8 +1486,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "206",
@@ -1659,8 +1497,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "217",
@@ -1669,8 +1506,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "218",
@@ -1679,8 +1515,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "220",
@@ -1691,8 +1526,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "221",
@@ -1701,8 +1535,7 @@
     "images": [
       "telegram-images/photos/telegram_221_1771887467.426924.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "222",
@@ -1711,8 +1544,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "223",
@@ -1722,8 +1554,7 @@
     "tags": [
       "actualité",
       "maraîchage"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "224",
@@ -1732,8 +1563,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "225",
@@ -1742,8 +1572,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "226",
@@ -1754,8 +1583,7 @@
     ],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "227",
@@ -1764,8 +1592,7 @@
     "images": [
       "telegram-images/photos/telegram_227_1771887471.762855.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "229",
@@ -1776,8 +1603,7 @@
     ],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "230",
@@ -1788,8 +1614,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "232",
@@ -1800,8 +1625,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "233",
@@ -1810,8 +1634,7 @@
     "images": [
       "telegram-images/photos/telegram_233_1771887479.203732.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "234",
@@ -1820,8 +1643,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "235",
@@ -1832,8 +1654,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "237",
@@ -1842,8 +1663,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "242",
@@ -1854,8 +1674,7 @@
     ],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "243",
@@ -1864,8 +1683,7 @@
     "images": [
       "telegram-images/photos/telegram_243_1771887485.13543.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "244",
@@ -1877,8 +1695,7 @@
     "tags": [
       "événement",
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "245",
@@ -1887,8 +1704,7 @@
     "images": [
       "telegram-images/photos/telegram_245_1771887489.301259.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "246",
@@ -1897,8 +1713,7 @@
     "images": [
       "telegram-images/photos/telegram_246_1771887490.129084.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "247",
@@ -1907,8 +1722,7 @@
     "images": [
       "telegram-images/photos/telegram_247_1771887492.07868.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "248",
@@ -1919,8 +1733,7 @@
     ],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "249",
@@ -1929,8 +1742,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "250",
@@ -1939,8 +1751,7 @@
     "images": [
       "telegram-images/affiches/telegram_250_1771887495.176452.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "251",
@@ -1949,8 +1760,7 @@
     "images": [
       "telegram-images/affiches/telegram_251_1771887495.821986.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "252",
@@ -1961,8 +1771,7 @@
     ],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "254",
@@ -1973,8 +1782,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "255",
@@ -1983,8 +1791,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "256",
@@ -1993,8 +1800,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "257",
@@ -2003,8 +1809,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "258",
@@ -2015,8 +1820,7 @@
     ],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "259",
@@ -2025,8 +1829,7 @@
     "images": [
       "telegram-images/affiches/telegram_259_1771887502.014688.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "260",
@@ -2035,8 +1838,7 @@
     "images": [
       "telegram-images/affiches/telegram_260_1771887504.239227.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "261",
@@ -2045,8 +1847,7 @@
     "images": [
       "telegram-images/affiches/telegram_261_1771887506.16628.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "263",
@@ -2057,8 +1858,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "264",
@@ -2067,8 +1867,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "265",
@@ -2077,8 +1876,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "266",
@@ -2089,8 +1887,7 @@
     ],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "267",
@@ -2099,8 +1896,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "268",
@@ -2111,8 +1907,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "269",
@@ -2121,8 +1916,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "270",
@@ -2131,8 +1925,7 @@
     "images": [
       "telegram-images/affiches/telegram_270_1771887515.48787.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "271",
@@ -2141,8 +1934,7 @@
     "images": [
       "telegram-images/affiches/telegram_271_1771887516.777403.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "272",
@@ -2151,8 +1943,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "273",
@@ -2163,8 +1954,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "274",
@@ -2173,8 +1963,7 @@
     "images": [
       "telegram-images/affiches/telegram_274_1771887518.626083.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "275",
@@ -2186,8 +1975,7 @@
     "tags": [
       "événement",
       "maraîchage"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "276",
@@ -2196,8 +1984,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "279",
@@ -2208,8 +1995,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "280",
@@ -2218,8 +2004,7 @@
     "images": [
       "telegram-images/affiches/telegram_280_1771887533.097661.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "281",
@@ -2230,8 +2015,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "283",
@@ -2242,8 +2026,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "284",
@@ -2254,8 +2037,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "286",
@@ -2266,8 +2048,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "289",
@@ -2278,8 +2059,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "290",
@@ -2288,8 +2068,7 @@
     "images": [
       "telegram-images/affiches/telegram_290_1771887541.402422.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "291",
@@ -2298,8 +2077,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "292",
@@ -2308,8 +2086,7 @@
     "images": [],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "294",
@@ -2321,8 +2098,7 @@
     "tags": [
       "événement",
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "295",
@@ -2333,8 +2109,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "296",
@@ -2346,8 +2121,7 @@
     "tags": [
       "événement",
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "297",
@@ -2358,8 +2132,7 @@
     ],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "298",
@@ -2370,8 +2143,7 @@
     ],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "299",
@@ -2382,8 +2154,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "300",
@@ -2394,8 +2165,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "301",
@@ -2407,8 +2177,7 @@
     "tags": [
       "actualité",
       "maraîchage"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "302",
@@ -2419,8 +2188,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "304",
@@ -2429,8 +2197,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "305",
@@ -2441,16 +2208,14 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "307",
     "date": "2025-09-30T17:56:23+00:00",
     "content": "📍Chemin du Bois des Creux 34, 2017 Boudry📍\n\n🎡 Infos Accessibilité : \nLa maison est pour l'instant peu apte à accueillir les personnes à mobilité réduite. L’arrêt de bus est à 10 minutes à pied de la ferme, mais la route est raide. Il n'y a pas d'escaliers pour accéder à la maison, et il y a des toilettes sèches accessibles PMR devant la cuisine extérieure (merci les Limaces♥️🔥!)",
     "images": [],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "308",
@@ -2461,8 +2226,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "309",
@@ -2471,8 +2235,7 @@
     "images": [
       "telegram-images/affiches/telegram_309_1771887561.349537.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "310",
@@ -2483,8 +2246,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "311",
@@ -2495,8 +2257,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "312",
@@ -2505,8 +2266,7 @@
     "images": [
       "telegram-images/affiches/telegram_312_1771887566.305081.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "314",
@@ -2515,8 +2275,7 @@
     "images": [
       "telegram-images/affiches/telegram_314_1771887567.624875.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "315",
@@ -2525,8 +2284,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "316",
@@ -2537,8 +2295,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "317",
@@ -2549,8 +2306,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "319",
@@ -2559,8 +2315,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "320",
@@ -2571,16 +2326,14 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "321",
     "date": "2026-01-17T11:16:16+00:00",
     "content": "🔥😍 **Aujourd'hui à Béthanie** 😍🔥\nHyper intéressant projet à ne pas manquer !",
     "images": [],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "322",
@@ -2591,8 +2344,7 @@
     ],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "323",
@@ -2601,8 +2353,7 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "325",
@@ -2613,8 +2364,7 @@
     ],
     "tags": [
       "actualité"
-    ],
-    "relatedEvent": null
+    ]
   },
   {
     "id": "327",
@@ -2623,8 +2373,7 @@
     "images": [
       "telegram-images/affiches/telegram_327_1771887575.667158.jpg"
     ],
-    "tags": [],
-    "relatedEvent": null
+    "tags": []
   },
   {
     "id": "329",
@@ -2633,7 +2382,6 @@
     "images": [],
     "tags": [
       "événement"
-    ],
-    "relatedEvent": null
+    ]
   }
 ]
