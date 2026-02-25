@@ -1,53 +1,39 @@
 import { Link } from "react-router-dom";
-import danceDayImg from "@/assets/dance-day.jpg";
-import planterImg from "@/assets/planter-hirondelles.jpg";
-import pontareuseImg from "@/assets/pontareuse-devant.jpg";
-import greffesImg from "@/assets/greffes.jpg";
+import { useEffect, useState } from "react";
 
-export const news = [
-  {
-    date: "22 février 2026",
-    title: "On lance des Dance Days !",
-    summary:
-      "Le concept : danser dans le noir pendant une heure, sans drague, sans jugement. Juste pour le plaisir de bouger. Parfois sur une playlist, d'autres fois DJ. Prochaines dates à Béthanie et à la Maison du Concert.",
-    telegramLink: "https://t.me/hirondelles/329",
-    image: danceDayImg,
-  },
-  {
-    date: "5 février 2026",
-    title: "Fête des 2 ans — Save the date : 4 avril !",
-    summary:
-      "Une étrange nuée d'hirondelles pleines d'amour, de paillettes et de rage révolutionnaire appelle à la fête ! Le 4 avril, venez festoyer nos 2 ans à la ferme. Grande journée paillettée avec ateliers, maraîche et grosse teuf !",
-    telegramLink: "https://t.me/hirondelles/325",
-    image: planterImg,
-  },
-  {
-    date: "17 janvier 2026",
-    title: "Chantier chambre froide au hameau de Pontareuse",
-    summary:
-      "Nous prévoyons une année de maraîchage avec davantage de production, il nous faut une chambre froide ! Venez nous aider à remettre en état la cave enterrée. Jeux de société, projections et discussions au programme des soirées.",
-    telegramLink: "https://t.me/hirondelles/323",
-    image: pontareuseImg,
-  },
-  {
-    date: "31 août 2025",
-    title: "Soutien à Naser — Cagnotte de solidarité",
-    summary:
-      "Notre ami Naser a été enfermé après s'être rendu au SPoMi de Fribourg. Son incarcération a aggravé sa dépression. Une cagnotte de soutien est organisée pour lui permettre d'avoir une sécurité financière après son expulsion.",
-    telegramLink: "https://t.me/hirondelles/298",
-    image: null,
-  },
-  {
-    date: "19 août 2025",
-    title: "Recherche isolation et mazout — Appel à dons",
-    summary:
-      "On cherche à vous débarrasser de votre isolation (laine de verre, de bois ou de roche) et de votre mazout. Comme ça on pourra avoir bien chaud en hiver et organiser plein de bouffes pop, de concerts et de projections !",
-    telegramLink: "https://t.me/hirondelles/292",
-    image: greffesImg,
-  },
-];
+interface TelegramMessage {
+  id: string;
+  date: string;
+  content: string;
+  images: string[];
+  tags: string[];
+}
 
 const NewsSection = () => {
+  const [news, setNews] = useState<TelegramMessage[]>([]);
+
+  useEffect(() => {
+    fetch(import.meta.env.BASE_URL + "Assets/messages.json")
+      .then(res => {
+        if (!res.ok) throw new Error("Impossible de charger les actualités");
+        return res.json();
+      })
+      .then((data: TelegramMessage[]) => {
+        const filteredData = data.filter(msg => msg.content && msg.content.trim() !== "");
+        const sorted = [...filteredData].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+        setNews(sorted.slice(0, 3));
+      })
+      .catch(err => console.error(err));
+  }, []);
+
+  const formatDate = (isoDate: string) => {
+    return new Date(isoDate).toLocaleDateString('fr-CH', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+    });
+  };
+
   return (
     <section id="actualites" className="py-24 px-6 bg-card">
       <div className="max-w-5xl mx-auto">
@@ -57,35 +43,34 @@ const NewsSection = () => {
         <div className="h-0.5 w-16 bg-primary mb-12" />
 
         <div className="space-y-10">
-          {news.slice(0, 3).map((item, i) => (
-            <article key={i} className="border-l-4 border-primary pl-6">
-              {item.image && (
+          {news.map((item) => (
+            <article key={item.id} className="border-l-4 border-primary pl-6">
+              {item.images.length > 0 && (
                 <img
-                  src={item.image}
-                  alt={item.title}
+                  src={import.meta.env.BASE_URL + 'Assets/' + item.images[0]}
+                  alt=""
                   className="w-full max-w-md h-48 object-cover rounded mb-4"
                   loading="lazy"
                 />
               )}
               <time className="font-body text-xs text-muted-foreground tracking-wide uppercase">
-                {item.date}
+                {formatDate(item.date)}
               </time>
               <h3 className="text-xl font-display font-bold uppercase text-foreground mt-1 mb-2 tracking-tight">
-                {item.title}
+                Actualité du {formatDate(item.date)}
               </h3>
-              <p className="text-muted-foreground font-body text-sm leading-relaxed max-w-2xl">
-                {item.summary}
+              <p className="text-muted-foreground font-body text-sm leading-relaxed max-w-2xl whitespace-pre-line">
+                {item.content.slice(0, 300)}
+                {item.content.length > 300 ? "..." : ""}
               </p>
-              {item.telegramLink && (
-                <a
-                  href={item.telegramLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block mt-2 text-primary font-body text-xs tracking-wide hover:underline"
-                >
-                  Lire sur Telegram →
-                </a>
-              )}
+              <a
+                href={`https://t.me/hirondelles/${item.id}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-2 text-primary font-body text-xs tracking-wide hover:underline"
+              >
+                Lire sur Telegram →
+              </a>
             </article>
           ))}
         </div>

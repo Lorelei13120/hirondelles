@@ -1,6 +1,4 @@
 import { Sprout, Users, Calendar, ImageIcon } from "lucide-react";
-import planterImg from "@/assets/planter-hirondelles.jpg";
-import greffesImg from "@/assets/greffes.jpg";
 import FooterSection from "@/components/FooterSection";
 
 const MaraichagePage = () => {
@@ -46,20 +44,6 @@ const MaraichagePage = () => {
                 On a aussi un projet de <strong className="text-foreground">greffes d'arbres fruitiers</strong> pour 
                 installer un verger à long terme. Pommiers, poiriers, pruniers — on pense à demain.
               </p>
-            </div>
-            <div className="space-y-4">
-              <img
-                src={planterImg}
-                alt="Plantations au hameau de Pontareuse"
-                className="w-full h-64 object-cover rounded"
-                loading="lazy"
-              />
-              <img
-                src={greffesImg}
-                alt="Atelier de greffes d'arbres fruitiers"
-                className="w-full h-64 object-cover rounded"
-                loading="lazy"
-              />
             </div>
           </div>
         </div>
@@ -132,8 +116,6 @@ const MaraichagePage = () => {
             D'autres photos arrivent bientôt ! En attendant, voici un aperçu du terrain.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <img src={planterImg} alt="Plantations" className="w-full h-48 object-cover rounded" loading="lazy" />
-            <img src={greffesImg} alt="Greffes" className="w-full h-48 object-cover rounded" loading="lazy" />
             <div className="w-full h-48 rounded bg-muted flex items-center justify-center">
               <span className="text-muted-foreground font-body text-sm">À venir</span>
             </div>

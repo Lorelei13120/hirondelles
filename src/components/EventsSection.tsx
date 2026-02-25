@@ -1,59 +1,76 @@
 import { Link } from "react-router-dom";
-import danceDayImg from "@/assets/dance-day.jpg";
-import planterImg from "@/assets/planter-hirondelles.jpg";
+import { useEffect, useState } from "react";
 
-export const events = [
-  {
-    date: "23 FÉV",
-    title: "Dance Day à Béthanie",
-    location: "Clos-de-Serrières 25, Neuchâtel",
-    description:
-      "Danser dans le noir pendant une heure, sans drague, sans jugement. Juste pour le plaisir de bouger ! Prix libre. 18h30.",
-    image: danceDayImg,
-  },
-  {
-    date: "9 MARS",
-    title: "Dance Day à la Maison du Concert",
-    location: "Maison du Concert, Neuchâtel",
-    description:
-      "Même concept, autre lieu ! Viens expérimenter tes mouvements dans le noir. 18h15.",
-    image: danceDayImg,
-  },
-  {
-    date: "23 MARS",
-    title: "Dance Day à Béthanie",
-    location: "Clos-de-Serrières 25, Neuchâtel",
-    description:
-      "Le retour du Dance Day ! Une heure de danse libre dans le noir. Prix libre. 18h30.",
-    image: danceDayImg,
-  },
-  {
-    date: "4 AVR",
-    title: "🎉 Fête des 2 ans de la ferme !",
-    location: "Hameau de Pontareuse, Boudry",
-    description:
-      "Grande journée paillettée pour fêter nos 2 ans ! Ateliers, maraîche participative et grosse teuf. Programme complet à venir !",
-    image: planterImg,
-  },
-  {
-    date: "6 AVR",
-    title: "Dance Day à la Maison du Concert",
-    location: "Maison du Concert, Neuchâtel",
-    description:
-      "Dance Day mensuel. Danser dans le noir, sans pression. 18h15.",
-    image: danceDayImg,
-  },
-  {
-    date: "20 AVR",
-    title: "Dance Day à Béthanie",
-    location: "Clos-de-Serrières 25, Neuchâtel",
-    description:
-      "Dance Day mensuel à Béthanie. Prix libre. 18h30.",
-    image: danceDayImg,
-  },
-];
+interface TelegramMessage {
+  id: string;
+  date: string;
+  content: string;
+  images: string[];
+  tags: string[];
+}
+
+interface ParsedEvent {
+  id: string;
+  date: string;
+  title: string;
+  eventDate: string;
+  location: string;
+  description: string;
+  image: string | null;
+}
+
+function parseEvent(msg: TelegramMessage): ParsedEvent {
+  const BASE_URL = import.meta.env.BASE_URL;
+  const lines = msg.content.split("\n").map(l => l.trim()).filter(l => l.length > 0);
+
+  const title = lines[0]?.replace(/#\S+/g, "").trim() ?? "";
+  let eventDate = "";
+  let location = "";
+  const descLines: string[] = [];
+
+  for (let i = 1; i < lines.length; i++) {
+    const line = lines[i];
+    if (line.startsWith("📅")) {
+      eventDate = line.replace(/^📅\s*/, "").trim();
+    } else if (line.startsWith("📍")) {
+      location = line.replace(/^📍\s*/, "").trim();
+    } else {
+      descLines.push(line);
+    }
+  }
+
+  const image = msg.images.length > 0 ? BASE_URL + "Assets/" + msg.images[0] : null;
+
+  return {
+    id: msg.id,
+    date: msg.date,
+    title,
+    eventDate,
+    location,
+    description: descLines.join(" "),
+    image,
+  };
+}
 
 const EventsSection = () => {
+  const [events, setEvents] = useState<ParsedEvent[]>([]);
+
+  useEffect(() => {
+    fetch(import.meta.env.BASE_URL + "Assets/messages.json")
+      .then(res => {
+        if (!res.ok) throw new Error("Impossible de charger les événements");
+        return res.json();
+      })
+      .then((data: TelegramMessage[]) => {
+        const filtered = data
+          .filter(msg => msg.tags.includes("événement"))
+          .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+          .map(parseEvent);
+        setEvents(filtered.slice(0, 4));
+      })
+      .catch(err => console.error(err));
+  }, []);
+
   return (
     <section id="evenements" className="py-24 px-6 bg-background">
       <div className="max-w-5xl mx-auto">
@@ -63,9 +80,9 @@ const EventsSection = () => {
         <div className="h-0.5 w-16 bg-primary mb-12" />
 
         <div className="space-y-0">
-          {events.slice(0, 4).map((event, i) => (
+          {events.map((event) => (
             <div
-              key={i}
+              key={event.id}
               className="border-t border-border py-8 flex flex-col md:flex-row gap-4 md:items-start hover:bg-card/50 transition-colors px-4 -mx-4 rounded"
             >
               {event.image && (
@@ -77,20 +94,22 @@ const EventsSection = () => {
                 />
               )}
               <div className="font-display font-bold text-primary text-2xl md:text-3xl w-32 shrink-0">
-                {event.date}
+                {event.eventDate || "À venir"}
               </div>
               <div className="flex-1">
                 <h3 className="text-lg font-display font-bold uppercase text-foreground mb-1 tracking-tight">{event.title}</h3>
-                <p className="text-muted-foreground font-body text-xs tracking-wide mb-2">
-                  📍 {event.location}
-                </p>
+                {event.location && (
+                  <p className="text-muted-foreground font-body text-xs tracking-wide mb-2">
+                    📍 {event.location}
+                  </p>
+                )}
                 <p className="text-muted-foreground font-body text-sm leading-relaxed">
                   {event.description}
                 </p>
               </div>
             </div>
           ))}
-          <div className="border-t border-border" />
+          {events.length > 0 && <div className="border-t border-border" />}
         </div>
 
         <div className="mt-12 text-center">

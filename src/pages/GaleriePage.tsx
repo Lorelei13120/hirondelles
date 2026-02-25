@@ -1,8 +1,4 @@
 import { useEffect, useState } from "react";
-import pontareuse from "@/assets/pontareuse-devant.jpg";
-import planter from "@/assets/planter-hirondelles.jpg";
-import greffes from "@/assets/greffes.jpg";
-import danceDay from "@/assets/dance-day.jpg";
 import FooterSection from "@/components/FooterSection";
 
 interface TelegramMessage {
@@ -38,8 +34,8 @@ const GaleriePage = () => {
             }
           }
         }
-        setTelegramPhotos(photos);
-        setTelegramAffiches(affiches);
+        setTelegramPhotos(photos.reverse());
+        setTelegramAffiches(affiches.reverse());
       })
       .catch(() => {
         // Silencieux si le fichier n'est pas encore disponible

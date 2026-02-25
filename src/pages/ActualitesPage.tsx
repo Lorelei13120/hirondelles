@@ -21,8 +21,9 @@ const ActualitesPage = () => {
         return res.json();
       })
       .then((data: TelegramMessage[]) => {
-        // Trier du plus récent au plus ancien
-        const sorted = [...data].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+        // Filtrer les messages sans texte et trier du plus récent au plus ancien
+        const filteredData = data.filter(msg => msg.content && msg.content.trim() !== "");
+        const sorted = [...filteredData].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
         setMessages(sorted);
       })
       .catch(err => setError(err.message))
