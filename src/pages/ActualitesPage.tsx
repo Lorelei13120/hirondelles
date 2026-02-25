@@ -76,36 +76,54 @@ const ActualitesPage = () => {
             <p className="font-body text-muted-foreground">{t('news.none')}</p>
           )}
 
-          <div className="space-y-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {messages.map((msg) => (
-              <article key={msg.id} className="border-l-4 border-primary pl-6">
+              <article 
+                key={msg.id} 
+                id={msg.id} 
+                className="bg-card border border-border rounded-lg overflow-hidden flex flex-col hover:shadow-lg transition-shadow"
+              >
                 {msg.images.length > 0 && (
-                  <img
-                    src={import.meta.env.BASE_URL + 'Assets/' + msg.images[0]}
-                    alt=""
-                    className="w-full max-w-lg h-auto max-h-[500px] object-contain rounded mb-4 bg-muted/30"
-                    loading="lazy"
-                  />
-                )}
-                <time className="font-body text-xs text-muted-foreground tracking-wide uppercase">
-                  {formatDate(msg.date)}
-                </time>
-                <p className="text-muted-foreground font-body text-base leading-relaxed max-w-3xl mt-2 whitespace-pre-line">
-                  {msg.content}
-                </p>
-                {msg.images.length > 1 && (
-                  <div className="flex flex-wrap gap-2 mt-3">
-                    {msg.images.slice(1).map((img, i) => (
-                      <img
-                        key={i}
-                        src={import.meta.env.BASE_URL + 'Assets/' + img}
-                        alt=""
-                        className="h-40 w-auto max-w-full object-contain rounded bg-muted/20"
-                        loading="lazy"
-                      />
-                    ))}
+                  <div className="aspect-video w-full overflow-hidden bg-muted">
+                    <img
+                      src={import.meta.env.BASE_URL + 'Assets/' + msg.images[0]}
+                      alt=""
+                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                      loading="lazy"
+                    />
                   </div>
                 )}
+                <div className="p-6 flex flex-col flex-1">
+                  <time className="font-body text-[10px] text-muted-foreground tracking-widest uppercase mb-3 block">
+                    {formatDate(msg.date)}
+                  </time>
+                  <p className="text-foreground font-body text-sm leading-relaxed whitespace-pre-line flex-1">
+                    {msg.content}
+                  </p>
+                  
+                  {msg.images.length > 1 && (
+                    <div className="flex flex-wrap gap-1.5 mt-4">
+                      {msg.images.slice(1).map((img, i) => (
+                        <img
+                          key={i}
+                          src={import.meta.env.BASE_URL + 'Assets/' + img}
+                          alt=""
+                          className="h-16 w-auto object-cover rounded shadow-sm"
+                          loading="lazy"
+                        />
+                      ))}
+                    </div>
+                  )}
+
+                  <a
+                    href={`https://t.me/hirondelles/${msg.id}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block mt-6 text-primary font-display font-bold text-[10px] tracking-widest uppercase hover:text-primary/80 transition-colors"
+                  >
+                    {t('news.read_more')}
+                  </a>
+                </div>
               </article>
             ))}
           </div>

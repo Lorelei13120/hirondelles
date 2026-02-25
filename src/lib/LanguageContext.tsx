@@ -73,7 +73,7 @@ export const translations: Translations = {
   'footer.legal': { fr: 'Tous droits réservés.', de: 'Alle Rechte vorbehalten.' },
 
   // Description Section (Index)
-  'desc.title': { fr: 'Qui sommes-nous ?', de: 'Über uns ?' },
+  'desc.title': { fr: 'Qui sommes-nous ?', de: 'Wer sind wir ?' },
   'desc.intro': { fr: 'Les Hirondelles, c\'est un collectif installé au hameau agricole de Pontareuse à Boudry (NE). Depuis deux ans, on fait renaître cette ferme abandonnée : maraîchage, bouffes pop, concerts, projections, chantiers collectifs et fêtes pailletées. La terre à celleux qui la travaillent !', de: 'Les Hirondelles ist ein Kollektiv im landwirtschaftlichen Weiler Pontareuse in Boudry (NE). Seit zwei Jahren lassen wir diesen verlassenen Bauernhof wieder aufleben: Gemüsebau, Volksküchen, Konzerte, Filmvorführungen, kollektive Arbeitseinsätze und glitzernde Feste. Das Land denen, die es bearbeiten!' },
   'desc.goals.title': { fr: 'Nos objectifs', de: 'Unsere Ziele' },
   'desc.goals.1.t': { fr: 'Vie collective', de: 'Kollektives Leben' },

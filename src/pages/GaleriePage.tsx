@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import FooterSection from "@/components/FooterSection";
 import { useLanguage } from "@/lib/LanguageContext";
 
@@ -7,27 +8,35 @@ interface TelegramMessage {
   date: string;
   content: string;
   images: string[];
+  tags: string[];
 }
 
-const staticPhotos = [
-];
+interface GalleryItem {
+  src: string;
+  alt: string;
+  msgId: string;
+  type: 'news' | 'event';
+}
 
 const GaleriePage = () => {
-  const [telegramPhotos, setTelegramPhotos] = useState<{ src: string; alt: string }[]>([]);
-  const [telegramAffiches, setTelegramAffiches] = useState<{ src: string; alt: string }[]>([]);
+  const [telegramPhotos, setTelegramPhotos] = useState<GalleryItem[]>([]);
+  const [telegramAffiches, setTelegramAffiches] = useState<GalleryItem[]>([]);
   const { t } = useLanguage();
 
   useEffect(() => {
     fetch(import.meta.env.BASE_URL + 'Assets/messages.json')
       .then(res => res.ok ? res.json() : Promise.reject())
       .then((data: TelegramMessage[]) => {
-        const photos: { src: string; alt: string }[] = [];
-        const affiches: { src: string; alt: string }[] = [];
+        const photos: GalleryItem[] = [];
+        const affiches: GalleryItem[] = [];
         for (const msg of data) {
+          const type = msg.tags.includes('événement') ? 'event' : 'news';
           for (const img of msg.images) {
-            const item = {
+            const item: GalleryItem = {
               src: import.meta.env.BASE_URL + 'Assets/' + img,
               alt: msg.content ? msg.content.slice(0, 60) : 'Image Telegram',
+              msgId: msg.id,
+              type: type,
             };
             if (img.includes('affiches/')) {
               affiches.push(item);
@@ -48,28 +57,10 @@ const GaleriePage = () => {
     <main className="min-h-screen bg-background">
       <section className="py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-display font-bold uppercase text-foreground mb-3 tracking-tight">
+          <h1 className="text-4xl md:text-6xl font-display font-bold uppercase text-foreground mb-8 tracking-tight">
             {t('nav.gallery')}
           </h1>
-          <div className="h-0.5 w-16 bg-primary mb-4" />
-          <p className="font-body text-muted-foreground mb-16 max-w-2xl">
-            {t('section.gallery.subtitle')}
-          </p>
-
-          {/* Photos statiques */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {staticPhotos.map((photo, i) => (
-              <div key={i} className="overflow-hidden rounded group">
-                <img
-                  src={photo.src}
-                  alt={photo.alt}
-                  className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-105"
-                  loading="lazy"
-                />
-                <p className="font-body text-sm text-muted-foreground mt-2">{photo.alt}</p>
-              </div>
-            ))}
-          </div>
+          <div className="h-0.5 w-16 bg-primary mb-12" />
 
           {/* Section Photos Telegram */}
           {telegramPhotos.length > 0 && (
@@ -79,14 +70,23 @@ const GaleriePage = () => {
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {telegramPhotos.map((photo, i) => (
-                  <div key={i} className="overflow-hidden rounded group">
+                  <Link 
+                    key={i} 
+                    to={photo.type === 'event' ? `/evenements#${photo.msgId}` : `/actualites#${photo.msgId}`}
+                    className="overflow-hidden rounded group relative block"
+                  >
                     <img
                       src={photo.src}
                       alt={photo.alt}
                       className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105"
                       loading="lazy"
                     />
-                  </div>
+                    <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                      <span className="text-primary-foreground font-display font-bold uppercase text-xs tracking-widest bg-primary/80 px-4 py-2 rounded">
+                        {photo.type === 'event' ? t('nav.events') : t('nav.news')}
+                      </span>
+                    </div>
+                  </Link>
                 ))}
               </div>
             </>
@@ -100,14 +100,23 @@ const GaleriePage = () => {
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 {telegramAffiches.map((affiche, i) => (
-                  <div key={i} className="overflow-hidden rounded group">
+                  <Link 
+                    key={i} 
+                    to={affiche.type === 'event' ? `/evenements#${affiche.msgId}` : `/actualites#${affiche.msgId}`}
+                    className="overflow-hidden rounded group relative block"
+                  >
                     <img
                       src={affiche.src}
                       alt={affiche.alt}
                       className="w-full object-contain transition-transform duration-500 group-hover:scale-105 bg-muted"
                       loading="lazy"
                     />
-                  </div>
+                    <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                      <span className="text-primary-foreground font-display font-bold uppercase text-xs tracking-widest bg-primary/80 px-4 py-2 rounded">
+                        {affiche.type === 'event' ? t('nav.events') : t('nav.news')}
+                      </span>
+                    </div>
+                  </Link>
                 ))}
               </div>
             </>

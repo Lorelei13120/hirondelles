@@ -4,11 +4,21 @@ import { useLanguage } from "@/lib/LanguageContext";
 
 const MaraichagePage = () => {
   const { t } = useLanguage();
+  const heroImage = import.meta.env.BASE_URL + "Assets/telegram-images/photos/telegram_180_1771887431.16151.jpg";
 
   return (
     <main className="min-h-screen bg-background">
-      {/* Hero */}
-      <section className="relative py-24 px-6 bg-card">
+      {/* Hero Image */}
+      <div className="w-full h-[40vh] md:h-[60vh] overflow-hidden">
+        <img 
+          src={heroImage} 
+          alt="Maraîchage" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      {/* Hero Text */}
+      <section className="relative py-20 px-6 bg-card">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-display font-bold uppercase text-foreground mb-3 tracking-tight">
             {t('farming.title')}

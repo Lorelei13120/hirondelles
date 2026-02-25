@@ -108,39 +108,54 @@ const EvenementsPage = () => {
             <p className="font-body text-muted-foreground">{t('events.none')}</p>
           )}
 
-          <div className="space-y-0">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {events.map((event) => (
               <div
                 key={event.id}
-                className="border-t border-border py-10 flex flex-col md:flex-row gap-6 md:items-start hover:bg-card/50 transition-colors px-4 -mx-4 rounded"
+                id={event.id}
+                className="bg-card border border-border rounded-lg overflow-hidden flex flex-col hover:shadow-lg transition-shadow"
               >
                 {event.image && (
-                  <img
-                    src={event.image}
-                    alt={event.title}
-                    className="w-full md:w-48 h-auto max-h-48 object-contain rounded shrink-0 bg-muted/30"
-                    loading="lazy"
-                  />
+                  <div className="aspect-video w-full overflow-hidden bg-muted">
+                    <img
+                      src={event.image}
+                      alt={event.title}
+                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                      loading="lazy"
+                    />
+                  </div>
                 )}
-                <div className="font-display font-bold text-primary text-3xl md:text-4xl w-36 shrink-0">
-                  {event.eventDate}
-                </div>
-                <div className="flex-1">
-                  <h2 className="text-xl font-display font-bold uppercase text-foreground mb-2 tracking-tight">
+                <div className="p-6 flex flex-col flex-1">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="bg-primary/10 text-primary font-display font-bold text-xl px-3 py-1 rounded">
+                      {event.eventDate}
+                    </div>
+                    {event.location && (
+                      <span className="text-muted-foreground font-body text-[10px] tracking-widest uppercase">
+                        📍 {event.location}
+                      </span>
+                    )}
+                  </div>
+                  
+                  <h2 className="text-xl font-display font-bold uppercase text-foreground mb-3 tracking-tight">
                     {event.title}
                   </h2>
-                  {event.location && (
-                    <p className="text-muted-foreground font-body text-xs tracking-wide mb-3">
-                      📍 {event.location}
-                    </p>
-                  )}
-                  <p className="text-muted-foreground font-body text-base leading-relaxed max-w-3xl">
+                  
+                  <p className="text-muted-foreground font-body text-sm leading-relaxed flex-1">
                     {event.description}
                   </p>
+
+                  <a
+                    href={`https://t.me/hirondelles/${event.id}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block mt-6 text-primary font-display font-bold text-[10px] tracking-widest uppercase hover:text-primary/80 transition-colors"
+                  >
+                    Telegram →
+                  </a>
                 </div>
               </div>
             ))}
-            {events.length > 0 && <div className="border-t border-border" />}
           </div>
         </div>
       </section>

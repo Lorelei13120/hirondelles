@@ -1,9 +1,9 @@
-import heroBg from "@/assets/hero-bg.jpg";
 import logo from "@/assets/logo-hirondelles.png";
 import { useLanguage } from "@/lib/LanguageContext";
 
 const HeroSection = () => {
   const { t } = useLanguage();
+  const heroBg = import.meta.env.BASE_URL + "Assets/telegram-images/photos/telegram_189_1771887443.508183.jpg";
 
   return (
     <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
