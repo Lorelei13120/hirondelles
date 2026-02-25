@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import FooterSection from "@/components/FooterSection";
+import { useLanguage } from "@/lib/LanguageContext";
 
 interface TelegramMessage {
   id: string;
@@ -13,25 +14,30 @@ const ActualitesPage = () => {
   const [messages, setMessages] = useState<TelegramMessage[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const { language, t } = useLanguage();
 
   useEffect(() => {
     fetch(import.meta.env.BASE_URL + 'Assets/messages.json')
       .then(res => {
-        if (!res.ok) throw new Error('Impossible de charger les actualités');
+        if (!res.ok) throw new Error(t('news.error'));
         return res.json();
       })
       .then((data: TelegramMessage[]) => {
-        // Filtrer les messages sans texte et trier du plus récent au plus ancien
-        const filteredData = data.filter(msg => msg.content && msg.content.trim() !== "");
+        // Filtrer les messages sans texte ou qui sont uniquement des événements, et trier du plus récent au plus ancien
+        const filteredData = data.filter(msg => {
+          const hasText = msg.content && msg.content.trim() !== "";
+          const isEventOnly = msg.tags.includes("événement") && !msg.tags.includes("actualité");
+          return hasText && !isEventOnly;
+        });
         const sorted = [...filteredData].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
         setMessages(sorted);
       })
       .catch(err => setError(err.message))
       .finally(() => setLoading(false));
-  }, []);
+  }, [t]);
 
   const formatDate = (isoDate: string) => {
-    return new Date(isoDate).toLocaleDateString('fr-CH', {
+    return new Date(isoDate).toLocaleDateString(language === 'fr' ? 'fr-CH' : 'de-DE', {
       day: 'numeric',
       month: 'long',
       year: 'numeric',
@@ -43,11 +49,11 @@ const ActualitesPage = () => {
       <section className="py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-display font-bold uppercase text-foreground mb-3 tracking-tight">
-            Actualités
+            {t('news.title')}
           </h1>
           <div className="h-0.5 w-16 bg-primary mb-4" />
           <p className="font-body text-muted-foreground mb-16 max-w-2xl">
-            Toutes les nouvelles du collectif. Retrouvez aussi nos publications en temps réel sur{" "}
+            {t('news.subtitle')}{" "}
             <a
               href="https://t.me/hirondelles"
               target="_blank"
@@ -59,7 +65,7 @@ const ActualitesPage = () => {
           </p>
 
           {loading && (
-            <p className="font-body text-muted-foreground">Chargement des actualités…</p>
+            <p className="font-body text-muted-foreground">{t('news.loading')}</p>
           )}
 
           {error && (
@@ -67,7 +73,7 @@ const ActualitesPage = () => {
           )}
 
           {!loading && !error && messages.length === 0 && (
-            <p className="font-body text-muted-foreground">Aucune actualité pour l'instant.</p>
+            <p className="font-body text-muted-foreground">{t('news.none')}</p>
           )}
 
           <div className="space-y-12">
@@ -77,7 +83,7 @@ const ActualitesPage = () => {
                   <img
                     src={import.meta.env.BASE_URL + 'Assets/' + msg.images[0]}
                     alt=""
-                    className="w-full max-w-lg h-56 object-cover rounded mb-4"
+                    className="w-full max-w-lg h-auto max-h-[500px] object-contain rounded mb-4 bg-muted/30"
                     loading="lazy"
                   />
                 )}
@@ -94,7 +100,7 @@ const ActualitesPage = () => {
                         key={i}
                         src={import.meta.env.BASE_URL + 'Assets/' + img}
                         alt=""
-                        className="h-32 w-auto object-cover rounded"
+                        className="h-40 w-auto max-w-full object-contain rounded bg-muted/20"
                         loading="lazy"
                       />
                     ))}

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { useLanguage } from "@/lib/LanguageContext";
 
 interface TelegramMessage {
   id: string;
@@ -54,11 +55,12 @@ function parseEvent(msg: TelegramMessage): ParsedEvent {
 
 const EventsSection = () => {
   const [events, setEvents] = useState<ParsedEvent[]>([]);
+  const { t } = useLanguage();
 
   useEffect(() => {
     fetch(import.meta.env.BASE_URL + "Assets/messages.json")
       .then(res => {
-        if (!res.ok) throw new Error("Impossible de charger les événements");
+        if (!res.ok) throw new Error(t('events.error'));
         return res.json();
       })
       .then((data: TelegramMessage[]) => {
@@ -69,13 +71,13 @@ const EventsSection = () => {
         setEvents(filtered.slice(0, 4));
       })
       .catch(err => console.error(err));
-  }, []);
+  }, [t]);
 
   return (
     <section id="evenements" className="py-24 px-6 bg-background">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-display font-bold uppercase text-foreground mb-3 tracking-tight">
-          Événements
+          {t('section.events.title')}
         </h2>
         <div className="h-0.5 w-16 bg-primary mb-12" />
 
@@ -89,12 +91,12 @@ const EventsSection = () => {
                 <img
                   src={event.image}
                   alt={event.title}
-                  className="w-full md:w-40 h-28 object-cover rounded shrink-0"
+                  className="w-full md:w-40 h-auto max-h-40 object-contain rounded shrink-0 bg-muted/30"
                   loading="lazy"
                 />
               )}
               <div className="font-display font-bold text-primary text-2xl md:text-3xl w-32 shrink-0">
-                {event.eventDate || "À venir"}
+                {event.eventDate || t('section.events.upcoming')}
               </div>
               <div className="flex-1">
                 <h3 className="text-lg font-display font-bold uppercase text-foreground mb-1 tracking-tight">{event.title}</h3>
@@ -117,7 +119,7 @@ const EventsSection = () => {
             to="/evenements"
             className="inline-block bg-primary text-primary-foreground px-6 py-3 font-body font-semibold text-sm tracking-wide rounded hover:bg-primary/80 transition-colors"
           >
-            Tous les événements
+            {t('section.events.all')}
           </Link>
         </div>
       </div>

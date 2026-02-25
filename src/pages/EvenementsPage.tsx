@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import FooterSection from "@/components/FooterSection";
+import { useLanguage } from "@/lib/LanguageContext";
 
 interface TelegramMessage {
   id: string;
@@ -56,11 +57,12 @@ const EvenementsPage = () => {
   const [events, setEvents] = useState<ParsedEvent[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const { t } = useLanguage();
 
   useEffect(() => {
     fetch(import.meta.env.BASE_URL + "Assets/messages.json")
       .then(res => {
-        if (!res.ok) throw new Error("Impossible de charger les événements");
+        if (!res.ok) throw new Error(t('events.error'));
         return res.json();
       })
       .then((data: TelegramMessage[]) => {
@@ -72,18 +74,18 @@ const EvenementsPage = () => {
       })
       .catch(err => setError(err.message))
       .finally(() => setLoading(false));
-  }, []);
+  }, [t]);
 
   return (
     <main className="min-h-screen bg-background">
       <section className="py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-display font-bold uppercase text-foreground mb-3 tracking-tight">
-            Événements
+            {t('events.title')}
           </h1>
           <div className="h-0.5 w-16 bg-primary mb-4" />
           <p className="font-body text-muted-foreground mb-16 max-w-2xl">
-            Les prochains événements. Pour ne rien rater, suivez{" "}
+            {t('events.subtitle')}{" "}
             <a
               href="https://t.me/hirondelles"
               target="_blank"
@@ -95,7 +97,7 @@ const EvenementsPage = () => {
           </p>
 
           {loading && (
-            <p className="font-body text-muted-foreground">Chargement des événements…</p>
+            <p className="font-body text-muted-foreground">{t('events.loading')}</p>
           )}
 
           {error && (
@@ -103,7 +105,7 @@ const EvenementsPage = () => {
           )}
 
           {!loading && !error && events.length === 0 && (
-            <p className="font-body text-muted-foreground">Aucun événement à venir pour l'instant.</p>
+            <p className="font-body text-muted-foreground">{t('events.none')}</p>
           )}
 
           <div className="space-y-0">
@@ -116,7 +118,7 @@ const EvenementsPage = () => {
                   <img
                     src={event.image}
                     alt={event.title}
-                    className="w-full md:w-48 h-32 object-cover rounded shrink-0"
+                    className="w-full md:w-48 h-auto max-h-48 object-contain rounded shrink-0 bg-muted/30"
                     loading="lazy"
                   />
                 )}

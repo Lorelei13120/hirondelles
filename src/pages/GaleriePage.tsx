@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import FooterSection from "@/components/FooterSection";
+import { useLanguage } from "@/lib/LanguageContext";
 
 interface TelegramMessage {
   id: string;
@@ -14,6 +15,7 @@ const staticPhotos = [
 const GaleriePage = () => {
   const [telegramPhotos, setTelegramPhotos] = useState<{ src: string; alt: string }[]>([]);
   const [telegramAffiches, setTelegramAffiches] = useState<{ src: string; alt: string }[]>([]);
+  const { t } = useLanguage();
 
   useEffect(() => {
     fetch(import.meta.env.BASE_URL + 'Assets/messages.json')
@@ -47,11 +49,11 @@ const GaleriePage = () => {
       <section className="py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-display font-bold uppercase text-foreground mb-3 tracking-tight">
-            Galerie
+            {t('nav.gallery')}
           </h1>
           <div className="h-0.5 w-16 bg-primary mb-4" />
           <p className="font-body text-muted-foreground mb-16 max-w-2xl">
-            Photos de la vie à Pontareuse.
+            {t('section.gallery.subtitle')}
           </p>
 
           {/* Photos statiques */}
@@ -73,7 +75,7 @@ const GaleriePage = () => {
           {telegramPhotos.length > 0 && (
             <>
               <h2 className="text-2xl font-display font-bold uppercase text-foreground mt-20 mb-8 tracking-tight">
-                Photos
+                {t('section.gallery.photos')}
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {telegramPhotos.map((photo, i) => (
@@ -94,7 +96,7 @@ const GaleriePage = () => {
           {telegramAffiches.length > 0 && (
             <>
               <h2 className="text-2xl font-display font-bold uppercase text-foreground mt-20 mb-8 tracking-tight">
-                Affiches
+                {t('section.gallery.posters')}
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 {telegramAffiches.map((affiche, i) => (

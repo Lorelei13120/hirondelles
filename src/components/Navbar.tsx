@@ -4,19 +4,21 @@ import { Menu, Send } from "lucide-react";
 import logo from "@/assets/logo-hirondelles.png";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
-
-const navLinks = [
-  { to: "/#description", label: "Qui sommes-nous" },
-  { to: "/maraichage", label: "Maraîchage" },
-  { to: "/actualites", label: "Actualités" },
-  { to: "/evenements", label: "Événements" },
-  { to: "/galerie", label: "Galerie" },
-];
+import { useLanguage } from "@/lib/LanguageContext";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const location = useLocation();
+  const { language, setLanguage, t } = useLanguage();
+
+  const navLinks = [
+    { to: "/#description", label: t('nav.home') },
+    { to: "/maraichage", label: t('nav.farming') },
+    { to: "/actualites", label: t('nav.news') },
+    { to: "/evenements", label: t('nav.events') },
+    { to: "/galerie", label: t('nav.gallery') },
+  ];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -69,10 +71,32 @@ const Navbar = () => {
           >
             <Send className="w-4 h-4" />
           </a>
+          
+          {/* Language Switcher */}
+          <div className="flex items-center gap-2 font-body text-xs text-primary-foreground/50 ml-4">
+            <button 
+              onClick={() => setLanguage('fr')} 
+              className={`hover:text-accent transition-colors ${language === 'fr' ? 'text-accent font-bold' : ''}`}
+            >
+              FR
+            </button>
+            <span>|</span>
+            <button 
+              onClick={() => setLanguage('de')} 
+              className={`hover:text-accent transition-colors ${language === 'de' ? 'text-accent font-bold' : ''}`}
+            >
+              DE
+            </button>
+          </div>
         </div>
 
         {/* Mobile */}
-        <div className="md:hidden">
+        <div className="md:hidden flex items-center gap-4">
+          <div className="flex items-center gap-2 font-body text-xs text-primary-foreground/50">
+            <button onClick={() => setLanguage('fr')} className={language === 'fr' ? 'text-accent font-bold' : ''}>FR</button>
+            <span>|</span>
+            <button onClick={() => setLanguage('de')} className={language === 'de' ? 'text-accent font-bold' : ''}>DE</button>
+          </div>
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="text-primary-foreground">

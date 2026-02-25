@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { useLanguage } from "@/lib/LanguageContext";
 
 interface TelegramMessage {
   id: string;
@@ -11,23 +12,28 @@ interface TelegramMessage {
 
 const NewsSection = () => {
   const [news, setNews] = useState<TelegramMessage[]>([]);
+  const { language, t } = useLanguage();
 
   useEffect(() => {
     fetch(import.meta.env.BASE_URL + "Assets/messages.json")
       .then(res => {
-        if (!res.ok) throw new Error("Impossible de charger les actualités");
+        if (!res.ok) throw new Error(t('news.error'));
         return res.json();
       })
       .then((data: TelegramMessage[]) => {
-        const filteredData = data.filter(msg => msg.content && msg.content.trim() !== "");
+        const filteredData = data.filter(msg => {
+          const hasText = msg.content && msg.content.trim() !== "";
+          const isEventOnly = msg.tags.includes("événement") && !msg.tags.includes("actualité");
+          return hasText && !isEventOnly;
+        });
         const sorted = [...filteredData].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
         setNews(sorted.slice(0, 3));
       })
       .catch(err => console.error(err));
-  }, []);
+  }, [t]);
 
   const formatDate = (isoDate: string) => {
-    return new Date(isoDate).toLocaleDateString('fr-CH', {
+    return new Date(isoDate).toLocaleDateString(language === 'fr' ? 'fr-CH' : 'de-DE', {
       day: 'numeric',
       month: 'long',
       year: 'numeric',
@@ -38,7 +44,7 @@ const NewsSection = () => {
     <section id="actualites" className="py-24 px-6 bg-card">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-display font-bold uppercase text-foreground mb-3 tracking-tight">
-          Actualités
+          {t('section.news.title')}
         </h2>
         <div className="h-0.5 w-16 bg-primary mb-12" />
 
@@ -49,7 +55,7 @@ const NewsSection = () => {
                 <img
                   src={import.meta.env.BASE_URL + 'Assets/' + item.images[0]}
                   alt=""
-                  className="w-full max-w-md h-48 object-cover rounded mb-4"
+                  className="w-full max-w-md h-auto max-h-80 object-contain rounded mb-4 bg-muted/30"
                   loading="lazy"
                 />
               )}
@@ -57,7 +63,7 @@ const NewsSection = () => {
                 {formatDate(item.date)}
               </time>
               <h3 className="text-xl font-display font-bold uppercase text-foreground mt-1 mb-2 tracking-tight">
-                Actualité du {formatDate(item.date)}
+                {t('news.date_prefix')} {formatDate(item.date)}
               </h3>
               <p className="text-muted-foreground font-body text-sm leading-relaxed max-w-2xl whitespace-pre-line">
                 {item.content.slice(0, 300)}
@@ -69,7 +75,7 @@ const NewsSection = () => {
                 rel="noopener noreferrer"
                 className="inline-block mt-2 text-primary font-body text-xs tracking-wide hover:underline"
               >
-                Lire sur Telegram →
+                {t('news.read_more')}
               </a>
             </article>
           ))}
@@ -80,7 +86,7 @@ const NewsSection = () => {
             to="/actualites"
             className="inline-block bg-primary text-primary-foreground px-6 py-3 font-body font-semibold text-sm tracking-wide rounded hover:bg-primary/80 transition-colors"
           >
-            Toutes les actualités
+            {t('section.news.all')}
           </Link>
         </div>
       </div>
