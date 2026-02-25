@@ -6,7 +6,8 @@
       "Bash(cd /c/Users/buton/Downloads/hirondelles && npx vite build 2>&1)",
       "Bash(cd /c/Users/buton/Downloads/hirondelles && ./node_modules/.bin/vite build 2>&1)",
       "Bash(ls:*)",
-      "Bash(cd C:\\\\Users\\\\buton\\\\Downloads\\\\hirondelles:*)"
+      "Bash(cd C:\\\\Users\\\\buton\\\\Downloads\\\\hirondelles:*)",
+      "Bash(mgrep type module configuration:*)"
     ]
   }
 }

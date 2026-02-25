@@ -8,10 +8,14 @@
  * Usage: node scripts/fetch_telegram_updates.js
  */
 
-const fs = require('fs');
-const path = require('path');
-const https = require('https');
-const TelegramBot = require('node-telegram-bot-api');
+import fs from 'fs';
+import path from 'path';
+import https from 'https';
+import { fileURLToPath } from 'url';
+import TelegramBot from 'node-telegram-bot-api';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Configuration
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
