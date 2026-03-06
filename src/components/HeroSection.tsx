@@ -3,7 +3,7 @@ import { useLanguage } from "@/lib/LanguageContext";
 
 const HeroSection = () => {
   const { t } = useLanguage();
-  const heroBg = import.meta.env.BASE_URL + "Assets/telegram-images/photos/telegram_189_1771887443.508183.jpg";
+  const heroBg = import.meta.env.BASE_URL + "public/Assets/telegram-images/photos/telegram_53_1771887322.318648.jpg";
 
   return (
     <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
