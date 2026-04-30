@@ -93,7 +93,33 @@ function loadMessages() {
 function saveMessages(messages) {
   fs.writeFileSync(MESSAGES_FILE, JSON.stringify(messages, null, 2), 'utf-8');
 }
+/**
+ * Détecte le type de message (actualité ou événement)
+ * Un message est un événement s'il contient:
+ * - Une date (emoji 📅)
+ * - Une heure (pattern HHH00 ou HH:MM)
+ * - Un lieu (emoji 📍)
+ */
+function detectMessageTags(content) {
+  if (!content || typeof content !== 'string') {
+    return ['actualité'];
+  }
 
+  // Patterns pour détecter un événement
+  const hasDateEmoji = content.includes('📅');
+  const hasLocationEmoji = content.includes('📍');
+  
+  // Patterns de temps: HHH00, HH:MM, H30, 10H30, 18:00, etc.
+  const timePatterns = /\d{1,2}[H:]\d{2}|\d{1,2}H\d{2}/;
+  const hasTimePattern = timePatterns.test(content);
+
+  // Si l'un des patterns est trouvé, c'est un événement
+  if (hasDateEmoji || hasLocationEmoji || hasTimePattern) {
+    return ['événement'];
+  }
+
+  return ['actualité'];
+}
 /**
  * Fonction principale
  */
@@ -149,12 +175,12 @@ async function fetchNewMessages() {
       console.log(`\n📨 Nouveau message: ${msg.message_id} (update: ${update.update_id})`);
 
       const msgObj = {
-        id: msg.message_id.toString(),
-        date: new Date(msg.date * 1000).toISOString(),
-        content: msg.text || msg.caption || '',
-        images: [],
-        tags: []
-      };
+  id: msg.message_id.toString(),
+  date: new Date(msg.date * 1000).toISOString(),
+  content: msg.text || msg.caption || '',
+  images: [],
+  tags: detectMessageTags(msg.text || msg.caption || '')
+};
 
       // Traiter les photos
       if (msg.photo && msg.photo.length > 0) {
