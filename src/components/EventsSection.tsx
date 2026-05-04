@@ -93,6 +93,7 @@ const EventsSection = () => {
                   alt={event.title}
                   className="w-full md:w-40 h-auto max-h-40 object-contain rounded shrink-0 bg-muted/30"
                   loading="lazy"
+                  onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
                 />
               )}
               <div className="font-display font-bold text-primary text-2xl md:text-3xl w-32 shrink-0">

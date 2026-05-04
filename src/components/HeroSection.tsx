@@ -1,17 +1,20 @@
 import logo from "@/assets/logo-hirondelles.png";
 import { useLanguage } from "@/lib/LanguageContext";
+import { useParallax } from "@/hooks/useParallax";
 
 const HeroSection = () => {
   const { t } = useLanguage();
   const heroBg = import.meta.env.BASE_URL + "Assets/telegram-images/photos/telegram_53_1771887322.318648.jpg";
+  const parallaxRef = useParallax(0.5);
 
   return (
     <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
       <div
+        ref={parallaxRef}
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${heroBg})` }}
       />
-      <div className="absolute inset-0 bg-foreground/40" />
+      <div className="absolute inset-0 bg-foreground/60" />
 
       <div className="relative z-10 text-center px-6 max-w-4xl">
         <img

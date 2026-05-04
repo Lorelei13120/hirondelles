@@ -1,21 +1,21 @@
 import { Sprout, Users, Calendar, ImageIcon } from "lucide-react";
 import FooterSection from "@/components/FooterSection";
 import { useLanguage } from "@/lib/LanguageContext";
+import { useParallax } from "@/hooks/useParallax";
 
 const MaraichagePage = () => {
   const { t } = useLanguage();
   const heroImage = import.meta.env.BASE_URL + "Assets/telegram-images/photos/telegram_180_1771887431.16151.jpg";
+  const parallaxRef = useParallax(0.4);
 
   return (
     <main className="min-h-screen bg-background">
-      {/* Hero Image */}
-      <div className="w-full h-[40vh] md:h-[60vh] overflow-hidden">
-        <img 
-          src={heroImage} 
-          alt="Maraîchage" 
-          className="w-full h-full object-cover"
-        />
-      </div>
+      {/* Hero Image with Parallax */}
+      <div 
+        ref={parallaxRef}
+        className="w-full h-[40vh] md:h-[60vh] overflow-hidden bg-cover bg-center"
+        style={{ backgroundImage: `url(${heroImage})` }}
+      />
 
       {/* Hero Text */}
       <section className="relative py-20 px-6 bg-card">

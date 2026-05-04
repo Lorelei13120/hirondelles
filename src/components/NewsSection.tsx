@@ -51,12 +51,13 @@ const NewsSection = () => {
         <div className="space-y-10">
           {news.map((item) => (
             <article key={item.id} className="border-l-4 border-primary pl-6">
-              {item.images.length > 0 && (
+              {item.images.length > 0 && item.images[0] && (
                 <img
                   src={import.meta.env.BASE_URL + 'Assets/' + item.images[0]}
                   alt=""
                   className="w-full max-w-md h-auto max-h-80 object-contain rounded mb-4 bg-muted/30"
                   loading="lazy"
+                  onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
                 />
               )}
               <time className="font-body text-xs text-muted-foreground tracking-wide uppercase">
