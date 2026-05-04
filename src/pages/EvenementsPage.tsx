@@ -121,11 +121,11 @@ const EvenementsPage = () => {
                 className="bg-card border border-border rounded-lg overflow-hidden flex flex-col hover:shadow-lg transition-shadow"
               >
                 {event.image && !brokenImages.has(event.id) && (
-                  <div className="aspect-video w-full overflow-hidden bg-muted">
+                  <div className="w-full overflow-hidden bg-muted">
                     <img
                       src={event.image}
                       alt={event.title}
-                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                      className="w-full h-auto object-contain transition-transform duration-500 hover:scale-105"
                       loading="lazy"
                       onError={() => handleImageError(event.id)}
                     />

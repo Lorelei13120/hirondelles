@@ -55,7 +55,15 @@ function parseEvent(msg: TelegramMessage): ParsedEvent {
 
 const EventsSection = () => {
   const [events, setEvents] = useState<ParsedEvent[]>([]);
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+
+  const formatDate = (isoDate: string) => {
+    return new Date(isoDate).toLocaleDateString(language === 'fr' ? 'fr-CH' : 'de-DE', {
+      day: 'numeric',
+      month: 'short',
+      year: 'numeric',
+    });
+  };
 
   useEffect(() => {
     fetch(import.meta.env.BASE_URL + "Assets/messages.json")
@@ -97,7 +105,7 @@ const EventsSection = () => {
                 />
               )}
               <div className="font-display font-bold text-primary text-2xl md:text-3xl w-32 shrink-0">
-                {event.eventDate || t('section.events.upcoming')}
+                {event.eventDate || formatDate(event.date)}
               </div>
               <div className="flex-1">
                 <h3 className="text-lg font-display font-bold uppercase text-foreground mb-1 tracking-tight">{event.title}</h3>
