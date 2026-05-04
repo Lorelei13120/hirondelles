@@ -5,6 +5,7 @@
  * et les ajouter au fichier messages.json
  *
  * Ce script est lancé par GitHub Actions (les lundis et jeudis à 9h UTC)
+ * MIGRÉ vers Telegraf pour meilleure maintenance et sécurité
  * Usage: node scripts/fetch_telegram_updates.js
  */
 
@@ -12,7 +13,7 @@ import fs from 'fs';
 import path from 'path';
 import https from 'https';
 import { fileURLToPath } from 'url';
-import TelegramBot from 'node-telegram-bot-api';
+import { Telegraf } from 'telegraf';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -93,6 +94,7 @@ function loadMessages() {
 function saveMessages(messages) {
   fs.writeFileSync(MESSAGES_FILE, JSON.stringify(messages, null, 2), 'utf-8');
 }
+
 /**
  * Détecte le type de message (actualité ou événement)
  * Un message est un événement s'il contient:
@@ -120,12 +122,13 @@ function detectMessageTags(content) {
 
   return ['actualité'];
 }
+
 /**
- * Fonction principale
+ * Fonction principale avec Telegraf
  */
 async function fetchNewMessages() {
   console.log('\n' + '='.repeat(60));
-  console.log('📥 RÉCUPÉRATION DES NOUVEAUX MESSAGES TELEGRAM');
+  console.log('📥 RÉCUPÉRATION DES NOUVEAUX MESSAGES TELEGRAM (Telegraf)');
   console.log('='.repeat(60) + '\n');
 
   // Vérifier le token
@@ -136,7 +139,7 @@ async function fetchNewMessages() {
   }
 
   try {
-    const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, { polling: false });
+    const bot = new Telegraf(TELEGRAM_BOT_TOKEN);
     const lastUpdateId = getLastUpdateId();
     const existingMessages = loadMessages();
     const existingMessageIds = new Set(existingMessages.map(m => m.id));
@@ -148,66 +151,78 @@ async function fetchNewMessages() {
     let maxUpdateId = lastUpdateId;
 
     // Récupérer les updates depuis le dernier update_id connu
-    console.log('🔄 Récupération des nouveaux updates...');
+    console.log('🔄 Récupération des nouveaux updates avec Telegraf...');
     const offset = lastUpdateId > 0 ? lastUpdateId + 1 : 0;
-    const updates = await bot.getUpdates({ offset, limit: 100, timeout: 10 });
+    
+    try {
+      const updates = await bot.telegram.getUpdates({ 
+        offset, 
+        limit: 100, 
+        timeout: 10,
+        allowed_updates: ['channel_post']
+      });
 
-    for (const update of updates) {
-      // Mettre à jour le maxUpdateId même si on ignore le message
-      maxUpdateId = Math.max(maxUpdateId, update.update_id);
+      for (const update of updates) {
+        // Mettre à jour le maxUpdateId même si on ignore le message
+        maxUpdateId = Math.max(maxUpdateId, update.update_id);
 
-      if (!update.channel_post) continue;
+        if (!update.channel_post) continue;
 
-      const msg = update.channel_post;
+        const msg = update.channel_post;
 
-      // Vérifier que c'est du canal @hirondelles
-      if (!msg.chat || msg.chat.id !== CHANNEL_ID) continue;
+        // Vérifier que c'est du canal @hirondelles
+        if (!msg.chat || msg.chat.id !== CHANNEL_ID) continue;
 
-      // Ignorer les messages déjà enregistrés (par leur message_id)
-      if (existingMessageIds.has(msg.message_id.toString())) continue;
+        // Ignorer les messages déjà enregistrés (par leur message_id)
+        if (existingMessageIds.has(msg.message_id.toString())) continue;
 
-      // Ignorer les messages contenant "rappel"
-      if (msg.text && msg.text.toLowerCase().includes('rappel')) {
-        console.log(`  ⏭️  Ignoré (rappel): Message ${msg.message_id}`);
-        continue;
-      }
+        // Ignorer les messages contenant "rappel"
+        if (msg.text && msg.text.toLowerCase().includes('rappel')) {
+          console.log(`  ⏭️  Ignoré (rappel): Message ${msg.message_id}`);
+          continue;
+        }
 
-      console.log(`\n📨 Nouveau message: ${msg.message_id} (update: ${update.update_id})`);
+        console.log(`\n📨 Nouveau message: ${msg.message_id} (update: ${update.update_id})`);
 
-      const msgObj = {
-  id: msg.message_id.toString(),
-  date: new Date(msg.date * 1000).toISOString(),
-  content: msg.text || msg.caption || '',
-  images: [],
-  tags: detectMessageTags(msg.text || msg.caption || '')
-};
+        const msgObj = {
+          id: msg.message_id.toString(),
+          date: new Date(msg.date * 1000).toISOString(),
+          content: msg.text || msg.caption || '',
+          images: [],
+          tags: detectMessageTags(msg.text || msg.caption || '')
+        };
 
-      // Traiter les photos
-      if (msg.photo && msg.photo.length > 0) {
-        const photo = msg.photo[msg.photo.length - 1]; // La plus grande version
+        // Traiter les photos avec Telegraf (API simplifiée)
+        if (msg.photo && msg.photo.length > 0) {
+          const photo = msg.photo[msg.photo.length - 1]; // La plus grande version
 
-        try {
-          console.log(`  📷 Téléchargement de l'image...`);
-          const file = await bot.getFile(photo.file_id);
-          const fileUrl = `https://api.telegram.org/file/bot${TELEGRAM_BOT_TOKEN}/${file.file_path}`;
-          const filename = `telegram_${msg.message_id}_${Date.now()}.jpg`;
-          const filepath = path.join(IMAGES_PHOTOS_PATH, filename);
+          try {
+            console.log(`  📷 Téléchargement de l'image...`);
+            const file = await bot.telegram.getFile(photo.file_id);
+            const fileUrl = `https://api.telegram.org/file/bot${TELEGRAM_BOT_TOKEN}/${file.file_path}`;
+            const filename = `telegram_${msg.message_id}_${Date.now()}.jpg`;
+            const filepath = path.join(IMAGES_PHOTOS_PATH, filename);
 
-          await downloadFile(fileUrl, filepath);
-          msgObj.images.push(`telegram-images/photos/${filename}`);
-          console.log(`    ✅ Sauvegardé: ${filename}`);
-        } catch (e) {
-          console.log(`    ❌ Erreur téléchargement: ${e.message}`);
+            await downloadFile(fileUrl, filepath);
+            msgObj.images.push(`telegram-images/photos/${filename}`);
+            console.log(`    ✅ Sauvegardé: ${filename}`);
+          } catch (e) {
+            console.log(`    ❌ Erreur téléchargement: ${e.message}`);
+          }
+        }
+
+        // Ajouter le message s'il contient du texte ou des images
+        if (msgObj.content || msgObj.images.length > 0) {
+          existingMessages.push(msgObj);
+          existingMessageIds.add(msgObj.id);
+          newMessagesCount++;
+          console.log(`  ✅ Message ajouté`);
         }
       }
-
-      // Ajouter le message s'il contient du texte ou des images
-      if (msgObj.content || msgObj.images.length > 0) {
-        existingMessages.push(msgObj);
-        existingMessageIds.add(msgObj.id);
-        newMessagesCount++;
-        console.log(`  ✅ Message ajouté`);
-      }
+    } catch (apiError) {
+      console.error('❌ Erreur API Telegraf:', apiError.message);
+      // Middleware d'erreur Telegraf pour meilleur handling
+      throw apiError;
     }
 
     // Sauvegarder les mises à jour
@@ -233,14 +248,14 @@ async function fetchNewMessages() {
 
   } catch (error) {
     console.error('❌ ERREUR:', error.message);
-    if (error.message.includes('token')) {
+    if (error.message.includes('token') || error.message.includes('401')) {
       console.error('⚠️  Vérifiez que TELEGRAM_BOT_TOKEN est correct');
     }
     process.exit(1);
   }
 }
 
-// Lancer le script
+// Lancer le script avec meilleur handling
 fetchNewMessages().catch(err => {
   console.error('❌ Erreur fatale:', err);
   process.exit(1);
