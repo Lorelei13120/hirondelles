@@ -104,9 +104,6 @@ const EventsSection = () => {
                   onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
                 />
               )}
-              <div className="font-display font-bold text-primary text-2xl md:text-3xl w-32 shrink-0">
-                {event.eventDate || formatDate(event.date)}
-              </div>
               <div className="flex-1">
                 <h3 className="text-lg font-display font-bold uppercase text-foreground mb-1 tracking-tight">{event.title}</h3>
                 {event.location && (

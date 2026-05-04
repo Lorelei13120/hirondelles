@@ -103,26 +103,6 @@ const MaraichagePage = () => {
         </div>
       </section>
 
-      {/* Photos placeholder */}
-      <section className="py-24 px-6 bg-card">
-        <div className="max-w-5xl mx-auto">
-          <div className="flex items-center gap-3 mb-6">
-            <ImageIcon className="w-8 h-8 text-primary" />
-            <h2 className="text-2xl md:text-3xl font-display font-bold uppercase text-foreground tracking-tight">
-              {t('farming.photos.title')}
-            </h2>
-          </div>
-          <p className="font-body text-muted-foreground mb-10">
-            {t('farming.photos.subtitle')}
-          </p>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <div className="w-full h-48 rounded bg-muted flex items-center justify-center">
-              <span className="text-muted-foreground font-body text-sm">{t('farming.photos.upcoming')}</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <FooterSection />
     </main>
   );
