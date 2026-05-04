@@ -14,7 +14,12 @@ const ActualitesPage = () => {
   const [messages, setMessages] = useState<TelegramMessage[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [brokenImages, setBrokenImages] = useState<Set<string>>(new Set());
   const { language, t } = useLanguage();
+
+  const handleImageError = (imageId: string) => {
+    setBrokenImages(prev => new Set(prev).add(imageId));
+  };
 
   useEffect(() => {
     fetch(import.meta.env.BASE_URL + 'Assets/messages.json')
@@ -83,13 +88,14 @@ const ActualitesPage = () => {
                 id={msg.id} 
                 className="bg-card border border-border rounded-lg overflow-hidden flex flex-col hover:shadow-lg transition-shadow"
               >
-                {msg.images.length > 0 && (
+                {msg.images.length > 0 && !brokenImages.has(`${msg.id}-main`) && (
                   <div className="aspect-video w-full overflow-hidden bg-muted">
                     <img
                       src={import.meta.env.BASE_URL + 'Assets/' + msg.images[0]}
                       alt=""
                       className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                       loading="lazy"
+                      onError={() => handleImageError(`${msg.id}-main`)}
                     />
                   </div>
                 )}
@@ -103,15 +109,19 @@ const ActualitesPage = () => {
                   
                   {msg.images.length > 1 && (
                     <div className="flex flex-wrap gap-1.5 mt-4">
-                      {msg.images.slice(1).map((img, i) => (
-                        <img
-                          key={i}
-                          src={import.meta.env.BASE_URL + 'Assets/' + img}
-                          alt=""
-                          className="h-16 w-auto object-cover rounded shadow-sm"
-                          loading="lazy"
-                        />
-                      ))}
+                      {msg.images.slice(1).map((img, i) => {
+                        const imageKey = `${msg.id}-extra-${i}`;
+                        return !brokenImages.has(imageKey) ? (
+                          <img
+                            key={i}
+                            src={import.meta.env.BASE_URL + 'Assets/' + img}
+                            alt=""
+                            className="h-16 w-auto object-cover rounded shadow-sm"
+                            loading="lazy"
+                            onError={() => handleImageError(imageKey)}
+                          />
+                        ) : null;
+                      })}
                     </div>
                   )}
 

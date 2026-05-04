@@ -55,7 +55,7 @@ const NewsSection = () => {
                 <img
                   src={import.meta.env.BASE_URL + 'Assets/' + item.images[0]}
                   alt=""
-                  className="w-full max-w-md h-auto max-h-80 object-contain rounded mb-4 bg-muted/30"
+                  className="w-full max-w-md h-auto object-contain rounded mb-4 bg-muted/30"
                   loading="lazy"
                   onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
                 />

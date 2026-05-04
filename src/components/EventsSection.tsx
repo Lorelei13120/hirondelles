@@ -91,7 +91,7 @@ const EventsSection = () => {
                 <img
                   src={event.image}
                   alt={event.title}
-                  className="w-full md:w-40 h-auto max-h-40 object-contain rounded shrink-0 bg-muted/30"
+                  className="w-full md:w-40 h-auto object-contain rounded shrink-0 bg-muted/30"
                   loading="lazy"
                   onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
                 />

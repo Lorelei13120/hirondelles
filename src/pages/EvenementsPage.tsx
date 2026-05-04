@@ -57,7 +57,12 @@ const EvenementsPage = () => {
   const [events, setEvents] = useState<ParsedEvent[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [brokenImages, setBrokenImages] = useState<Set<string>>(new Set());
   const { t } = useLanguage();
+
+  const handleImageError = (imageId: string) => {
+    setBrokenImages(prev => new Set(prev).add(imageId));
+  };
 
   useEffect(() => {
     fetch(import.meta.env.BASE_URL + "Assets/messages.json")
@@ -115,13 +120,14 @@ const EvenementsPage = () => {
                 id={event.id}
                 className="bg-card border border-border rounded-lg overflow-hidden flex flex-col hover:shadow-lg transition-shadow"
               >
-                {event.image && (
+                {event.image && !brokenImages.has(event.id) && (
                   <div className="aspect-video w-full overflow-hidden bg-muted">
                     <img
                       src={event.image}
                       alt={event.title}
                       className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                       loading="lazy"
+                      onError={() => handleImageError(event.id)}
                     />
                   </div>
                 )}
