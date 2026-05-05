@@ -9,8 +9,6 @@ const Index = () => {
     <main>
       <HeroSection />
       <DescriptionSection />
-      <NewsSection />
-      <EventsSection />
       <FooterSection />
     </main>
   );

@@ -13,7 +13,7 @@ const MaraichagePage = () => {
       {/* Hero Image with Parallax */}
       <div 
         ref={parallaxRef}
-        className="w-full h-[40vh] md:h-[60vh] overflow-hidden bg-cover bg-center"
+        className="w-full h-[40vh] md:h-[60vh] overflow-hidden bg-cover bg-bottom"
         style={{ backgroundImage: `url(${heroImage})` }}
       />
 

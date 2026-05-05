@@ -41,6 +41,19 @@ const ActualitesPage = () => {
       .finally(() => setLoading(false));
   }, [t]);
 
+  // Scroll vers l'élément si un hash est présent dans l'URL
+  useEffect(() => {
+    const hash = window.location.hash.slice(1);
+    if (hash && messages.length > 0) {
+      const element = document.getElementById(hash);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+      }
+    }
+  }, [messages]);
+
   const formatDate = (isoDate: string) => {
     return new Date(isoDate).toLocaleDateString(language === 'fr' ? 'fr-CH' : 'de-DE', {
       day: 'numeric',
