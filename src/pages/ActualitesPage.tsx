@@ -45,20 +45,21 @@ const ActualitesPage = () => {
   useEffect(() => {
     const scrollToHash = () => {
       const hash = window.location.hash.slice(1);
-      if (hash && messages.length > 0) {
-        const element = document.getElementById(hash);
-        if (element) {
-          setTimeout(() => {
+      if (hash && !loading) {
+        // Utiliser requestAnimationFrame pour s'assurer que le DOM est complètement rendu
+        requestAnimationFrame(() => {
+          const element = document.getElementById(hash);
+          if (element) {
             element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }, 100);
-        }
+          }
+        });
       }
     };
     
     scrollToHash();
     window.addEventListener('hashchange', scrollToHash);
     return () => window.removeEventListener('hashchange', scrollToHash);
-  }, [messages]);
+  }, [messages, loading]);
 
   const formatDate = (isoDate: string) => {
     return new Date(isoDate).toLocaleDateString(language === 'fr' ? 'fr-CH' : 'de-DE', {

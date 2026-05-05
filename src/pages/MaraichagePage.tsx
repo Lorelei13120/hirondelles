@@ -6,7 +6,7 @@ import { useParallax } from "@/hooks/useParallax";
 const MaraichagePage = () => {
   const { t } = useLanguage();
   const heroImage = import.meta.env.BASE_URL + "Assets/telegram-images/photos/telegram_180_1771887431.16151.jpg";
-  const parallaxRef = useParallax(0.4);
+  const parallaxRef = useParallax(0.4, 'bottom');
 
   return (
     <main className="min-h-screen bg-background">
@@ -14,7 +14,7 @@ const MaraichagePage = () => {
       <div 
         ref={parallaxRef}
         className="w-full h-[40vh] md:h-[60vh] overflow-hidden bg-cover"
-        style={{ backgroundImage: `url(${heroImage})`, backgroundPosition: 'bottom' }}
+        style={{ backgroundImage: `url(${heroImage})` }}
       />
 
       {/* Hero Text */}

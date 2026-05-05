@@ -85,20 +85,21 @@ const EvenementsPage = () => {
   useEffect(() => {
     const scrollToHash = () => {
       const hash = window.location.hash.slice(1);
-      if (hash && events.length > 0) {
-        const element = document.getElementById(hash);
-        if (element) {
-          setTimeout(() => {
+      if (hash && !loading) {
+        // Utiliser requestAnimationFrame pour s'assurer que le DOM est complètement rendu
+        requestAnimationFrame(() => {
+          const element = document.getElementById(hash);
+          if (element) {
             element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }, 100);
-        }
+          }
+        });
       }
     };
     
     scrollToHash();
     window.addEventListener('hashchange', scrollToHash);
     return () => window.removeEventListener('hashchange', scrollToHash);
-  }, [events]);
+  }, [events, loading]);
 
   return (
     <main className="min-h-screen bg-background">
