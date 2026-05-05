@@ -5,14 +5,17 @@ import { useParallax } from "@/hooks/useParallax";
 const HeroSection = () => {
   const { t } = useLanguage();
   const heroBg = import.meta.env.BASE_URL + "Assets/telegram-images/photos/telegram_53_1771887322.318648.jpg";
-  const parallaxRef = useParallax(0.5);
+  // Parallax en mode 'bottom' avec maxPercent=50 aligné sur le backgroundPosition initial,
+  // pour éviter le saut visuel observé en mode 'center' (qui passait de 50% à 0px au 1er scroll).
+  // Glisse de 50% (cadre centré sur l'enseigne Pontareuse) vers 0% (toiture) au scroll.
+  const parallaxRef = useParallax(0.4, 'bottom', 0, 50);
 
   return (
     <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
       <div
         ref={parallaxRef}
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroBg})` }}
+        className="absolute inset-0 bg-cover"
+        style={{ backgroundImage: `url(${heroBg})`, backgroundPosition: 'center 50%' }}
       />
       <div className="absolute inset-0 bg-foreground/60" />
 

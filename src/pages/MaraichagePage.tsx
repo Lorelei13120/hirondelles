@@ -6,15 +6,19 @@ import { useParallax } from "@/hooks/useParallax";
 const MaraichagePage = () => {
   const { t } = useLanguage();
   const heroImage = import.meta.env.BASE_URL + "Assets/telegram-images/photos/telegram_180_1771887431.16151.jpg";
-  const parallaxRef = useParallax(0.4, 'bottom');
+  // Parallax inversé (reverse=true) : la photo descend dans le cadre au scroll.
+  // Démarre à 75% (humains visibles) et glisse vers 95% (vers le bas de la photo).
+  // Le backgroundPosition initial doit valoir minPercent (point de départ en mode reverse)
+  // pour éviter un saut au premier événement scroll.
+  const parallaxRef = useParallax(0.3, 'bottom', 75, 95, true);
 
   return (
     <main className="min-h-screen bg-background">
-      {/* Hero Image with Parallax */}
-      <div 
+      {/* Hero Image with bounded Parallax */}
+      <div
         ref={parallaxRef}
         className="w-full h-[40vh] md:h-[60vh] overflow-hidden bg-cover"
-        style={{ backgroundImage: `url(${heroImage})` }}
+        style={{ backgroundImage: `url(${heroImage})`, backgroundPosition: 'center 75%' }}
       />
 
       {/* Hero Text */}

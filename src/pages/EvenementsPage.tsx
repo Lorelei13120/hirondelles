@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import FooterSection from "@/components/FooterSection";
 import { useLanguage } from "@/lib/LanguageContext";
 
@@ -59,6 +60,7 @@ const EvenementsPage = () => {
   const [error, setError] = useState<string | null>(null);
   const [brokenImages, setBrokenImages] = useState<Set<string>>(new Set());
   const { t } = useLanguage();
+  const location = useLocation();
 
   const handleImageError = (imageId: string) => {
     setBrokenImages(prev => new Set(prev).add(imageId));
@@ -81,25 +83,19 @@ const EvenementsPage = () => {
       .finally(() => setLoading(false));
   }, [t]);
 
-  // Scroll vers l'élément si un hash est présent dans l'URL
+  // Scroll vers l'élément si un hash est présent dans l'URL.
+  // Avec HashRouter, useLocation().hash isole l'ancre du path (ex: "#abc123"),
+  // alors que window.location.hash contient le path + l'ancre ("#/evenements#abc123").
   useEffect(() => {
-    const scrollToHash = () => {
-      const hash = window.location.hash.slice(1);
-      if (hash && !loading) {
-        // Utiliser requestAnimationFrame pour s'assurer que le DOM est complètement rendu
-        requestAnimationFrame(() => {
-          const element = document.getElementById(hash);
-          if (element) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
-        });
+    const id = location.hash.slice(1);
+    if (!id || loading) return;
+    requestAnimationFrame(() => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
-    };
-    
-    scrollToHash();
-    window.addEventListener('hashchange', scrollToHash);
-    return () => window.removeEventListener('hashchange', scrollToHash);
-  }, [events, loading]);
+    });
+  }, [location.hash, events, loading]);
 
   return (
     <main className="min-h-screen bg-background">
