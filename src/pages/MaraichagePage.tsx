@@ -2,10 +2,13 @@ import { Sprout, Users, Calendar, ImageIcon } from "lucide-react";
 import FooterSection from "@/components/FooterSection";
 import { useLanguage } from "@/lib/LanguageContext";
 import { useParallax } from "@/hooks/useParallax";
+// Importée comme module Vite pour figer le hash et garantir la présence
+// au build, plutôt que de pointer vers un fichier du pipeline d'ingestion
+// Telegram (qui pourrait être renommé/supprimé sans crier gare).
+import heroImage from "@/assets/maraichage-hero.jpg";
 
 const MaraichagePage = () => {
   const { t } = useLanguage();
-  const heroImage = import.meta.env.BASE_URL + "Assets/telegram-images/photos/telegram_180_1771887431.16151.jpg";
   // Parallax inversé (reverse=true) : la photo descend dans le cadre au scroll.
   // Démarre à 75% (humains visibles) et glisse vers 95% (vers le bas de la photo).
   // Le backgroundPosition initial doit valoir minPercent (point de départ en mode reverse)
