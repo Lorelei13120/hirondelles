@@ -81,7 +81,7 @@ const ActualitesPage = () => {
               rel="noopener noreferrer"
               className="text-primary hover:underline"
             >
-              notre canal Telegram
+              {t('common.our_telegram')}
             </a>.
           </p>
 

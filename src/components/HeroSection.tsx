@@ -26,7 +26,7 @@ const HeroSection = () => {
           className="w-32 h-32 md:w-40 md:h-40 mx-auto mb-6 drop-shadow-lg"
         />
         <p className="font-body text-primary-foreground/80 text-sm tracking-widest uppercase mb-4">
-          Hameau de Pontareuse · Boudry (NE)
+          {t('hero.location')}
         </p>
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold uppercase text-primary-foreground leading-tight mb-6 tracking-tight">
           Collectif des Hirondelles
