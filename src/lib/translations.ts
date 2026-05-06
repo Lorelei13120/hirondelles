@@ -1,8 +1,8 @@
 export type Language = 'fr' | 'de';
 
-// Forme attendue du dictionnaire (validee par `satisfies` ci-dessous).
-// On evite un type explicite sur `translations` pour preserver l'inference
-// litterale des cles, ce qui permet d'exporter `TranslationKey` precis.
+// Forme attendue du dictionnaire (validée par `satisfies` ci-dessous).
+// On évite un type explicite sur `translations` pour préserver l'inférence
+// littérale des clés, ce qui permet d'exporter `TranslationKey` précis.
 type TranslationEntry = {
   fr: string;
   de: string;
