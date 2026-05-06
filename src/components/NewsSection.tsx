@@ -14,10 +14,12 @@ const NewsSection = () => {
   const [news, setNews] = useState<TelegramMessage[]>([]);
   const { language, t } = useLanguage();
 
+  // Dep [] : evite le re-fetch a chaque changement de langue. L'erreur ne
+  // remonte qu'en console (pas user-visible ici), donc pas besoin de trad.
   useEffect(() => {
     fetch(import.meta.env.BASE_URL + "Assets/messages.json")
       .then(res => {
-        if (!res.ok) throw new Error(t('news.error'));
+        if (!res.ok) throw new Error('Failed to fetch messages.json');
         return res.json();
       })
       .then((data: TelegramMessage[]) => {
@@ -30,7 +32,7 @@ const NewsSection = () => {
         setNews(sorted.slice(0, 3));
       })
       .catch(err => console.error(err));
-  }, [t]);
+  }, []);
 
   const formatDate = (isoDate: string) => {
     return new Date(isoDate).toLocaleDateString(language === 'fr' ? 'fr-CH' : 'de-DE', {

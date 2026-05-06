@@ -23,10 +23,13 @@ const ActualitesPage = () => {
     setBrokenImages(prev => new Set(prev).add(imageId));
   };
 
+  // Le state error stocke une CLE i18n et non le message deja traduit, pour
+  // que le switch FR/DE re-traduise correctement. Dep [] : pas de re-fetch
+  // a chaque changement de langue (evite les race conditions).
   useEffect(() => {
     fetch(import.meta.env.BASE_URL + 'Assets/messages.json')
       .then(res => {
-        if (!res.ok) throw new Error(t('news.error'));
+        if (!res.ok) throw new Error();
         return res.json();
       })
       .then((data: TelegramMessage[]) => {
@@ -39,9 +42,9 @@ const ActualitesPage = () => {
         const sorted = [...filteredData].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
         setMessages(sorted);
       })
-      .catch(err => setError(err.message))
+      .catch(() => setError('news.error'))
       .finally(() => setLoading(false));
-  }, [t]);
+  }, []);
 
   // Scroll vers l'élément si un hash est présent dans l'URL.
   // Avec HashRouter, useLocation().hash isole l'ancre du path (ex: "#abc123"),
@@ -90,7 +93,7 @@ const ActualitesPage = () => {
           )}
 
           {error && (
-            <p className="font-body text-destructive">{error}</p>
+            <p className="font-body text-destructive">{t(error)}</p>
           )}
 
           {!loading && !error && messages.length === 0 && (
