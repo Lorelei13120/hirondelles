@@ -1,13 +1,14 @@
 export type Language = 'fr' | 'de';
 
-export interface Translations {
-  [key: string]: {
-    fr: string;
-    de: string;
-  };
-}
+// Forme attendue du dictionnaire (validee par `satisfies` ci-dessous).
+// On evite un type explicite sur `translations` pour preserver l'inference
+// litterale des cles, ce qui permet d'exporter `TranslationKey` precis.
+type TranslationEntry = {
+  fr: string;
+  de: string;
+};
 
-export const translations: Translations = {
+export const translations = {
   // Navbar
   'nav.home': { fr: 'Qui sommes-nous', de: 'Über uns' },
   'nav.news': { fr: 'Actualités', de: 'Neuigkeiten' },
@@ -93,4 +94,6 @@ export const translations: Translations = {
   'desc.values.3.d': { fr: 'Un espace complètement safe est impossible. On favorise l\'écoute, la remise en question et l\'apprentissage plutôt que la punition.', de: 'Ein vollkommen sicherer Raum ist unmöglich. Wir fördern Zuhören, Hinterfragen und Lernen anstelle von Bestrafung.' },
   'desc.values.4.t': { fr: 'Lieu ouvert', de: 'Offener Ort' },
   'desc.values.4.d': { fr: 'Le collectif est ouvert à toute personne qui souhaite s\'intégrer au projet et respecte les valeurs de la charte. Sens-toi bienvenu·e !', de: 'Das Kollektiv steht allen offen, die sich in das Projekt integrieren möchten und die Werte der Charta respektieren. Fühl dich willkommen!' },
-};
+} satisfies Record<string, TranslationEntry>;
+
+export type TranslationKey = keyof typeof translations;
