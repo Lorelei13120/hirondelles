@@ -13,7 +13,7 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
   const [language, setLanguage] = useState<Language>('fr');
 
   const t = (key: TranslationKey): string => {
-    return translations[key]?.[language] || key;
+    return translations[key]?.[language] ?? key;
   };
 
   return (
