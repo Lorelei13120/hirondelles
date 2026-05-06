@@ -32,14 +32,17 @@ export const useParallax = (
   reverse: boolean = false,
 ) => {
   const ref = useRef<HTMLDivElement>(null);
-  const elementOffsetRef = useRef<number>(0);
+  // Sentinelle -1 (et non 0) car offsetTop=0 est une vraie valeur valide pour
+  // un élément en haut de page (HeroSection). Avec 0 comme sentinelle, on
+  // recalculait elementOffsetRef à chaque scroll au lieu d'une seule fois.
+  const elementOffsetRef = useRef<number>(-1);
 
   useEffect(() => {
     const handleScroll = () => {
       if (!ref.current) return;
 
       // Calculer la position de l'élément une fois
-      if (elementOffsetRef.current === 0) {
+      if (elementOffsetRef.current === -1) {
         elementOffsetRef.current = ref.current.offsetTop;
       }
 
