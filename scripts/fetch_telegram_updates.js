@@ -75,17 +75,29 @@ function saveLastUpdateId(updateId) {
 }
 
 /**
- * Charge les messages existants
+ * Charge les messages existants.
+ *
+ * IMPORTANT : on distingue strictement deux cas pour eviter d'ecraser
+ * tout l'historique du canal en cas de probleme :
+ *   - Fichier ABSENT (premier run, repo neuf) → retour `[]`, comportement normal.
+ *   - Fichier PRESENT mais JSON corrompu → process.exit(1), refus d'ecraser.
+ *
+ * Risque mitige : si on retournait `[]` sur un parse echoue (ecriture
+ * partielle suite a un crash, encodage casse), le saveMessages() suivant
+ * ECRASERAIT l'historique. Les anciens messages ne reviennent pas via
+ * getUpdates car ils sont au-dela de la fenetre Telegram.
  */
 function loadMessages() {
-  try {
-    if (fs.existsSync(MESSAGES_FILE)) {
-      return JSON.parse(fs.readFileSync(MESSAGES_FILE, 'utf-8'));
-    }
-  } catch (e) {
-    console.log('⚠️  Impossible de lire messages.json, création d\'un nouveau fichier');
+  if (!fs.existsSync(MESSAGES_FILE)) {
+    return [];
   }
-  return [];
+  try {
+    return JSON.parse(fs.readFileSync(MESSAGES_FILE, 'utf-8'));
+  } catch (e) {
+    console.error('❌ messages.json existe mais est corrompu :', e.message);
+    console.error('❌ Refus d\'ecraser l\'historique. Restaurer le fichier depuis git ou un backup.');
+    process.exit(1);
+  }
 }
 
 /**
