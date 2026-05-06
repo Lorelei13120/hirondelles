@@ -13,10 +13,10 @@ const FooterSection = () => {
             <img src={logo} alt="Les Hirondelles" className="w-12 h-12" />
             <div>
               <h3 className="font-display font-bold text-xl uppercase tracking-tight">
-                Les Hirondelles
+                {t('footer.title')}
               </h3>
               <p className="font-body text-xs text-primary-foreground/60 leading-relaxed">
-                Hameau de Pontareuse.
+                {t('footer.subtitle')}
               </p>
             </div>
           </div>
@@ -43,7 +43,7 @@ const FooterSection = () => {
         </div>
 
         <div className="mt-10 pt-6 border-t border-primary-foreground/10 font-body text-[10px] text-primary-foreground/40 text-center uppercase tracking-widest">
-          📍 Chemin du Bois des Creux 34, 2017 Boudry (NE) · 🐦 {t('hero.title')} 🌾
+          {t('footer.location')} {" · 🐦 "} {t('hero.title')} {"🌾"}
         </div>
       </div>
     </footer>

@@ -17,8 +17,9 @@ export const translations: Translations = {
   
   // Hero Section
   'hero.location': { fr: 'Hameau de Pontareuse · Boudry (NE)', de: 'Weiler Pontareuse · Boudry (NE)' },
-  'hero.title': { fr: 'La terre à celleux qui la cultivent', de: 'Das Land denen, die es bebauen' },
-  'hero.subtitle': { fr: 'Vive les topis, le bissap et les poêles à bois', de: 'Lang lebe Topinambur, Bissap und Holzöfen' },
+  'hero.title': { fr: 'Collectif des Hirondelles', de: 'Collectif des Hirondelles' },
+  'hero.subtitle1': { fr: 'La terre à celleux qui la cultivent', de: 'Das Land denen, die es bebauen' },
+  'hero.subtitle2': { fr: 'Vive les topis, le bissap et les poêles à bois', de: 'Lang lebe Topinambur, Bissap und Holzöfen' },
   'hero.cta': { fr: 'Qui sommes-nous ?', de: 'Über uns ?' },
 
   // Sections Common
@@ -52,26 +53,32 @@ export const translations: Translations = {
 
   // Actualites Page
   'news.title': { fr: 'Actualités', de: 'Neuigkeiten' },
-  'news.subtitle': { fr: 'Toutes les nouvelles du collectif. Retrouvez aussi nos publications en temps réel sur notre canal Telegram.', de: 'Alle Neuigkeiten des Kollektivs. Finden Sie unsere Beiträge auch in Echtzeit auf unserem Telegram-Kanal.' },
+  'news.subtitle': { fr: 'Toutes les nouvelles du collectif. Retrouvez aussi nos publications en temps réel sur', de: 'Alle Neuigkeiten des Kollektivs. Finden Sie unsere Beiträge auch in Echtzeit auf' },
   'news.loading': { fr: 'Chargement des actualités…', de: 'Neuigkeiten werden geladen…' },
   'news.error': { fr: 'Impossible de charger les actualités', de: 'Neuigkeiten konnten nicht geladen werden' },
   'news.none': { fr: 'Aucune actualité pour l\'instant.', de: 'Zur Zeit keine Neuigkeiten.' },
   'news.date_prefix': { fr: 'Actualité du ', de: 'Neuigkeit vom ' },
   'news.read_more': { fr: 'Lire sur Telegram →', de: 'Auf Telegram lesen →' },
-  'common.our_telegram': { fr: 'notre canal Telegram', de: 'unseren Telegram-Kanal' },
+  
 
   // Evenements Page
   'events.title': { fr: 'Événements', de: 'Veranstaltungen' },
-  'events.subtitle': { fr: 'Les prochains événements. Pour ne rien rater, suivez notre canal Telegram.', de: 'Die nächsten Veranstaltungen. Um nichts zu verpassen, folgen Sie unserem Telegram-Kanal.' },
+  'events.subtitle': { fr: 'Les prochains événements. Pour ne rien rater, suivez', de: 'Die nächsten Veranstaltungen. Um nichts zu verpassen, folgen Sie' },
   'events.loading': { fr: 'Chargement des événements…', de: 'Veranstaltungen werden geladen…' },
   'events.error': { fr: 'Impossible de charger les événements', de: 'Veranstaltungen konnten nicht geladen werden' },
   'events.none': { fr: 'Aucun événement à venir pour l\'instant.', de: 'Zur Zeit keine anstehenden Veranstaltungen.' },
   'events.read_more': { fr: 'Telegram →', de: 'Telegram →' },
 
-  // Footer
+  //Common
+  'common.our_telegram': { fr: 'notre canal Telegram', de: 'unseren Telegram-Kanal' },
+
+  // Footer Section
   'footer.contact': { fr: 'Contact & Réseaux', de: 'Kontakt & Netzwerke' },
   'footer.links': { fr: 'Liens rapides', de: 'Schnelllinks' },
   'footer.legal': { fr: 'Tous droits réservés.', de: 'Alle Rechte vorbehalten.' },
+  'footer.location': { fr: '📍 Chemin du Bois des Creux 34, 2017 Boudry (NE)', de: '📍 Chemin du Bois des Creux 34, 2017 Boudry (NE)'},
+  'footer.title' : { fr: 'Les Hirondelles', de: 'Les Hirondelles' },
+  'footer.subtitle' : { fr: 'Hameau de Pontareuse.', de: 'Hameau de Pontareuse.' },
 
   // Description Section (Index)
   'desc.title': { fr: 'Qui sommes-nous ?', de: 'Wer sind wir ?' },

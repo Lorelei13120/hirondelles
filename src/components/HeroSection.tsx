@@ -29,12 +29,12 @@ const HeroSection = () => {
           {t('hero.location')}
         </p>
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold uppercase text-primary-foreground leading-tight mb-6 tracking-tight">
-          Collectif des Hirondelles
+          {t('hero.title')}
         </h1>
         <p className="text-primary-foreground/80 font-body text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light">
-          {t('hero.title')}
+          {t('hero.subtitle1')}
           <br />
-          {t('hero.subtitle')}
+          {t('hero.subtitle2')}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
