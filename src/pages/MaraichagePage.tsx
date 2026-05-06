@@ -2,9 +2,9 @@ import { Sprout, Users, Calendar, ImageIcon } from "lucide-react";
 import FooterSection from "@/components/FooterSection";
 import { useLanguage } from "@/lib/LanguageContext";
 import { useParallax } from "@/hooks/useParallax";
-// Importée comme module Vite pour figer le hash et garantir la presence
-// au build, plutot que de pointer vers un fichier du pipeline d'ingestion
-// Telegram (qui pourrait etre renomme/supprime sans crier gare).
+// Importée comme module Vite pour figer le hash et garantir la présence
+// au build, plutôt que de pointer vers un fichier du pipeline d'ingestion
+// Telegram (qui pourrait être renommé/supprimé sans crier gare).
 import heroImage from "@/assets/maraichage-hero.jpg";
 
 const MaraichagePage = () => {
