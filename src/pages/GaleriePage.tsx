@@ -69,9 +69,9 @@ const GaleriePage = () => {
                 {t('section.gallery.photos')}
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                {telegramPhotos.map((photo, i) => (
-                  <Link 
-                    key={i} 
+                {telegramPhotos.map((photo) => (
+                  <Link
+                    key={`${photo.msgId}-${photo.src}`}
                     to={photo.type === 'event' ? `/evenements#${photo.msgId}` : `/actualites#${photo.msgId}`}
                     className="overflow-hidden rounded group relative block"
                   >
@@ -99,9 +99,9 @@ const GaleriePage = () => {
                 {t('section.gallery.posters')}
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                {telegramAffiches.map((affiche, i) => (
-                  <Link 
-                    key={i} 
+                {telegramAffiches.map((affiche) => (
+                  <Link
+                    key={`${affiche.msgId}-${affiche.src}`}
                     to={affiche.type === 'event' ? `/evenements#${affiche.msgId}` : `/actualites#${affiche.msgId}`}
                     className="overflow-hidden rounded group relative block"
                   >
