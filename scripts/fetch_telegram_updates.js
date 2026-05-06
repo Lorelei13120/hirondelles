@@ -77,15 +77,15 @@ function saveLastUpdateId(updateId) {
 /**
  * Charge les messages existants.
  *
- * IMPORTANT : on distingue strictement deux cas pour eviter d'ecraser
- * tout l'historique du canal en cas de probleme :
+ * IMPORTANT : on distingue strictement deux cas pour éviter d'écraser
+ * tout l'historique du canal en cas de problème :
  *   - Fichier ABSENT (premier run, repo neuf) → retour `[]`, comportement normal.
- *   - Fichier PRESENT mais JSON corrompu → process.exit(1), refus d'ecraser.
+ *   - Fichier PRESENT mais JSON corrompu → process.exit(1), refus d'écraser.
  *
- * Risque mitige : si on retournait `[]` sur un parse echoue (ecriture
- * partielle suite a un crash, encodage casse), le saveMessages() suivant
+ * Risque mitigé : si on retournait `[]` sur un parse échoué (écriture
+ * partielle suite à un crash, encodage cassé), le saveMessages() suivant
  * ECRASERAIT l'historique. Les anciens messages ne reviennent pas via
- * getUpdates car ils sont au-dela de la fenetre Telegram.
+ * getUpdates car ils sont au-delà de la fenêtre Telegram.
  */
 function loadMessages() {
   if (!fs.existsSync(MESSAGES_FILE)) {
