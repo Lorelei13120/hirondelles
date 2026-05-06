@@ -47,7 +47,14 @@ async function downloadFile(fileUrl, filePath) {
         resolve();
       });
     }).on('error', (err) => {
-      fs.unlink(filePath, () => {});
+      // Cleanup du fichier partiel. Si unlink echoue (permissions, lock),
+      // on le signale pour eviter qu'un fichier corrompu reste reference
+      // dans messages.json comme une image valide (404 silencieux cote front).
+      fs.unlink(filePath, (unlinkErr) => {
+        if (unlinkErr && unlinkErr.code !== 'ENOENT') {
+          console.warn(`⚠️  Cleanup partial echoue pour ${filePath}: ${unlinkErr.message}`);
+        }
+      });
       reject(err);
     });
   });
