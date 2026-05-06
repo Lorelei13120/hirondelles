@@ -21,11 +21,16 @@ interface GalleryItem {
 const GaleriePage = () => {
   const [telegramPhotos, setTelegramPhotos] = useState<GalleryItem[]>([]);
   const [telegramAffiches, setTelegramAffiches] = useState<GalleryItem[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const { t } = useLanguage();
 
   useEffect(() => {
     fetch(import.meta.env.BASE_URL + 'Assets/messages.json')
-      .then(res => res.ok ? res.json() : Promise.reject())
+      .then(res => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      })
       .then((data: TelegramMessage[]) => {
         const photos: GalleryItem[] = [];
         const affiches: GalleryItem[] = [];
@@ -48,10 +53,9 @@ const GaleriePage = () => {
         setTelegramPhotos(photos.reverse());
         setTelegramAffiches(affiches.reverse());
       })
-      .catch(() => {
-        // Silencieux si le fichier n'est pas encore disponible
-      });
-  }, []);
+      .catch((err: Error) => setError(`${t('gallery.error')} (${err.message})`))
+      .finally(() => setLoading(false));
+  }, [t]);
 
   return (
     <main className="min-h-screen bg-background">
@@ -61,6 +65,14 @@ const GaleriePage = () => {
             {t('nav.gallery')}
           </h1>
           <div className="h-0.5 w-16 bg-primary mb-12" />
+
+          {loading && (
+            <p className="font-body text-muted-foreground">{t('gallery.loading')}</p>
+          )}
+
+          {error && (
+            <p className="font-body text-destructive">{error}</p>
+          )}
 
           {/* Section Photos Telegram */}
           {telegramPhotos.length > 0 && (
