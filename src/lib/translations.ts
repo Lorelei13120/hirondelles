@@ -16,6 +16,7 @@ export const translations: Translations = {
   'nav.gallery': { fr: 'Galerie', de: 'Galerie' },
   
   // Hero Section
+  'hero.location': { fr: 'Hameau de Pontareuse · Boudry (NE)', de: 'Weiler Pontareuse · Boudry (NE)' },
   'hero.title': { fr: 'La terre à celleux qui la cultivent', de: 'Das Land denen, die es bebauen' },
   'hero.subtitle': { fr: 'Vive les topis, le bissap et les poêles à bois', de: 'Lang lebe Topinambur, Bissap und Holzöfen' },
   'hero.cta': { fr: 'Qui sommes-nous ?', de: 'Über uns ?' },
@@ -57,6 +58,7 @@ export const translations: Translations = {
   'news.none': { fr: 'Aucune actualité pour l\'instant.', de: 'Zur Zeit keine Neuigkeiten.' },
   'news.date_prefix': { fr: 'Actualité du ', de: 'Neuigkeit vom ' },
   'news.read_more': { fr: 'Lire sur Telegram →', de: 'Auf Telegram lesen →' },
+  'common.our_telegram': { fr: 'notre canal Telegram', de: 'unseren Telegram-Kanal' },
 
   // Evenements Page
   'events.title': { fr: 'Événements', de: 'Veranstaltungen' },
@@ -64,6 +66,7 @@ export const translations: Translations = {
   'events.loading': { fr: 'Chargement des événements…', de: 'Veranstaltungen werden geladen…' },
   'events.error': { fr: 'Impossible de charger les événements', de: 'Veranstaltungen konnten nicht geladen werden' },
   'events.none': { fr: 'Aucun événement à venir pour l\'instant.', de: 'Zur Zeit keine anstehenden Veranstaltungen.' },
+  'events.read_more': { fr: 'Telegram →', de: 'Telegram →' },
 
   // Footer
   'footer.contact': { fr: 'Contact & Réseaux', de: 'Kontakt & Netzwerke' },

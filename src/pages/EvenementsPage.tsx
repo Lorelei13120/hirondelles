@@ -113,7 +113,7 @@ const EvenementsPage = () => {
               rel="noopener noreferrer"
               className="text-primary hover:underline"
             >
-              notre canal Telegram
+              {t('common.our_telegram')}
             </a>.
           </p>
 
@@ -173,7 +173,7 @@ const EvenementsPage = () => {
                     rel="noopener noreferrer"
                     className="inline-block mt-6 text-primary font-display font-bold text-[10px] tracking-widest uppercase hover:text-primary/80 transition-colors"
                   >
-                    Telegram →
+                    {t('events.read_more')}
                   </a>
                 </div>
               </div>
