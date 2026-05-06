@@ -55,6 +55,7 @@ function parseEvent(msg: TelegramMessage): ParsedEvent {
 
 const EventsSection = () => {
   const [events, setEvents] = useState<ParsedEvent[]>([]);
+  const [error, setError] = useState<string | null>(null);
   const { t, language } = useLanguage();
 
   const formatDate = (isoDate: string) => {
@@ -78,7 +79,7 @@ const EventsSection = () => {
           .map(parseEvent);
         setEvents(filtered.slice(0, 4));
       })
-      .catch(err => console.error(err));
+      .catch((err: Error) => setError(err.message));
   }, [t]);
 
   return (
@@ -88,6 +89,10 @@ const EventsSection = () => {
           {t('section.events.title')}
         </h2>
         <div className="h-0.5 w-16 bg-primary mb-12" />
+
+        {error && (
+          <p className="font-body text-destructive mb-8">{error}</p>
+        )}
 
         <div className="space-y-0">
           {events.map((event) => (

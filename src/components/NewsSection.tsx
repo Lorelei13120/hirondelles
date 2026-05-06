@@ -12,6 +12,7 @@ interface TelegramMessage {
 
 const NewsSection = () => {
   const [news, setNews] = useState<TelegramMessage[]>([]);
+  const [error, setError] = useState<string | null>(null);
   const { language, t } = useLanguage();
 
   useEffect(() => {
@@ -29,7 +30,7 @@ const NewsSection = () => {
         const sorted = [...filteredData].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
         setNews(sorted.slice(0, 3));
       })
-      .catch(err => console.error(err));
+      .catch((err: Error) => setError(err.message));
   }, [t]);
 
   const formatDate = (isoDate: string) => {
@@ -47,6 +48,10 @@ const NewsSection = () => {
           {t('section.news.title')}
         </h2>
         <div className="h-0.5 w-16 bg-primary mb-12" />
+
+        {error && (
+          <p className="font-body text-destructive mb-8">{error}</p>
+        )}
 
         <div className="space-y-10">
           {news.map((item) => (
