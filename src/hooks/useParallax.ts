@@ -26,7 +26,7 @@ import { useEffect, useRef } from 'react';
  */
 export const useParallax = (
   factor: number = 0.5,
-  positionY: string = 'center',
+  positionY: 'center' | 'bottom' = 'center',
   minPercent: number = 0,
   maxPercent: number = 100,
   reverse: boolean = false,
