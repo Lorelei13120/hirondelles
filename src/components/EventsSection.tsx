@@ -66,10 +66,12 @@ const EventsSection = () => {
     });
   };
 
+  // Dep [] : evite le re-fetch a chaque changement de langue. L'erreur ne
+  // remonte qu'en console (pas user-visible ici), donc pas besoin de trad.
   useEffect(() => {
     fetch(import.meta.env.BASE_URL + "Assets/messages.json")
       .then(res => {
-        if (!res.ok) throw new Error(t('events.error'));
+        if (!res.ok) throw new Error('Failed to fetch messages.json');
         return res.json();
       })
       .then((data: TelegramMessage[]) => {
