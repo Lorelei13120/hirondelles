@@ -33,6 +33,8 @@ export const translations = {
   'section.gallery.subtitle': { fr: 'Photos de la vie à Pontareuse.', de: 'Fotos vom Leben in Pontareuse.' },
   'section.gallery.photos': { fr: 'Photos', de: 'Fotos' },
   'section.gallery.posters': { fr: 'Affiches', de: 'Plakate' },
+  'gallery.loading': { fr: 'Chargement de la galerie…', de: 'Galerie wird geladen…' },
+  'gallery.error': { fr: 'Impossible de charger la galerie', de: 'Galerie konnte nicht geladen werden' },
 
   // Maraichage Page
   'farming.title': { fr: 'Maraîchage', de: 'Gemüsebau' },
