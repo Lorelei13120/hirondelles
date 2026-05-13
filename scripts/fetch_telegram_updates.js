@@ -226,7 +226,12 @@ async function fetchNewMessages() {
             msgObj.images.push(`telegram-images/photos/${filename}`);
             console.log(`    ✅ Sauvegardé: ${filename}`);
           } catch (e) {
-            console.log(`    ❌ Erreur téléchargement: ${e.message}`);
+            // Echec de telechargement : le message sera ajoute sans image plutot
+            // que d'etre perdu, mais on logue avec assez de contexte pour permettre
+            // un re-run manuel cible (file_id Telegram + message_id) au lieu d'un
+            // re-run complet du workflow.
+            console.warn(`    ⚠️  Echec telechargement image pour message ${msg.message_id} (file_id=${photo.file_id}): ${e.message}`);
+            console.warn(`        Le message est conserve sans image. Pour reessayer : node scripts/fetch_telegram_updates.js apres correction du probleme reseau/permission.`);
           }
         }
 
