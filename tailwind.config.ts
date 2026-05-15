@@ -15,8 +15,14 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ["Barlow Condensed", "sans-serif"],
-        body: ["Barlow", "sans-serif"],
+        // Lemon Milk pour les titres impactants
+        display: ['"Lemon Milk"', 'sans-serif'],
+        // Outer Sans pour les sous-titres et accents humains
+        accent: ['"Outer Sans"', 'sans-serif'],
+        // Agenor Neue pour le corps de texte (lisibilité)
+        body: ['"Agenor Neue"', 'sans-serif'],
+        // Défaut (fallback)
+        sans: ['"Agenor Neue"', 'system-ui', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

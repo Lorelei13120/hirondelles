@@ -90,4 +90,40 @@
     -webkit-text-stroke: 2px hsl(var(--foreground));
     color: transparent;
   }
+
+  /* Import des typos personnalisées */
+/* Note: Utilisation de BASE_URL implicite car le dossier est dans public/Assets/ */
+/* Vite servira automatiquement les fichiers de public/ à la racine du site */
+
+@font-face {
+  font-family: 'Lemon Milk';
+  src: url('/Assets/fonts/LEMONMILK-Bold.otf') format('otf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outer Sans';
+  src: url('/Assets/fonts/OuterSansRegular.otf') format('otf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Agenor Neue';
+  src: url('/Assets/fonts/AgenorNeue-Regular.otf') format('otf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Agenor Neue';
+  src: url('/Assets/fonts/AgenorNeue-Regular.otf') format('otf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 }
