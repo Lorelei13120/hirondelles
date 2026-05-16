@@ -1,9 +1,17 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
 const ASSETS = 'public/Assets';
 const messagesFile = path.join(ASSETS, 'messages.json');
-const messages = JSON.parse(fs.readFileSync(messagesFile, 'utf-8'));
+
+let messages;
+try {
+  messages = JSON.parse(fs.readFileSync(messagesFile, 'utf-8'));
+  if (!Array.isArray(messages)) throw new Error('messages.json doit être un array');
+} catch (e) {
+  console.error(`❌ Erreur lecture messages.json: ${e.message}`);
+  process.exit(1);
+}
 
 let fixed = 0;
 for (const msg of messages) {
@@ -19,5 +27,10 @@ for (const msg of messages) {
   });
 }
 
-fs.writeFileSync(messagesFile, JSON.stringify(messages, null, 2), 'utf-8');
-console.log(`✅ ${fixed} chemins corrigés dans messages.json`);
+try {
+  fs.writeFileSync(messagesFile, JSON.stringify(messages, null, 2), 'utf-8');
+  console.log(`✅ ${fixed} chemins corrigés dans messages.json`);
+} catch (e) {
+  console.error(`❌ Erreur écriture messages.json: ${e.message}`);
+  process.exit(1);
+}
