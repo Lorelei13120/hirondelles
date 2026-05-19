@@ -4,8 +4,9 @@
  * Script pour récupérer les nouveaux messages du canal Telegram @hirondelles
  * et les ajouter au fichier messages.json
  *
- * Ce script est lancé par GitHub Actions deux fois par jour (02h et 14h UTC).
+ * Ce script est lancé par GitHub Actions deux fois par jour (06h et 18h UTC).
  * Cadence imposée par la rétention 24h de la Bot API Telegram (getUpdates).
+ * Slots calés sur "matin Suisse" : 06h UTC = 08h CEST / 07h CET.
  * MIGRÉ vers Telegraf pour meilleure maintenance et sécurité.
  * Usage: node scripts/fetch_telegram_updates.js
  */
@@ -119,7 +120,7 @@ function saveMessages(messages) {
  * Détecte le type de message (actualité ou événement)
  * Un message est un événement s'il contient:
  * - Une date (emoji 📅)
- * - Une heure (pattern HHH00 ou HH:MM)
+ * - Une heure (pattern \d{1,2}[hH:]\d{0,2}, ex: "13h", "13h30", "10H30", "18:00")
  * - Un lieu (emoji 📍)
  */
 function detectMessageTags(content) {
@@ -130,9 +131,12 @@ function detectMessageTags(content) {
   // Patterns pour détecter un événement
   const hasDateEmoji = content.includes('📅');
   const hasLocationEmoji = content.includes('📍');
-  
-  // Patterns de temps: HHH00, HH:MM, H30, 10H30, 18:00, etc.
-  const timePatterns = /\d{1,2}[H:]\d{2}|\d{1,2}H\d{2}/;
+
+  // Patterns de temps : on accepte "13h", "13h30", "13:00", "13H30", etc.
+  // Les minutes sont optionnelles parce que la convention "13h à 18h"
+  // (sans deux digits derrière) est très utilisée dans les annonces FR
+  // et était précédemment ignorée par la regex.
+  const timePatterns = /\d{1,2}[hH:]\d{0,2}/;
   const hasTimePattern = timePatterns.test(content);
 
   // Si l'un des patterns est trouvé, c'est un événement

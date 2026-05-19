@@ -20,7 +20,7 @@ Topologie rapide :
 - `src/hooks/` — hooks custom (`useToast`, `useParallax`)
 - `scripts/` — Node : `fetch_telegram_updates.js` (ingestion canal), utilitaires de chemins/tri d'images
 - `public/Assets/` — `messages.json` (source de vérité contenu), `telegram-images/`, `articles.json`
-- `.github/workflows/` — `deploy.yml` (Pages) + `fetch-telegram.yml` (cron 02h & 14h UTC)
+- `.github/workflows/` — `deploy.yml` (Pages) + `fetch-telegram.yml` (cron 06h & 18h UTC)
 
 ## III. Pile Technologique
 
@@ -41,7 +41,7 @@ Topologie rapide :
 
 1. **Toujours** préfixer les chemins d'assets statiques par `import.meta.env.BASE_URL` (ex : `fetch(import.meta.env.BASE_URL + 'Assets/messages.json')`). Le `base: '/hirondelles/'` du `vite.config.ts` casse tout chemin absolu hardcodé en prod.
 2. **HashRouter uniquement** (pas `BrowserRouter`) : GitHub Pages ne gère pas le fallback côté serveur. Les liens vers un message spécifique utilisent `/#/route#message-id` (cf. scroll-to-hash dans `ActualitesPage.tsx`).
-3. **Ne jamais éditer `public/Assets/messages.json` à la main** : ce fichier est régénéré par `fetch-telegram.yml` (2× par jour, 02h & 14h UTC, contrainte par la fenêtre 24h de la Bot API). Toute édition manuelle sera écrasée au prochain run.
+3. **Ne jamais éditer `public/Assets/messages.json` à la main** : ce fichier est régénéré par `fetch-telegram.yml` (2× par jour, 06h & 18h UTC, contrainte par la fenêtre 24h de la Bot API). Toute édition manuelle sera écrasée au prochain run.
 4. **Tout texte affiché passe par `useLanguage()` + clé dans `translations.ts`** — pas de string littérale dans le JSX. Ajouter la paire `{ fr, de }` à chaque nouvelle clé.
 5. **Aucun secret en clair** : `TELEGRAM_BOT_TOKEN` vit uniquement dans GitHub Actions Secrets. Le `.env.example` est un template, jamais une source.
 6. **Immutabilité du state React** : pattern `setX(prev => new Set(prev).add(item))`, jamais de mutation in-place.
