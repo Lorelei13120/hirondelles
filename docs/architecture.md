@@ -58,7 +58,7 @@ Cette séparation permet aux membres du collectif de publier depuis Telegram san
                                │
 ┌──────────────────────────────────────────────────────────────────┐
 │         scripts/fetch_telegram_updates.js (Node + telegraf)      │
-│  Cron: lundis & jeudis 10:00 UTC (fetch-telegram.yml)            │
+│  Cron: 02:00 & 14:00 UTC (fetch-telegram.yml)                    │
 └──────────────────────────────────────────────────────────────────┘
                                ▲
                                │ getUpdates / getFile
@@ -93,7 +93,7 @@ Cette séparation permet aux membres du collectif de publier depuis Telegram san
 
 ## Pipeline d'ingestion Telegram
 
-**Trigger** : `.github/workflows/fetch-telegram.yml` — cron `0 10 * * 1` (lundi) + `0 10 * * 4` (jeudi), ou déclenchement manuel via `workflow_dispatch`.
+**Trigger** : `.github/workflows/fetch-telegram.yml` — cron `0 2,14 * * *` (2× par jour, 02h et 14h UTC), ou déclenchement manuel via `workflow_dispatch`. La double fréquence quotidienne est imposée par la fenêtre de rétention de 24h de la Bot API Telegram (`getUpdates` drop les updates non lus au-delà), combinée au jitter des schedules GitHub Actions.
 
 **Étapes** :
 1. Checkout du repo + setup Node 20 + `npm install`.

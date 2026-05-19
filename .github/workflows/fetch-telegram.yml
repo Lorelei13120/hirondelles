@@ -1,12 +1,14 @@
 name: Fetch Telegram Updates
 
-# Exécution schedulée (tous les lundis et jeudis à 10h UTC)
+# Exécution schedulée deux fois par jour (02h et 14h UTC).
+# Justification : la Bot API Telegram (getUpdates) drop les updates non
+# récupérés après 24h. Avec un cron Mon/Thu, le gap pouvait atteindre 96h
+# et perdait silencieusement les messages postés en milieu de cycle.
+# Deux runs/jour → gap max ~12h, marge confortable même avec le jitter
+# des schedules GitHub Actions (souvent retardés de 1-3h en charge).
 on:
   schedule:
-    # Lundis à 10h UTC
-    - cron: '0 10 * * 1'
-    # Jeudis à 10h UTC
-    - cron: '0 10 * * 4'
+    - cron: '0 2,14 * * *'
   
   # Permet aussi de déclencher manuellement depuis GitHub
   workflow_dispatch:

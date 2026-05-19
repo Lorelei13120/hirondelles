@@ -4,8 +4,9 @@
  * Script pour récupérer les nouveaux messages du canal Telegram @hirondelles
  * et les ajouter au fichier messages.json
  *
- * Ce script est lancé par GitHub Actions (les lundis et jeudis à 9h UTC)
- * MIGRÉ vers Telegraf pour meilleure maintenance et sécurité
+ * Ce script est lancé par GitHub Actions deux fois par jour (02h et 14h UTC).
+ * Cadence imposée par la rétention 24h de la Bot API Telegram (getUpdates).
+ * MIGRÉ vers Telegraf pour meilleure maintenance et sécurité.
  * Usage: node scripts/fetch_telegram_updates.js
  */
 
