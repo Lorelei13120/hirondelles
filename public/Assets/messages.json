@@ -1467,7 +1467,9 @@
     "images": [
       "telegram-images/photos/telegram_332_1772808744921.jpg"
     ],
-    "tags": ["événement"]
+    "tags": [
+      "événement"
+    ]
   },
   {
     "id": "337",
@@ -1484,5 +1486,36 @@
       "telegram-images/photos/telegram_345_1776942680284.jpg"
     ],
     "tags": []
+  },
+  {
+    "id": "347",
+    "date": "2026-05-16T18:38:00.000Z",
+    "content": "👯‍♂️👯‍♂️ Ateliers participatifs pour la déco des dix ans de l’Amar et l’incroyable parade du samedi 30 mai 🔥🌈🔥\nVenez nombreuses et nombreux pour participer à la création de la décoration (couture et brico) et surtout des lanternes qui défileront avec nous lors de la parade du samedi soir! On vous attend:\n•⁠ ⁠⁠Les 15 et 16 mai à l’Amar (Coquemène 1, Serrières), de 13h à 18h\n•⁠ ⁠⁠Les 17, 18 et 19 mai à Béthanie (Clos-de-Serrières 25, Serrières), de 13h à 18h\n•⁠ ⁠⁠Le 20 mai au Hameau agricole de Pontareuse - Les Hirondelles (Chemin du Bois-des-creux 34, Boudry), de 13h à 18h\n•⁠ ⁠⁠Le 22 mai à l’Amar (Coquemène 1, Serrières), de 13h à 18h\n•⁠ ⁠⁠Le 23 mai au Jardin de la main (rue de la Mainvv 6a, Neuchâtel), de 14h à 22h\nÇa va être dingue ces trois jours de festival, venez mettre la main à la pâte dès vendredi 💖",
+    "images": [
+      "telegram-images/photos/telegram_347_1778956680000.jpg"
+    ],
+    "tags": [
+      "événement"
+    ]
+  },
+  {
+    "id": "349",
+    "date": "2026-05-16T18:40:00.000Z",
+    "content": "Voici le programme des festivités en détail!",
+    "images": [
+      "telegram-images/photos/telegram_349_1778956800000.jpg"
+    ],
+    "tags": [
+      "événement"
+    ]
+  },
+  {
+    "id": "350",
+    "date": "2026-05-18T16:21:00.000Z",
+    "content": "Coucou, on a des plants de tomates en trop !! Tomate jaune du canada, de taille moyenne, très résistant au mildiou. Ce ne sont pas ceux qui sont le plus en forme mais une fois planté ils reprendront vigueur :)\nVenez les chercher à prix libre ou gratuit à pontareuse 🌱",
+    "images": [],
+    "tags": [
+      "actualité"
+    ]
   }
 ]
