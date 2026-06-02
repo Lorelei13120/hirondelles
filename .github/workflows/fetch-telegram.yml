@@ -18,7 +18,8 @@ on:
 
 permissions:
   contents: write
-  
+  actions: write # Permet de lancer d'autres workflows (deploiement)
+
 jobs:
   fetch-messages:
     runs-on: ubuntu-latest
@@ -79,3 +80,12 @@ jobs:
       - name: No changes found
         if: steps.verify_changed_files.outputs.changed == 'false'
         run: echo "✅ Aucun nouveau message trouvé"
+
+        # 9. NOUVEAU : Déclencher le déploiement
+      - name: Trigger deployment
+        if: steps.verify_changed_files.outputs.changed == 'true'
+        uses: benc-uk/workflow-dispatch@v1
+        with:
+          workflow: Deploy to GitHub Pages
+          ref: main
+          token: ${{ secrets.GITHUB_TOKEN }}
