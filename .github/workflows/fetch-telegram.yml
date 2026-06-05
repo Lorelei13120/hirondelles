@@ -46,42 +46,37 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         run: node scripts/fetch_telegram_updates.js
       
-      # 5. Configurer Git
-      - name: Configure Git
-        run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-      
-      # 6. Vérifier s'il y a des changements
-      - name: Check for changes
+      # 5. Vérifier les changements APRÈS fetch (et AVANT commit)
+      - name: Check for real changes
         id: verify_changed_files
         run: |
-          if git diff-index --quiet HEAD --; then
+          git add public/Assets/
+          if git diff --cached --quiet; then
             echo "changed=false" >> $GITHUB_OUTPUT
           else
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
       
-      # 7. Commit et push les changements
+      # 6. Configurer Git
+      - name: Configure Git
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+      
+      # 7. Commit et push les changements réels
       - name: Commit and push changes
         if: steps.verify_changed_files.outputs.changed == 'true'
         run: |
-          git add public/Assets/
-          # Vérifier s'il y a vraiment des changements après git add
-          if git diff --cached --quiet; then
-            echo "ℹ️ Aucun changement détecté après synchronisation"
-          else
-            git commit -m "🤖 Mise à jour automatique des messages Telegram - $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
-            git push
-            echo "✅ Changements poussés avec succès"
-          fi
+          git commit -m "🤖 Mise à jour automatique des messages Telegram - $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+          git push
+          echo "✅ Changements poussés avec succès"
       
       # 8. Message d'information si pas de changements
       - name: No changes found
         if: steps.verify_changed_files.outputs.changed == 'false'
         run: echo "✅ Aucun nouveau message trouvé"
 
-        # 9. NOUVEAU : Déclencher le déploiement
+      # 9. Déclencher le déploiement SEULEMENT s'il y a vraiment des changements
       - name: Trigger deployment
         if: steps.verify_changed_files.outputs.changed == 'true'
         uses: benc-uk/workflow-dispatch@v1
