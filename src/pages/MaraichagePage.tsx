@@ -9,11 +9,10 @@ import heroImage from "@/assets/maraichage-hero.jpg";
 
 const MaraichagePage = () => {
   const { t } = useLanguage();
-  // Parallax inversé (reverse=true) : la photo descend dans le cadre au scroll.
-  // Démarre à 75% (humains visibles) et glisse vers 95% (vers le bas de la photo).
-  // Le backgroundPosition initial doit valoir minPercent (point de départ en mode reverse)
-  // pour éviter un saut au premier événement scroll.
-  const parallaxRef = useParallax(0.3, 'bottom', 75, 95, true);
+  // La photo descend dans le cadre au scroll : démarre à 75% (humains visibles)
+  // et glisse vers 95% (bas de la photo). Le backgroundPosition initial (75%)
+  // doit valoir `from` pour éviter un saut au chargement.
+  const parallaxRef = useParallax({ from: 75, to: 95 });
 
   return (
     <main className="min-h-screen bg-background">
