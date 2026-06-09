@@ -16,7 +16,8 @@ Cette séparation permet aux membres du collectif de publier depuis Telegram san
 │              https://lorelei13120.github.io/hirondelles/         │
 └──────────────────────────────────────────────────────────────────┘
                                ▲
-                               │ deploy.yml (push main)
+                               │ deploy.yml (push humain sur main,
+                               │  ou workflow_dispatch du cron si contenu modifié)
                                │
 ┌──────────────────────────────────────────────────────────────────┐
 │                   Frontend SPA (React 19 + Vite)                 │
@@ -99,8 +100,8 @@ Cette séparation permet aux membres du collectif de publier depuis Telegram san
 1. Checkout du repo + setup Node 20 + `npm install`.
 2. Exécution de `scripts/fetch_telegram_updates.js` avec `TELEGRAM_BOT_TOKEN` injecté depuis GitHub Secrets.
 3. Le script lit `last_update_id.txt`, appelle `getUpdates` via Telegraf à partir de cet ID, télécharge les nouvelles photos via `https.get` dans `telegram-images/{photos,affiches}/`, met à jour `messages.json` et `last_update_id.txt`.
-4. Si `git diff` non vide → commit `🤖 Mise à jour automatique…` + push (auteur `GitHub Actions <actions@github.com>`).
-5. Le push sur `main` redéclenche `deploy.yml` qui rebuild et republie.
+4. Si quelque chose a changé dans `public/Assets/` → commit `🤖 Mise à jour automatique…` + push (auteur `GitHub Actions <actions@github.com>`). Le commit inclut `last_update_id.txt` afin de persister l'offset Telegram, même quand aucun message visible n'a changé.
+5. Le workflow déclenche `deploy.yml` via `workflow_dispatch` (`gh workflow run`) **uniquement** si un fichier autre que `last_update_id.txt` a changé (`messages.json` ou une image). Le `git push` du bot ne peut PAS déclencher `deploy.yml` tout seul : un push fait avec le `GITHUB_TOKEN` par défaut n'enclenche aucun autre workflow (règle anti-récursion de GitHub ; seul `workflow_dispatch`/`repository_dispatch` fait exception). Conséquence : un simple incrément du curseur (rappel ignoré, message déjà connu) ne republie pas le site ; seul un vrai nouveau contenu déclenche un build. En complément, `deploy.yml` porte un `paths-ignore` sur `last_update_id.txt` qui couvre le cas d'un push *humain* ne touchant que le curseur.
 
 **Schéma `messages.json`** (consommé par `NewsSection`, `EventsSection`, `ActualitesPage`, `EvenementsPage`) :
 ```ts

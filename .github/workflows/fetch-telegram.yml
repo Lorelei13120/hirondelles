@@ -18,7 +18,7 @@ on:
 
 permissions:
   contents: write
-  actions: write # Permet de lancer d'autres workflows (deploiement)
+  actions: write # nécessaire pour déclencher deploy.yml via workflow_dispatch
 
 jobs:
   fetch-messages:
@@ -46,7 +46,13 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         run: node scripts/fetch_telegram_updates.js
       
-      # 5. Vérifier les changements APRÈS fetch (et AVANT commit)
+      # 5. Distinguer DEUX notions de changement :
+      #    - changed         : n'importe quoi a bougé dans public/Assets/
+      #                        → on commit (pour persister le curseur Telegram).
+      #    - content_changed : un fichier AUTRE que last_update_id.txt a bougé
+      #                        (messages.json, une image…) → on déploie.
+      #    last_update_id.txt s'incrémente à chaque run même sans nouveau message
+      #    (rappel ignoré, message déjà connu) : il ne doit PAS déclencher un build.
       - name: Check for real changes
         id: verify_changed_files
         run: |
@@ -56,31 +62,43 @@ jobs:
           else
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
-      
+          CONTENT=$(git diff --cached --name-only -- public/Assets/ ':(exclude)public/Assets/last_update_id.txt')
+          if [ -n "$CONTENT" ]; then
+            echo "content_changed=true" >> $GITHUB_OUTPUT
+            echo "🆕 Contenu modifié :"; echo "$CONTENT"
+          else
+            echo "content_changed=false" >> $GITHUB_OUTPUT
+          fi
+
       # 6. Configurer Git
       - name: Configure Git
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
       
-      # 7. Commit et push les changements réels
+      # 7. Commit et push (curseur inclus, pour persister l'offset Telegram)
       - name: Commit and push changes
         if: steps.verify_changed_files.outputs.changed == 'true'
         run: |
           git commit -m "🤖 Mise à jour automatique des messages Telegram - $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
           git push
           echo "✅ Changements poussés avec succès"
-      
+
       # 8. Message d'information si pas de changements
       - name: No changes found
         if: steps.verify_changed_files.outputs.changed == 'false'
         run: echo "✅ Aucun nouveau message trouvé"
 
-      # 9. Déclencher le déploiement SEULEMENT s'il y a vraiment des changements
+      # 9. Déclencher le déploiement SEULEMENT si le contenu visible a changé.
+      #
+      # Indispensable : le push ci-dessus utilise le GITHUB_TOKEN par défaut, et
+      # GitHub n'autorise PAS un tel push à déclencher d'autres workflows (règle
+      # anti-récursion). Seul workflow_dispatch/repository_dispatch fait exception.
+      # On déclenche donc deploy.yml explicitement, mais uniquement quand
+      # content_changed=true → pas de build inutile sur un simple incrément de
+      # curseur (cf. #36).
       - name: Trigger deployment
-        if: steps.verify_changed_files.outputs.changed == 'true'
-        uses: benc-uk/workflow-dispatch@v1
-        with:
-          workflow: Deploy to GitHub Pages
-          ref: main
-          token: ${{ secrets.GITHUB_TOKEN }}
+        if: steps.verify_changed_files.outputs.content_changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run deploy.yml --ref main

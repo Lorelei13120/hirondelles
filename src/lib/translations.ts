@@ -106,16 +106,6 @@ export const translations = {
   'desc.values.3.d': { fr: 'Un espace complètement safe est impossible. On favorise l\'écoute, la remise en question et l\'apprentissage plutôt que la punition.', de: 'Ein vollkommen sicherer Raum ist unmöglich. Wir fördern Zuhören, Hinterfragen und Lernen anstelle von Bestrafung.' },
   'desc.values.4.t': { fr: 'Lieu ouvert', de: 'Offener Ort' },
   'desc.values.4.d': { fr: 'Le collectif est ouvert à toute personne qui souhaite s\'intégrer au projet et respecte les valeurs de la charte. Sens-toi bienvenu·e !', de: 'Das Kollektiv steht allen offen, die sich in das Projekt integrieren möchten und die Werte der Charta respektieren. Fühl dich willkommen!' },
-
-  // Typography Preview
-  'typography.preview.title': { fr: 'Aperçu des nouvelles typos', de: 'Vorschau der neuen Schriftarten' },
-  'typography.display.label': { fr: 'Lemon Milk (Titres)', de: 'Lemon Milk (Überschriften)' },
-  'typography.display.hero': { fr: 'Un hameau agricole à Pontareuse, cultivé avec passion.', de: 'Ein landwirtschaftlicher Weiler in Pontareuse, mit Leidenschaft bewirtschaftet.' },
-  'typography.accent.label': { fr: 'Outer Sans (Accents)', de: 'Outer Sans (Akzente)' },
-  'typography.accent.title': { fr: 'Maraîchage & Jardins Partagés', de: 'Gemüsebau & Gemeinschaftsgärten' },
-  'typography.accent.description': { fr: 'Nous cultivons des légumes de saison, sans pesticides, pour nourrir la communauté locale.', de: 'Wir kultivieren saisonales Gemüse ohne Pestizide, um die lokale Gemeinschaft zu ernähren.' },
-  'typography.body.label': { fr: 'Agenor Neue (Corps)', de: 'Agenor Neue (Fließtext)' },
-  'typography.body.description': { fr: 'Rejoignez-nous pour les ateliers de réparation de vélos, les récoltes communes et les soirées conviviales. Chaque samedi matin, venez partager nos valeurs et nos produits frais directement du champ à l\'assiette.', de: 'Schließen Sie sich uns an für Fahrrad-Reparaturworkshops, gemeinsame Ernten und gesellige Abende. Jeden Samstagvormittag teilen Sie unsere Werte und frische Produkte direkt vom Feld auf den Teller.' },
 } satisfies Record<string, TranslationEntry>;
 
 export type TranslationKey = keyof typeof translations;

@@ -3,6 +3,13 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+    # Ne pas redéployer quand le SEUL fichier modifié est le curseur Telegram.
+    # last_update_id.txt s'incrémente à chaque run du cron même sans nouveau
+    # message (rappel ignoré, message déjà connu…). GitHub saute le workflow
+    # lorsque tous les fichiers du push matchent paths-ignore, donc un commit
+    # qui touche aussi messages.json ou une image déclenche bien le deploy. (#36)
+    paths-ignore:
+      - 'public/Assets/last_update_id.txt'
   workflow_dispatch:
 
 permissions:
