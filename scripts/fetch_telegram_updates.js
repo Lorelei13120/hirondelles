@@ -147,6 +147,40 @@ function detectMessageTags(content) {
   return ['actualité'];
 }
 
+// Nouvelles tentatives sur getUpdates : une coupure reseau ponctuelle entre le
+// runner GitHub et api.telegram.org ne doit pas faire echouer la run, car une
+// run manquee rapproche les updates en attente de leur expiration (24h).
+const GET_UPDATES_RETRY_DELAYS_MS = [5000, 15000];
+
+/**
+ * Une erreur merite une nouvelle tentative si elle est reseau (pas de reponse
+ * de l'API) ou si Telegram renvoie 429 / 5xx. Un 4xx (jeton invalide, conflit
+ * de webhook) est definitif : reessayer ne changerait rien.
+ */
+function isRetryableTelegramError(error) {
+  const code = error?.response?.error_code;
+  if (code === undefined) return true;
+  return code === 429 || code >= 500;
+}
+
+/**
+ * Appelle getUpdates, avec jusqu'a GET_UPDATES_RETRY_DELAYS_MS.length nouvelles
+ * tentatives sur erreur passagere. Sans danger : getUpdates ne confirme les
+ * updates que via l'offset de l'appel suivant, un echec ne perd donc rien.
+ */
+async function getUpdatesWithRetry(bot, params) {
+  for (let attempt = 0; ; attempt++) {
+    try {
+      return await bot.telegram.getUpdates(params);
+    } catch (error) {
+      const delay = GET_UPDATES_RETRY_DELAYS_MS[attempt];
+      if (delay === undefined || !isRetryableTelegramError(error)) throw error;
+      console.warn(`⚠️  getUpdates a echoue (tentative ${attempt + 1}) : ${error.message} — nouvel essai dans ${delay / 1000} s`);
+      await new Promise(resolve => setTimeout(resolve, delay));
+    }
+  }
+}
+
 /**
  * Fonction principale avec Telegraf
  */
@@ -179,7 +213,7 @@ async function fetchNewMessages() {
     const offset = lastUpdateId > 0 ? lastUpdateId + 1 : 0;
     
     try {
-      const updates = await bot.telegram.getUpdates({ 
+      const updates = await getUpdatesWithRetry(bot, {
         offset, 
         limit: 100, 
         timeout: 10,
